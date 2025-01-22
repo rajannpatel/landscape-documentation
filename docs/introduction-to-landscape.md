@@ -34,7 +34,7 @@ Landscape performs your system management tasks. You can use Landscape for lots 
 
 There are three different editions of Landscape: [SaaS](#heading--landscape-saas), [Managed](#heading--managed-landscape), and [Self-hosted](#heading--self-hosted-landscape).
 
-<a href="#heading--landscape-saas"><h3 id="heading--landscape-saas">Landscape SaaS</h3></a>
+### Landscape SaaS
 
 Landscape SaaS is our standard SaaS offering. It’s a cloud-based version of Landscape that’s hosted and maintained by Canonical, bundled with your [Ubuntu Pro](https://ubuntu.com/pro) subscription. Landscape SaaS is hosted on Canonical’s shared infrastructure (multi-tenanted) and is ready to use immediately, with no setup required.
 
@@ -42,7 +42,7 @@ While the majority of Landscape features are offered in SaaS, there are certain 
 
 Organizations interested in using Landscape SaaS at enterprise-scale should [contact Canonical Sales](https://ubuntu.com/landscape#get-in-touch).
 
-<a href="#heading--managed-landscape"><h3 id="heading--managed-landscape">Managed Landscape</h3></a>
+### Managed Landscape
 
 Managed Landscape is a single-tenant version of Landscape with dedicated resources that’s hosted by Canonical and comes with an SLA. It’s for organizations that want private, dedicated resources but don’t want to manage their own infrastructure. With Managed Landscape, you get your own private Landscape instance that’s managed by Canonical but customized to your organization’s needs.
 
@@ -50,7 +50,7 @@ The Managed Landscape offering comes with all Landscape features, including [rep
 
 Organizations interested in Managed Landscape should [contact Canonical Sales](https://ubuntu.com/landscape#get-in-touch).
 
-<a href="#heading--self-hosted-landscape"><h3 id="heading--self-hosted-landscape">Self-hosted Landscape</h3></a>
+### Self-hosted Landscape
 
 Self-hosted Landscape is the on-premises version of Landscape that’s set-up, hosted, and maintained by the user or organization. It’s customizable, controlled by the user, and can also be deployed to public cloud resources. The self-hosted version gives you the most control over your Landscape instance, but it requires more technical knowledge and resources to set-up and maintain. All Landscape features are available for self-hosted Landscape instances.
 

@@ -32,7 +32,7 @@ To learn more about Juju and to bootstrap a Juju controller, check out their [ge
 
 When deploying with Juju, you will use a Juju bundle. A bundle is an encapsulation of all of the parts needed to deploy the required services as well as associated relations and configurations that the deployment requires. When deploying Landscape Server using Juju, there are three different methods you can use. Select the one that meets the needs for your environment.
 
-<a href="#heading--landscape-dense-maas-bundle"><h3 id="heading--landscape-dense-maas-bundle">landscape-dense-maas bundle</h3></a>
+### landscape-dense-maas bundle
 
 > See also: [Landscape-dense-maas bundle on Charmhub](https://charmhub.io/landscape-dense-maas)
 
@@ -44,7 +44,7 @@ juju deploy landscape-dense-maas
 
 This will deploy Landscape on just one node using LXD containers for all services.
 
-<a href="#heading--landscape-scalable-bundle"><h3 id="heading--landscape-scalable-bundle">landscape-scalable bundle</h3></a>
+### landscape-scalable bundle
 
 > See also: [Landscape-scalable bundle on Charmhub](https://charmhub.io/landscape-scalable)
 
@@ -54,7 +54,7 @@ This will deploy Landscape on just one node using LXD containers for all service
 juju deploy landscape-scalable
 ```
 
-<a href="#heading--landscape-dense-bundle"><h3 id="heading--landscape-dense-bundle">landscape-dense bundle</h3></a>
+### landscape-dense bundle
 
 > See also: [Landscape-dense bundle on Charmhub](https://charmhub.io/landscape-dense)
 
