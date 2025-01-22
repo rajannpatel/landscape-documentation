@@ -7,12 +7,6 @@ If you already have a Windows machine with WSL 2 and Ubuntu installed, you donâ€
 
 This guide provides an example of how you could set up an environment to use WSL with Landscape. Itâ€™s intended for users who want to create a Windows VM, although later steps in the guide are still relevant for users who already have a Windows machine. 
 
-**Contents:**
-
-- [Configure Ubuntu for virtualization with QEMU and libvirt](#heading--configure-ubuntu-for-virtualization-with-qemu-and-libvirt)
-- [Create and provision a Windows 11 VM using an ISO](#heading--create-and-provision-a-windows-11-vm-using-an-iso)
-- [Set up WSL, Ubuntu and helper utilities](#heading--set-up-wsl-ubuntu-and-helper-utilities)
-
 ## Step 1: Configure Ubuntu for virtualization with QEMU and libvirt
 
 To enable libvirt-based virtualization on Ubuntu, run the following commands:

@@ -1,15 +1,6 @@
 (how-to-guides-backup-and-maintenance-backup-and-restore)=
 # Backup and restore
 
-**Contents:**
-- [Overview](#heading--overview)
-- [Define a backup and retention policy](#heading--define-a-backup-and-retention-policy)
-- [Configure PostgreSQL](#heading--configure-postgresql)
-- [Backup server configuration files](#heading--backup-server-configuration-files)
-- [Test recovery procedures](#heading--test-recovery-procedures)
-
-## Overview
-
 Self-hosted Landscape consists of several stateful components that must be roughly synchronized to guarantee correct functioning of the system as a whole. These include:
 
 * **Landscape Server**: At least 6 PostgreSQL databases, a cache of hash databases, and a variety of configuration files.

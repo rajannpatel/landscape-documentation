@@ -1,13 +1,6 @@
 (how-to-guides-landscape-installation-and-set-up-install-in-a-lxd-container)=
 # Install in a LXD container
 
-**Contents:**
-
-1. [Install and configure cloud-init](#heading--install-and-configure-cloud-init)
-2. [Install and configure LXD](#heading--install-and-configure-LXD)
-3. [Configure network settings](#heading--configure-network-settings)
-4. [Install and configure Landscape Quickstart](#heading--install-and-configure-landscape-quickstart)
-
 ```{note}
 You can also use this guide to test Landscape inside a single LXD container.
 ```

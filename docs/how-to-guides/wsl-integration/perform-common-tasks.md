@@ -7,14 +7,6 @@
 This guide assumes that a registered WSL host and WSL instance already exist in Landscape. For more information, visit [how to register WSL hosts to Landscape](/how-to-guides/wsl-integration/register-wsl-hosts) and [how to register WSL instances to Landscape](/how-to-guides/wsl-integration/manage-wsl-instances).
 ```
 
-**Contents:**
-
-- [Start WSL instances registered in your Landscape account](#heading--start-wsl-instances-registered-in-your-landscape-account)
-- [Shutdown WSL instances registered in your Landscape account](#heading--shutdown-wsl-instances-registered-in-your-landscape-account)
-- [Set a default WSL instance](#heading--set-a-default-wsl-instance)
-- [Log in to any WSL instance](#heading--log-into-any-wsl-instance)
-- [Delete a WSL instance](#heading--delete-a-wsl-instance)
-- [View WSL host machines and child computers](#heading--view-wsl-host-machines-and-child-computers)
 
 ## Start WSL instances registered in your Landscape account
 

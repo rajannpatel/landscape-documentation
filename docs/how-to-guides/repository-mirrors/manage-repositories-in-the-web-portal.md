@@ -11,17 +11,6 @@ The repository mirroring feature in Landscape enables you to mirror Ubuntu and t
 
 The guide specifically demonstrates how to mirror an Ubuntu repository, but most of the information here also applies to mirroring third-party repositories.
 
-**Contents:**
-
-- [Disk space requirements](#heading--disk-space-requirements)
-- [(If needed) Generate API credentials](#heading--generate-API-credentials)
-- [Create and import the GPG key](#heading--create-and-import-the-gpg-key)
-- [Create a new repository (distribution)](#heading--create-a-new-repository)
-- [Create a mirror](#heading--create-a-mirror)
-- [Sync pockets](#heading--sync-pockets)
-- [Create a repository profile and associate computers to the profile](#heading--create-a-repository-profile-and-associate-computers)
-- [Create and manage pull pockets](#heading--create-and-manage-pull-pockets)
-
 ## Disk space requirements
 
 As of March 2024, these are the estimates for the amount of disk space needed to download the following Ubuntu distributions:

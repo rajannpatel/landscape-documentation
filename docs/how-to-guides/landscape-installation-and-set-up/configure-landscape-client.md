@@ -9,13 +9,6 @@ If you're using the snap instead of the Debian package, see [how to configure th
 
 If you're using the charm, you'll need to configure the client with `juju config`. For more information, see the [Juju documentation](https://juju.is/docs/juju) and [Charmhub's documentation on the Landscape client charm](https://charmhub.io/landscape-client).
 
-**Contents:**
-
-- [Use `landscape-config`](#heading--use-landscape-config)
-- [Auto-register new computers](#heading--auto-register-new-computers)
-- [Enable script execution](#heading--enable-script-execution)
-- [Configuration management tools](#heading--landscape-clients-with-configuration-management-tools)
-
 ## Use `landscape-config`
 
 After you’ve installed `landscape-client`, you can use `landscape-config` to configure it on your client machines. Running `landscape-config` without any arguments starts the configuration, and you’ll be prompted to provide any information needed to run Landscape Client. When the configuration is complete, you’ll receive confirmation that the client was registered successfully or if an error occurred.

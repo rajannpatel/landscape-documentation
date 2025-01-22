@@ -1,14 +1,6 @@
 (how-to-guides-web-portal-classic-web-portal-manage-packages)=
 # Manage packages
 
-**Contents:**
-
-- [Access package information](#heading--access-package-information)
-- [Add a package profile](#heading--add-a-package-profile)
-- [Export a package profile](#heading--export-a-package-profile)
-- [Modify a package profile](#heading--modify-a-package-profile)
-- [Delete a package profile](#heading--delete-a-package-profile)
-
 ## Access package information
 
 To access package information:

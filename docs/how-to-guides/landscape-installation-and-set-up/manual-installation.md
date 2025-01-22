@@ -14,28 +14,6 @@ For a manual installation of Landscape 24.04 LTS:
 
 This is a long document. If you want a quick installation that just works, but doesn't scale to a large number of machines, then install the `landscape-server-quickstart` package. For more information, visit [how to install Landscape Server with quickstart mode](https://ubuntu.com/landscape/docs/quickstart-deployment).
 
-**Contents:**
-- [Prepare for the installation](#heading--prepare-for-the-installation)
--  [Install the database server](#heading--install-the-database-server)
-   1. [Install PostgreSQL and required libraries](#heading--install-postgresql-and-required-libraries)
-   2. [Create a superuser Landscape can use](#heading--create-a-superuser-Landscape-can-use)
-   3. [Configure PostgreSQL](#heading--configure-postgresql)
-   4. [Tune PostgreSQL](#heading--tune-postgresql)
-      - [Landscape-specific tips for tuning PostgreSQL](#heading--landscape-specific-tips-for-tuning-postgresql)
-- [Install the application server](#heading--install-the-application-server)
-   1. [Add the Landscape package archive](#heading--add-the-landscape-package-archive)
-   2. [Install the server package](#heading--install-the-server-package)
-   3. [Install the license file](#heading--install-the-license-file)
-   4. [Configure rabbitmq](#heading--configure-rabbitmq)
-   5. [Configure database and broker access](#heading--configure-database-and-broker-access)
-   6. [Run the Landscape setup script](#heading--run-the-landscape-setup-script)
-   7. [Configure Landscape services and schema upgrades](#heading--configure-landscape-services-and-schema-upgrades)
-   8. [Configure web server](#heading--configure-web-server)
-   9. [Start Landscape services](#heading--start-landscape-services)
-   10. [Create the first user](#heading--create-the-first-user)
-   11. [Configure the first client](#heading--configure-the-first-client)
-   12. [(Optional) Add an email alias](#heading--add-an-email-alias)
-
 ## Prepare for the installation
 
 What you will need:

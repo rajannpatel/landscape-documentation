@@ -9,12 +9,6 @@ Note: You must be an administrator to perform these tasks.
 
 This document describes how to manage additional administrators and roles.
 
-**Contents:**
-
-- [Invite administrators](#heading--invite-administrators)
-- [Disable administrators](#heading--disable-administrators)
-- [Create roles](#heading--create-roles)
-
 ## Invite administrators
 
 You can make someone an administrator by sending them an invitation via email. To invite an administrator: 

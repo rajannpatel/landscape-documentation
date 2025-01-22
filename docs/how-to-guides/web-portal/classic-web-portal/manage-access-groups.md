@@ -5,15 +5,6 @@
 
 This document describes how to manage access groups.
 
-**Contents:**
-
-- [Create access groups](#heading--create-access-groups)
-- [Edit access groups](#heading--edit-access-groups)
-- [Delete access groups](#heading--delete-access-groups)
-- [View existing computers in an access group](#heading--view-existing-computers-in-an-access-group)
-- [Add computers to access groups](#heading--add-computers-to-access-groups)
-- [Associate roles with access groups](#heading--associate-roles-with-access-groups)
-
 ## Create access groups
 
 To create a new access group:

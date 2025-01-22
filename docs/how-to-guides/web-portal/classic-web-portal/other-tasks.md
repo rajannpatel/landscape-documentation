@@ -1,15 +1,6 @@
 (how-to-guides-web-portal-classic-web-portal-other-tasks)=
 # Other tasks
 
-**Contents:**
-- [Identify your Landscape version](#heading--identify-your-landscape-version)
-- [Group machines together to perform a task across the group](#heading--group-machines-together-to-perform-a-task-across-the-group)
-- [Upgrade all packages on a certain group of machines](#heading--upgrade-all-packages-on-a-certain-group-of-machines)
-- [Keep a set of machines automatically up to date](#heading--keep-a-set-of-machines-automatically-up-to-date)
-- [Keep Landscape from upgrading a certain package on one of my servers](#heading--keep-landscape-from-upgrading-a-certain-package-on-one-of-my-servers)
-- [Create a custom graph](#heading--create-a-custom-graph)
-- [Ensure all computers with a given tag have a common list of packages installed](#heading--ensure-all-computers-with-a-given-tag-have-a-common-list-of-packages-installed)
-
 ## Identify your Landscape version
 
 ```{note}

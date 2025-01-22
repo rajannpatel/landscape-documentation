@@ -1,20 +1,6 @@
 (how-to-guides-web-portal-classic-web-portal-manage-computers)=
 # Manage computers
 
-**Contents:**
-- [Register computers](#heading--register-computers)
-- [Select computers](#heading--select-computers)
-- [Apply tags to computers](#heading--apply-tags-to-computers)
-- [Access information about computers](#heading--access-information-about-computers)
-- [Get computer IDs](#heading--get-computer-ids)
-- [Access the activity log](#heading--access-the-activity-log)
-- [Manage users](#heading--manage-users)
-- [Manage roles](#heading--manage-roles)
-- [Manage alerts](#heading--manage-alerts)
-- [Manage scripts](#heading--manage-scripts)
-- [Manage upgrade profiles](#heading--manage-upgrade-profiles)
-- [Manage removal profiles](#heading--manage-removal-profiles)
-
 ## Register computers
 
 To register computers with a Landscape server:

@@ -9,15 +9,6 @@ Note: For more information on charms and bundles, visit [Charmhub](https://charm
 
 You can deploy Landscape in a scalable way with Juju.
 
-**Contents:**
-1. [Install Juju](#heading--install-juju)
-1. [Deploy self-hosted Landscape Server](#heading--deploy-self-hosted-landscape-server)
-   - [landscape-dense-maas bundle](#heading--landscape-dense-maas-bundle)
-   - [landscape-scalable bundle](#heading--landscape-scalable-bundle)
-   - [landscape-dense bundle](#heading--landscape-dense-bundle)
-1. [Configure an SSL cert on HAProxy](#heading--configure-an-ssl-cert-on-haproxy)
-1. [Access self-hosted Landscape](#heading--access-self-hosted-landscape)
-
 ## Install Juju
 
 [Install Juju](https://juju.is/docs/olm/installing-juju) as a snap with this command:

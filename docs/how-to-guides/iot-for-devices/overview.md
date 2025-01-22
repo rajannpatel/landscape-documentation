@@ -7,12 +7,6 @@ Landscape can solve these issues. Landscape enables you to remotely manage, conf
 
 Using the strictly-confined snap version of Landscape Client, you can add all of your Core devices to your Landscape account and manage them from the web portal. Landscape works with a variety of devices, including devices with limited or intermittent connectivity. Additionally, leveraging the capabilities of the Snap Store ensures transactional, automatic updates with built-in rollback-on-failure support. As a result, you can manage your devices remotely without the need for physical intervention.
 
-**Contents:**
-- [How-to guides](#heading--how-to-guides-client-snap)
-- [Best practices for IoT](#heading--best-practices-for-iot)
-- [Limitations of the Landscape Client snap](#heading--limitations-of-landscape-client-snap)
-- [Known issues with the snap](#heading--known-issues)
-
 ## How-to guides
 
 We have the following how-to guides to help you use the Landscape Client snap to manage your IoT devices:

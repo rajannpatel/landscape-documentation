@@ -7,13 +7,6 @@ You must have the Landscape Client snap installed on at least one client device 
 
 This document describes how to configure the Landscape Client snap in multiple ways. If you’re using the Debian package instead of the snap, see [how to configure Landscape Client](/how-to-guides/landscape-installation-and-set-up/configure-landscape-client).
 
-**Contents:**
-
-- [Use `landscape-client.config`](#heading--use-landscape-client-config)
-- [Auto-register new devices](#heading--auto-register-new-devices)
-- [Manage script execution](#heading--manage-script-execution)
-- [Managed device mode](#heading--managed-device-mode)
-
 ## Use `landscape-client.config`
 
 After you’ve installed the `landscape-client` snap, you can use `landscape-client.config` to configure it on your client devices. Running `landscape-client.config` without any arguments starts the configuration, and you’ll be prompted to provide any information needed to run.

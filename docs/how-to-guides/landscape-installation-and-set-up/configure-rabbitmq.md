@@ -5,12 +5,6 @@ RabbitMQ is configured with a default timeout of 30 minutes in Jammy 22.04 or la
 
 If you encounter this issue, try increasing or disabling the timeout and re-run your task. If you’re syncing a repository mirror, you may also need to delete a lock file for your task to re-run successfully.
 
-**Contents:**
-
-- [Configure the RabbitMQ timeout to be longer than 30 minutes](#heading--configure-the-rabbitmq-timeout-to-be-longer-than-30-minutes)
-- [Disable the RabbitMQ timeout](#heading--disable-the-rabbitmq-timeout)
-- [(If necessary) Delete the lock file](#heading--delete-the-lock-file)
-
 ## Configure the RabbitMQ timeout to be longer than 30 minutes
 
 The default timeout is set in milliseconds at 1,800,000 milli seconds (30 minutes). To increase it to five hours:

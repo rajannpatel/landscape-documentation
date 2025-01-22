@@ -9,14 +9,6 @@ This guide provides an example of how to install and set up your Landscape serve
 For the most up-to-date documentation on Microsoft Azure, see [Microsoft's Azure documentation](https://learn.microsoft.com/en-us/azure).
 ```
 
-**Contents:**
-
-- Install and set up Microsoft Azure CLI
-- Provision Azure resources
-- Deploy Landscape Server VM with cloud-init
-- Configure Landscape
-- (Optional) Perform a complete teardown
-
 ## Install and set up Microsoft Azure CLI
 
 ### Install Azure CLI

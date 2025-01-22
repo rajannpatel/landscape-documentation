@@ -13,13 +13,6 @@ If this is the first time you've installed Landscape, you can continue with this
 
 This guide describes how to set up Ubuntu Pro for WSL and register new WSL hosts (Windows machines) to Landscape.
 
-**Contents:**
-
-- [Check prerequisites](#heading--check-prerequisites)
-- [Install and configure Ubuntu Pro for WSL](#heading--install-and-configure-ubuntu-pro-for-wsl)
-- [Finalize the Windows machine registration](#heading--finalize-the-windows-machine-registration)
-- [(If necessary) Troubleshoot](#heading--troubleshoot)
-
 ## Check prerequisites
 
 ```{note}

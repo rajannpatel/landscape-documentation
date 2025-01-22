@@ -5,23 +5,6 @@
 Repository mirroring is available for self-hosted users.
 ```
 
-**Contents:**
-- [Overview](#heading--overview)
-- [Disk space requirements](#heading--disk-space-requirements)
-- [Create the gpg key](#heading--create-the-gpg-key)
-- [Create the distribution, series and pockets](#heading--create-the-distribution-series-and-pockets)
-- [Sync pockets](#heading--sync-pockets)
-- [Create a repository profile](#heading--create-a-repository-profile)
-- [Associate computers with repository profile](#heading--associate-computers-with-repository-profile)
-- [Add pockets to the repository profile](#heading--add-pockets-to-the-repository-profile)
-- [Edit pockets](#heading--edit-pockets)
-- [Upload pockets](#heading--upload-pockets)
-- [Pull pockets](#heading--pull-pockets)
-- [Repository management mirroring tips](#heading--repository-management-mirroring-tips)
-- [Mirror smaller pocket for testing](#heading--mirror-smaller-pocket-for-testing)
-
-## Overview
-
 Repository management requires the use of the Landscape [API.](/how-to-guides/api/use-the-legacy-api) Set it up and have it ready for the next steps. Linux distributions like Ubuntu use repositories to hold packages you can install on managed computers. While Ubuntu has several repositories that anyone can access, you can also maintain your own repositories on your network, and enforce repository configurations for the machines you manage. This can be useful when you want to maintain packages with different versions from those in the community repositories, or if you have private repositories of in-house software for internal distribution. Once you add your machines to a Landscape repository profile, you have a choice to enforce the entire repository configuration, or just individual repositories.
 
 In the following instructions we will use:

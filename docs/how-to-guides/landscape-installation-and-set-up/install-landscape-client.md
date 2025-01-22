@@ -3,14 +3,6 @@
 
 There are multiple ways to install Landscape Client. This document describes each method.
 
-**Contents:**
-
-- [Main repository](#heading--install-landscape-client-from-the-main-repository)
-- [PPA](#heading--install-landscape-client-from-a-PPA)
-- [Subordinate charm](#heading--install-landscape-client-with-the-subordinate-charm)
-- [Cloud-init](#heading--install-landscape-client-with-cloud-init)
-- [Snap](#heading--install-landscape-client-snap)
-
 ## Install Landscape Client from Ubuntu's `main` repository
 
 Landscape Client is available in Ubuntu's `main` repository in all [Ubuntu releases](https://ubuntu.com/about/release-cycle), and is published independently of the self-hosted Landscape releases. This method is suitable when performing the installation through a terminal or shell scripting. To install Landscape Client from Ubuntu's `main` repository:

@@ -7,13 +7,6 @@ The Landscape Client snap allows remote script execution, but its behavior diffe
 
 This document describes some differences and gives examples of how remote script execution can be used with the snap.
 
-**Contents:**
-
-- [Background information](#heading--background-information)
-- [Example scripts to run on your device](#heading--example-scripts-to-run-on-your-device)
-- [Debug scripts](#heading--debug-scripts)
-
-
 ## Background information
 
 ### Landscape Client snap design

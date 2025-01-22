@@ -7,14 +7,6 @@ The quickstart mode of deploying Landscape consists of installing all the necess
 **Note:** If you have an Ubuntu Pro subscription, we recommend you attach your Pro token for easy access to your Pro services. For more information, see [how to attach your Ubuntu Pro subscription](/how-to-guides/ubuntu-pro/attach-ubuntu-pro) and [how to enable Landscape in the Ubuntu Pro Client](/how-to-guides/ubuntu-pro/enable-landscape).
 ```
 
-**Contents:**
-
-1. [Check minimum requirements](#heading--check-minimum-requirements)
-2. [Install Landscape Server](#heading--install-landscape-server)
-3. [Install an SSL certificate](#heading--install-an-ssl-certificate)
-4. [Create a global administrator account](#heading--create-a-global-administrator-account)
-5. [(Optional) Configure Postfix for email](#heading--configure-postfix-for-email)
-
 ## Check minimum requirements
 
 The following minimum requirements are needed to install Landscape Server:

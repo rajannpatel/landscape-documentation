@@ -5,18 +5,6 @@ You can manage your Ubuntu Core device deployments with the Landscape Client sna
 
 The example provided here is based on [Ubuntu Core’s tutorial for building your first Ubuntu Core image](https://ubuntu.com/core/docs/build-an-image). It uses a Raspberry Pi running Ubuntu Core 22, but the instructions still generally apply to other devices and configurations.
 
-**Contents:**
-
-- [Prerequisites](#heading--prerequisites)
-- [Define your custom image](#heading--define-your-custom-image)
-- [Configure your custom image](#heading--configure-your-custom-image)
-- [Build the gadget and update your model assertion](#heading--build-the-gadget-and-update-your-model-assertion)
-- [Sign the model assertion](#heading--sign-the-model-assertion)
-- [Build the custom Ubuntu Core image](#heading--build-the-custom-ubuntu-core-image)
-- [Write the image to an SD card](#heading--write-the-image-to-an-sd-card)
-- [Boot the device](#heading--boot-the-device)
-- [Explanation: Auto-registration process in the gadget snap](#heading--explanation-auto-registration-process-in-the-gadget-snap)
-
 ## Prerequisites
 
 To build your custom Ubuntu Core image, you must have the following:

@@ -7,14 +7,6 @@ This guide provides an example of how to install and set up your Landscape serve
 For the most up-to-date documentation on Google Cloud, see [Google Cloud's documentation](https://cloud.google.com/docs).
 ```
 
-**Contents:** 
-
-- [Install and set up Google Cloud CLI](#heading--install-and-set-up-google-cloud-cli)
-- [Deploy Landscape Server VMs with cloud-init](#heading--deploy-landscape-server-vms-with-cloud-init)
-- [Configure Landscape](#heading--configure-landscape)
-- [Clean up provisioning metadata containing secrets](#heading--clean-up-provisioning-metadata-containing-secrets)
-- [(Optional) Perform a complete teardown](#heading--perform-a-complete-teardown)
-
 ## Install and set up Google Cloud CLI
 
 ### Install `gcloud`
