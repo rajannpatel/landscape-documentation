@@ -1,0 +1,97 @@
+(how-to-guides-landscape-installation-and-set-up-juju-installation)=
+# Juju installation
+
+> See also: [Landscape Server charm (Charmhub)](https://charmhub.io/landscape-server)
+
+```{note}
+Note: For more information on charms and bundles, visit [Charmhub](https://charmhub.io/).
+```
+
+You can deploy Landscape in a scalable way with Juju.
+
+**Contents:**
+1. [Install Juju](#heading--install-juju)
+1. [Deploy self-hosted Landscape Server](#heading--deploy-self-hosted-landscape-server)
+   - [landscape-dense-maas bundle](#heading--landscape-dense-maas-bundle)
+   - [landscape-scalable bundle](#heading--landscape-scalable-bundle)
+   - [landscape-dense bundle](#heading--landscape-dense-bundle)
+1. [Configure an SSL cert on HAProxy](#heading--configure-an-ssl-cert-on-haproxy)
+1. [Access self-hosted Landscape](#heading--access-self-hosted-landscape)
+
+<a href="#heading--install-juju"><h2 id="heading--install-juju">Install Juju</h2></a>
+
+[Install Juju](https://juju.is/docs/olm/installing-juju) as a snap with this command:
+
+```bash
+sudo snap install juju --classic
+```
+
+To learn more about Juju and to bootstrap a Juju controller, check out their [getting started](https://juju.is/docs/juju/get-started-with-juju) page.
+
+<a href="#heading--deploy-self-hosted-landscape-server"><h2 id="heading--deploy-self-hosted-landscape-server">Deploy self-hosted Landscape Server</h2></a>
+
+When deploying with Juju, you will use a Juju bundle. A bundle is an encapsulation of all of the parts needed to deploy the required services as well as associated relations and configurations that the deployment requires. When deploying Landscape Server using Juju, there are three different methods you can use. Select the one that meets the needs for your environment.
+
+<a href="#heading--landscape-dense-maas-bundle"><h3 id="heading--landscape-dense-maas-bundle">landscape-dense-maas bundle</h3></a>
+
+> See also: [Landscape-dense-maas bundle on Charmhub](https://charmhub.io/landscape-dense-maas)
+
+If you have a [MAAS](https://maas.io) server, you can take advantage of containers and use the `landscape-dense-maas` bundle:
+
+```console
+juju deploy landscape-dense-maas
+```
+
+This will deploy Landscape on just one node using LXD containers for all services.
+
+<a href="#heading--landscape-scalable-bundle"><h3 id="heading--landscape-scalable-bundle">landscape-scalable bundle</h3></a>
+
+> See also: [Landscape-scalable bundle on Charmhub](https://charmhub.io/landscape-scalable)
+
+**landscape-scalable** each service gets its own machine. Currently that means you will need 4 machines for Landscape, and one for the controller node:
+
+```console
+juju deploy landscape-scalable
+```
+
+<a href="#heading--landscape-dense-bundle"><h3 id="heading--landscape-dense-bundle">landscape-dense bundle</h3></a>
+
+> See also: [Landscape-dense bundle on Charmhub](https://charmhub.io/landscape-dense)
+
+**landscape-dense** is quite similar to the `landscape-dense-maas` deployment, but it installs the `haproxy` service directly on the machine without a container. All the other services use a container:
+
+```console
+juju deploy landscape-dense
+```
+
+This is useful for the cases where the LXD containers don't get externally routable IP addresses.
+
+<a href="#heading--configure-an-ssl-cert-on-haproxy"><h2 id="heading--configure-an-ssl-cert-on-haproxy">Configure an SSL cert on HAProxy</h2></a>
+
+### Create a SSL certificate with LetsEncrypt
+
+If your Landscape instance has a public IP, and your FQDN resolves to that public IP, run the following code to get a valid SSL certificate from LetsEncrypt. Replace `<EMAIL@EXAMPLE.COM>` with an email address where certificate renewal reminders can be sent.
+
+```bash
+sudo certbot certonly --standalone -d $FQDN --non-interactive --agree-tos --email <EMAIL@EXAMPLE.COM>
+```
+
+This will produce a `fullchain.pem` and `privkey.pem` file which you need for HAProxy SSL termination.
+
+### Configure HAProxy with the certificate
+
+Use the following commands to configure HAProxy with the generated certificate.
+
+```bash
+juju config haproxy ssl_cert="$(base64 fullchain.pem)"
+juju config haproxy ssl_key="$(base64 privkey.pem)"
+```
+
+<a href="#heading--access-self-hosted-landscape"><h2 id="heading--access-self-hosted-landscape">Access self-hosted Landscape</h2></a>
+
+Once the deployment has finished, grab the address of the first `haproxy` unit and access it with your browser:
+
+```bash
+juju status haproxy
+```
+
