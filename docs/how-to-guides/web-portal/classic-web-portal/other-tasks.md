@@ -10,7 +10,7 @@
 - [Create a custom graph](#heading--create-a-custom-graph)
 - [Ensure all computers with a given tag have a common list of packages installed](#heading--ensure-all-computers-with-a-given-tag-have-a-common-list-of-packages-installed)
 
-<a href="#heading--identify-your-landscape-version"><h2 id="heading--identify-your-landscape-version">Identify your Landscape version</h2></a>
+## Identify your Landscape version
 
 ```{note}
 Landscape beta versions run ahead of the Landscape SaaS version, and the Landscape SaaS version runs ahead of of self-hosted Landscape versions.
@@ -21,7 +21,7 @@ You may need to know what version of Landscape you're running. To identify your 
 - **Landscape Server**: Add `/about` to the URL of your Landscape account. For example, `https://landscape-server.domain.com/about`. If you're using Landscape SaaS, the URL is `https://landscape.canonical.com/about`. If you're using self-hosted Landscape,  you can also run `apt policy landscape-server` in the command line on the server machine.
 - **Landscape Client**: Run `apt policy landscape-client` in the command line on the client machine.
 
-<a href="#heading--group-machines-together-to-perform-a-task-across-the-group"><h2 id="heading--group-machines-together-to-perform-a-task-across-the-group">Group machines together to perform a task across the group</h2></a>
+## Group machines together to perform a task across the group
 
 You can use tags to manage a group of computers. To add a tag to a group of computers:
 
@@ -31,7 +31,7 @@ You can use tags to manage a group of computers. To add a tag to a group of comp
 4. In the **Tags** section, enter the tag you want to use
 5. Click **Add**
 
-<a href="#heading--upgrade-all-packages-on-a-certain-group-of-machines"><h2 id="heading--upgrade-all-packages-on-a-certain-group-of-machines">Upgrade all packages on a certain group of machines</h2></a>
+## Upgrade all packages on a certain group of machines
 
 Using tags, you can perform an upgrade across a group of machines. For example, if you want to upgrade all your desktop computers, you might want to use "desktop" as a tag.
 
@@ -46,7 +46,7 @@ Starting the upgrade:
 
 Note: While the upgrade tasks are now in the queue, they will not be executed until you approve them. To approve the tasks, click **All**, then click **Approve**.
 
-<a href="#heading--keep-a-set-of-machines-automatically-up-to-date"><h2 id="heading--keep-a-set-of-machines-automatically-up-to-date"> Keep a set of machines automatically up to date</h2></a>
+##  Keep a set of machines automatically up to date
 
 The best way is to use [upgrade profiles](/explanation/terms/profiles/upgrade-profile), which rely on [access groups](/explanation/terms/access-groups). If an access group is already set up for the group of machines you want to keep updated automatically, click on its name. If not, you must create an access group for them:
 
@@ -81,7 +81,7 @@ Once you've added machines to an access group, you'll need to create an upgrade 
    * the schedule you want to use
 4. Click **Save**
 
-<a href="#heading--keep-landscape-from-upgrading-a-certain-package-on-one-of-my-servers"><h2 id="heading--keep-landscape-from-upgrading-a-certain-package-on-one-of-my-servers">Keep Landscape from upgrading a certain package on one of my servers</h2></a>
+## Keep Landscape from upgrading a certain package on one of my servers
 
 1. Click **Computers** in the header
 2. Click **Packages**
@@ -92,7 +92,7 @@ Once you've added machines to an access group, you'll need to create an upgrade 
 
 ![Locked packages](https://assets.ubuntu.com/v1/d34df398-usecases2.png)
 
-<a href="#heading--create-a-custom-graph"><h2 id="heading--create-a-custom-graph">Create a custom graph</h2></a>
+## Create a custom graph
 
 Suppose you want to monitor the size of the PostgreSQL database on your database servers, you may use tags to group these machines together. Now you can create a graph to provide information from all of these servers:
 
@@ -114,7 +114,7 @@ Suppose you want to monitor the size of the PostgreSQL database on your database
 
 To view the graph, click **Computers** in the header, then click **Monitoring**. You can select the monitoring period from the dropdown menu at the top of the window.
 
-<a href="#heading--ensure-all-computers-with-a-given-tag-have-a-common-list-of-packages-installed"><h2 id="heading--ensure-all-computers-with-a-given-tag-have-a-common-list-of-packages-installed">Ensure all computers with a given tag have a common list of packages installed</h2></a>
+## Ensure all computers with a given tag have a common list of packages installed
 
 Manage them via a [package profile](/explanation/terms/profiles/package-profile).
 

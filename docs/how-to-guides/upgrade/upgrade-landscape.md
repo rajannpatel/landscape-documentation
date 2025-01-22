@@ -12,7 +12,7 @@ Note that you don’t need to upgrade your client machines when you upgrade your
 - [Upgrade Juju deployments](#heading--upgrade-juju-deployments)
 
 
-<a href="#heading--prepare-to-upgrade"><h2 id="heading--prepare-to-upgrade">Prepare to upgrade</h2></a>
+## Prepare to upgrade
 
 > See also: [Backup and restore](/how-to-guides/backup-and-maintenance/backup-and-restore)
 
@@ -22,7 +22,7 @@ We strongly recommend you backup your database and configuration files before pe
 - **Apache2 configuration file**: This is commonly located in `/etc/apache2/sites-available/<hostname>.conf`.
 - **Service configuration file**: This is commonly located in `/etc/landscape/service.conf`.
 
-<a href="#heading--upgrade-your-landscape-server"><h2 id="heading--upgrade-your-landscape-server">Upgrade your Landscape server</h2></a>
+## Upgrade your Landscape server
 
 ```{note}
 When you upgrade, you should use your existing configuration file. This file is typically located in `/etc/landscape/service.conf`.
@@ -52,7 +52,7 @@ During your upgrade, you may be asked if you want to replace your configuration 
 
 If you accidentally replace your configuration file, you can put your previous configuration back by overwriting your `service.conf` file with the one you backed up earlier.
 
-<a href="#heading--upgrade-the-database-schema"><h2 id="heading--upgrade-the-database-schema">(If needed) Upgrade the database schema</h2></a>
+## (If needed) Upgrade the database schema
 
 If you’re not using a quickstart deployment of Landscape, you need to manually update your database schema. You only need to run the database schema updates once, even if your deployment has multiple servers.
 
@@ -76,7 +76,7 @@ For Juju deployments, see the [upgrade Juju deployments section](#heading--upgra
     sudo lsctl restart
     ```
     
-<a href="#heading--upgrade-juju-deployments"><h2 id="heading--upgrade-juju-deployments">Upgrade Juju deployments</h2></a>
+## Upgrade Juju deployments
 
 > See also: [Landscape-server charm on Charmhub](https://charmhub.io/landscape-server)
 

@@ -16,7 +16,7 @@ This guide assumes that a registered WSL host and WSL instance already exist in 
 - [Delete a WSL instance](#heading--delete-a-wsl-instance)
 - [View WSL host machines and child computers](#heading--view-wsl-host-machines-and-child-computers)
 
-<a href="#heading--start-wsl-instances-registered-in-your-landscape-account"><h2 id="heading--start-wsl-instances-registered-in-your-landscape-account">Start WSL instances registered in your Landscape account</h2></a>
+## Start WSL instances registered in your Landscape account
 
 You can remotely start a list of one or more WSL instances via the Landscape API. To start WSL instances, or child computers, by ID, make an API call such as:
 
@@ -26,7 +26,7 @@ You can remotely start a list of one or more WSL instances via the Landscape API
 
 If you don’t know the IDs of your child computers, see [how to get computer IDs](https://ubuntu.com/landscape/docs/managing-computers#heading--get-computer-ids).
 
-<a href="#heading--shutdown-wsl-instances-registered-in-your-landscape-account"><h2 id="heading--shutdown-wsl-instances-registered-in-your-landscape-account">Shutdown WSL instances registered in your Landscape account</h2></a>
+## Shutdown WSL instances registered in your Landscape account
 
 You can remotely shutdown a list of one or more WSL instances via the Landscape API. To shutdown WSL instances, or child computers, by ID, make an API call such as:
 
@@ -36,7 +36,7 @@ You can remotely shutdown a list of one or more WSL instances via the Landscape 
 
 If you don’t know the IDs of your child computers, visit [how to get computer IDs](https://ubuntu.com/landscape/docs/managing-computers#heading--get-computer-ids).
 
-<a href="#heading--set-a-default-wsl-instance"><h2 id="heading--set-a-default-wsl-instance">Set a default WSL instance</h2></a>
+## Set a default WSL instance
 
 You can set a specific WSL instance as the default child computer. This will be the default instance you log into if you run `wsl` in PowerShell from the Windows host. You can set your default child computer in the Landscape web portal or via the API.
 
@@ -56,7 +56,7 @@ To set your default child computer via the Landscape API, make an API call such 
 
 If you don’t know the IDs of your child computers, visit [how to get computer IDs](https://ubuntu.com/landscape/docs/managing-computers#heading--get-computer-ids).
 
-<a href="#heading--log-into-any-wsl-instance"><h2 id="heading--log-into-any-wsl-instance">Log in to any WSL instance</h2></a>
+## Log in to any WSL instance
 
 You can log into any WSL instance that is a child computer from your Windows host. To do this, run the following in PowerShell. Replace `{CHILD_COMPUTER_NAME}` with your specific computer name.
 
@@ -72,7 +72,7 @@ wsl -d Ubuntu-22.04
 
 If you’re logging into your default child computer, you only need to run `wsl` in PowerShell.
 
-<a href="#heading--delete-a-wsl-instance"><h2 id="heading--delete-a-wsl-instance">Delete a WSL instance</h2></a>
+## Delete a WSL instance
 
 You can delete, or uninstall, any WSL instances from the Landscape web portal or via the API.
 
@@ -92,7 +92,7 @@ To delete a WSL instance via the API, make an API call such as:
 
 If you don’t know the IDs of your child computers, visit [how to get computer IDs](https://ubuntu.com/landscape/docs/managing-computers#heading--get-computer-ids).
 
-<a href="#heading--view-wsl-host-machines-and-child-computers"><h2 id="heading--view-wsl-host-machines-and-child-computers">View WSL host machines and child computers</h2></a>
+## View WSL host machines and child computers
 
 From the Landscape web portal, you can view all WSL host machines and their associated WSL instances, or child computers. All machines associated with WSL indicate their status next to their name in the **Select computers** table. WSL child instances also display their parent Windows machine next to their name.
 

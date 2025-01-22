@@ -15,7 +15,7 @@ For the most up-to-date documentation on Google Cloud, see [Google Cloud's docum
 - [Clean up provisioning metadata containing secrets](#heading--clean-up-provisioning-metadata-containing-secrets)
 - [(Optional) Perform a complete teardown](#heading--perform-a-complete-teardown)
 
-<a href="#heading--install-and-set-up-google-cloud-cli"><h2 id="heading--install-and-set-up-google-cloud-cli">Install and set up Google Cloud CLI</h2></a>
+## Install and set up Google Cloud CLI
 
 ### Install `gcloud`
 
@@ -116,7 +116,7 @@ Your current project is [None].  You can change this setting by running:
     
     If the address value in the `nslookup` output matches the value of the `landscape-external-ip` static IP address, the LetsEncrypt SSL provisioning step defined in the cloud-init configuration automation template will succeed.
 
-<a href="#heading--deploy-landscape-server-vms-with-cloud-init"><h2 id="heading--deploy-landscape-server-vms-with-cloud-init">Deploy Landscape Server VMs with cloud-init</h2></a>
+## Deploy Landscape Server VMs with cloud-init
 
 Before beginning the deployment process with cloud-init, you must choose which of the two cloud-init configuration automation templates you want to use. In the [Landscape Scripts](https://github.com/canonical/landscape-scripts) Github repository, there are two Landscape Quickstart cloud-init configuration templates: [`cloud-init-quickstart.yaml`](https://github.com/canonical/landscape-scripts/blob/main/provisioning/cloud-init-quickstart.yaml) and [`cloud-init-quickstart-fips.yaml`](https://github.com/canonical/landscape-scripts/blob/main/provisioning/cloud-init-quickstart-fips.yaml). 
 
@@ -200,7 +200,7 @@ Once you’ve chosen your configuration template, complete the following steps.
     
 10. Press `CTRL + C` to terminate the tail process in your terminal window.
 
-<a href="#heading--configure-landscape"><h2 id="heading--configure-landscape">Configure Landscape</h2></a>
+## Configure Landscape
 
 1. Navigate to the Landscape dashboard by entering the FQDN of the Landscape VM into a browser window
 2. Provide a name, email address, and password for the first global administrator on the machine. 
@@ -209,7 +209,7 @@ Once you’ve chosen your configuration template, complete the following steps.
     
     Alerts and administrator invitations sent via email are less likely to fail SPF or DMARC checks if the system email address is configured in a way the email service provider expects. If the email service provider sends emails which fail SPF and DMARC checks, mail delivery can be delayed or miscategorized as spam.
     
-<a href="#heading--clean-up-provisioning-metadata-containing-secrets"><h2 id="heading--clean-up-provisioning-metadata-containing-secrets">Clean up provisioning metadata containing secrets</h2></a>
+## Clean up provisioning metadata containing secrets
 
 To delete the cloud-init `user-data` key, run:
 
@@ -217,7 +217,7 @@ To delete the cloud-init `user-data` key, run:
 
 Cloud-init scripts are provided in a custom metadata key named `user-data`. The `user-data` key is consumed during instance creation and is executed when the instance starts. Sensitive information such as API keys shouldn’t be left visible within the custom metadata of the VM or in the cloud dashboard. Once the cloud-init process is complete, it’s safe to delete the cloud-init `user-data` key.
 
-<a href="#heading--perform-a-complete-teardown"><h2 id="heading--perform-a-complete-teardown">(Optional) Perform a complete teardown</h2></a>
+## (Optional) Perform a complete teardown
 
 You may want to perform a teardown to clean up unused or unnecessary resources. This can help control costs and optimize resources. To perform a complete teardown:
 

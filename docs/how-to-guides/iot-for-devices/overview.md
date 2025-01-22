@@ -13,7 +13,7 @@ Using the strictly-confined snap version of Landscape Client, you can add all of
 - [Limitations of the Landscape Client snap](#heading--limitations-of-landscape-client-snap)
 - [Known issues with the snap](#heading--known-issues)
 
-<a href="#heading--how-to-guides-client-snap"><h2 id="heading--how-to-guides-client-snap">How-to guides</h2></a>
+## How-to guides
 
 We have the following how-to guides to help you use the Landscape Client snap to manage your IoT devices:
 
@@ -28,7 +28,7 @@ We have the following how-to guides to help you use the Landscape Client snap to
 - [Use remote script execution](/how-to-guides/iot-for-devices/remote-script-execution)
 - [Use annotations](/how-to-guides/iot-for-devices/use-annotations)
 
-<a href="#heading--best-practices-for-iot"><h2 id="heading--best-practices-for-iot">Best practices for IoT</h2></a>
+## Best practices for IoT
 
 IoT devices come with their own unique characteristics and challenges. Therefore, we recommend the following best practices to make their management as easy, safe and secure as possible.
 
@@ -44,7 +44,7 @@ IoT devices come with their own unique characteristics and challenges. Therefore
 - **Use remote scripting to debug**
     - Use Landscape’s remote scripting interface to collect and parse various logs from your devices to help debug issues
 
-<a href="#heading--limitations-of-landscape-client-snap"><h2 id="heading--limitations-of-landscape-client-snap">Limitations of the Landscape Client snap</h2></a>
+## Limitations of the Landscape Client snap
 
 There are some limitations to be aware of when using the Landscape Client snap and some functionality which isn’t available yet in the web portal. In many cases, you can use remote scripts to overcome these limitations. It’s recommended that you explore the example scripts available in the [Landscape Scripts repository on GitHub](https://github.com/canonical/landscape-scripts).
 
@@ -98,7 +98,7 @@ The same issues that affect snap services management on Ubuntu Core also apply t
 
 The same issues that affect snap configuration on Ubuntu Core also apply to Ubuntu Classic. See the previous section on Ubuntu Core and snap configuration.
 
-<a href="#heading--known-issues"><h2 id="heading--known-issues">Known issues with the snap</h2></a>
+## Known issues with the snap
 
 ### Duplicate machines after reverting snap revisions
 

@@ -11,7 +11,7 @@ There are multiple ways to install Landscape Client. This document describes eac
 - [Cloud-init](#heading--install-landscape-client-with-cloud-init)
 - [Snap](#heading--install-landscape-client-snap)
 
-<a href="#heading--install-landscape-client-from-the-main-repository"><h2 id="heading--install-landscape-client-from-the-main-repository">Install Landscape Client from Ubuntu's `main` repository</h2></a>
+## Install Landscape Client from Ubuntu's `main` repository
 
 Landscape Client is available in Ubuntu's `main` repository in all [Ubuntu releases](https://ubuntu.com/about/release-cycle), and is published independently of the self-hosted Landscape releases. This method is suitable when performing the installation through a terminal or shell scripting. To install Landscape Client from Ubuntu's `main` repository:
 
@@ -45,7 +45,7 @@ Landscape Client is available in Ubuntu's `main` repository in all [Ubuntu relea
 
 When you install Landscape Client from Ubuntu's `main` repository, you install the version of Landscape Client that's included in that version of Ubuntu. For the latest features, install Landscape Client from the PPA.
 
-<a href="#heading--install-landscape-client-from-a-PPA"><h2 id="heading--install-landscape-client-from-a-PPA">Install Landscape Client from a PPA</h2></a>
+## Install Landscape Client from a PPA
 
 This method is suitable when performing the installation through a terminal or shell scripting. To install Landscape Client from a PPA:
 
@@ -90,7 +90,7 @@ This method is suitable when performing the installation through a terminal or s
    sudo landscape-config --silent --account-name="${LANDSCAPE_ACCOUNT_NAME}" --computer-title="${LANDSCAPE_COMPUTER_TITLE}" --tags='' --script-users='nobody,landscape,root' --ping-url="http://${LANDSCAPE_FQDN}/ping" --url="https://${LANDSCAPE_FQDN}/message-system"
    ```
 
-<a href="#heading--install-landscape-client-with-the-subordinate-charm"><h2 id="heading--install-landscape-client-with-the-subordinate-charm">Install Landscape Client with the subordinate charm</h2></a>
+## Install Landscape Client with the subordinate charm
 
 > See also: [Landscape-client charm on Charmhub](https://charmhub.io/landscape-client)
 
@@ -123,7 +123,7 @@ This method is suitable when using charmed operators. To install Landscape Clien
 
 For more information on the Landscape client charm, see the [Charmhub documentation](https://charmhub.io/landscape-client).
 
-<a href="#heading--install-landscape-client-with-cloud-init"><h2 id="heading--install-landscape-client-with-cloud-init">Install Landscape Client with Cloud-init</h2></a>
+## Install Landscape Client with Cloud-init
 
 This method is suitable if it’s available during a machine’s provisioning stage. To install Landscape Client with cloud-init:
 
@@ -157,7 +157,7 @@ This method is suitable if it’s available during a machine’s provisioning st
 
    For additional information, see the [cloud-init Landscape module documentation](https://cloudinit.readthedocs.io/en/latest/reference/modules.html#landscape).
 
-<a href="#heading--install-landscape-client-snap"><h2 id="heading--install-landscape-client-snap">Install the `landscape-client` snap</h2></a>
+## Install the `landscape-client` snap
 
 ```{note}
 The Landscape Client snap doesn’t support management of Debian packages.

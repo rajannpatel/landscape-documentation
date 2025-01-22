@@ -14,7 +14,7 @@ This document describes how to manage access groups.
 - [Add computers to access groups](#heading--add-computers-to-access-groups)
 - [Associate roles with access groups](#heading--associate-roles-with-access-groups)
 
-<a href="#heading--create-access-groups"><h2 id="heading--create-access-groups">Create access groups</h2></a>
+## Create access groups
 
 To create a new access group:
 
@@ -27,7 +27,7 @@ When you create a new access group, you must provide a title for the access grou
 
 When a new access group is first created, its administrators are those who have roles linked to its parent access group, but you can edit the roles associated with an access group. For more information, visit [how to associate roles with access groups](/t/23075#heading--associate-roles-with-access-groups).
 
-<a href="#heading--edit-access-groups"><h2 id="heading--edit-access-groups">Edit access groups</h2></a>
+## Edit access groups
 
 To change the name or title of an existing access group:
 
@@ -38,7 +38,7 @@ To change the name or title of an existing access group:
 5. Make your changes
 6. Click **Save**
 
-<a href="#heading--delete-access-groups"><h2 id="heading--delete-access-groups">Delete access groups</h2></a>
+## Delete access groups
 
 To delete an existing access group:
 
@@ -52,7 +52,7 @@ To delete an existing access group:
 
 When you delete an access group, its resources move to its parent access group.
 
-<a href="#heading--view-existing-computers-in-an-access-group"><h2 id="heading--view-existing-computers-in-an-access-group">View existing computers in an access group</h2></a>
+## View existing computers in an access group
 
 To view existing computers in an access group:
 
@@ -67,7 +67,7 @@ Or, you can view existing computers directly from the **Computers** page in the 
 2. Enter `access-group` followed by a `:` (colon) and the name of your access group
    - E.g., `access-group:global`
 
-<a href="#heading--add-computers-to-access-groups"><h2 id="heading--add-computers-to-access-groups">Add computers to access groups</h2></a>
+## Add computers to access groups
 
 To add computers to in an access group:
 
@@ -92,7 +92,7 @@ You can also add computers to access groups directly from the **Computers** page
 6. Select the access group you want from the dropdown menu
 7. Click **Update access group**
 
-<a href="#heading--associate-roles-with-access-groups"><h2 id="heading--associate-roles-with-access-groups">Associate roles with access groups</h2></a>
+## Associate roles with access groups
 
 To associate a role with one or more access groups:
 

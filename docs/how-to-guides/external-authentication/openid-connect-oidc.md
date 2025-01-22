@@ -9,7 +9,7 @@ Landscape offers support for OpenID-Connect (OIDC) authentication for self-hoste
 - [Restart all Landscape services](#heading--restart-all-landscape-services)
 - [(Optional) Configure a logout URL](#heading--configure-a-logout-url)
 
-<a href="#heading--enable-oidc-support-in-landscape"><h2 id="heading--enable-oidc-support-in-landscape">Enable OIDC support in Landscape</h2></a>
+## Enable OIDC support in Landscape
 
 To enable OIDC support, add `oidc-issuer`, `oidc-client-id` and `oidc-client-secret` to `/etc/landscape/service.conf` in the `[landscape]` section. For example:
 
@@ -23,7 +23,7 @@ The `oidc-issuer` is the URL of the issuer. That URL should also be a discovery 
 
 The `oidc-client-id` and `oidc-client-secret` should be provided by your OIDC provider when you create the client credentials. The provider may require setting an authorization redirect URI. This should look like `https://your_landscape/login/handle-openid`. If your provider also requires a logout redirect URL, this should be the address of your Landscape server such as `https://your_landscape/`.
 
-<a href="#heading--restart-all-landscape-services"><h2 id="heading--restart-all-landscape-services">Restart all Landscape services</h2></a>
+## Restart all Landscape services
 
 To restart all Landscape services, run:
 
@@ -31,7 +31,7 @@ To restart all Landscape services, run:
 sudo lsctl restart
 ```
 
-<a href="#heading--configure-a-logout-url"><h2 id="heading--configure-a-logout-url">(Optional) Configure a logout URL</h2></a>
+## (Optional) Configure a logout URL
 
 A logout URL can be configured with `oidc-logout-url` if the provider doesn’t expose one. For example:
 

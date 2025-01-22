@@ -13,7 +13,7 @@ This guide provides an example of how you could set up an environment to use WSL
 - [Create and provision a Windows 11 VM using an ISO](#heading--create-and-provision-a-windows-11-vm-using-an-iso)
 - [Set up WSL, Ubuntu and helper utilities](#heading--set-up-wsl-ubuntu-and-helper-utilities)
 
-<a href="#heading--configure-ubuntu-for-virtualization-with-qemu-and-libvirt"><h2 id="heading--configure-ubuntu-for-virtualization-with-qemu-and-libvirt">Step 1: Configure Ubuntu for virtualization with QEMU and libvirt</h2></a>
+## Step 1: Configure Ubuntu for virtualization with QEMU and libvirt
 
 To enable libvirt-based virtualization on Ubuntu, run the following commands:
 
@@ -36,7 +36,7 @@ For those who want a more detailed understanding, here’s what each command doe
 A reboot typically isn’t required at this stage, but if you encounter issues, try rebooting your machine to ensure all changes get applied properly.
 ```
 
-<a href="#heading--create-and-provision-a-windows-11-vm-using-an-iso"><h2 id="heading--create-and-provision-a-windows-11-vm-using-an-iso">Step 2: Create and provision a Windows 11 VM using an ISO</h2></a>
+## Step 2: Create and provision a Windows 11 VM using an ISO
 
 ```{note}
 This ISO disk image is unactivated and generally used for Windows testing and development purposes. There may be some differences between the ISO and a licensed copy of Windows. For more information, refer to Microsoft’s documentation.
@@ -139,7 +139,7 @@ To create and provision your Windows 11 VM using an ISO:
     Once the VM opens in the console, you’ll need to press a key to boot from CD. If the installer requests you eject the CD during or after the installation process, press **Enter** and continue. The ISO disk image will be considered ejected (or unmounted) when this warning appears, and no additional steps are needed.
     
 
-<a href="#heading--set-up-wsl-ubuntu-and-helper-utilities"><h2 id="heading--set-up-wsl-ubuntu-and-helper-utilities">Step 3: Set up WSL, Ubuntu and helper utilities</h2></a>
+## Step 3: Set up WSL, Ubuntu and helper utilities
 
 ### Install Chocolatey and necessary drivers
 

@@ -17,7 +17,7 @@ The example provided here is based on [Ubuntu Core’s tutorial for building you
 - [Boot the device](#heading--boot-the-device)
 - [Explanation: Auto-registration process in the gadget snap](#heading--explanation-auto-registration-process-in-the-gadget-snap)
 
-<a href="#heading--prerequisites"><h2 id="heading--prerequisites">Prerequisites</h2></a>
+## Prerequisites
 
 To build your custom Ubuntu Core image, you must have the following:
 
@@ -27,7 +27,7 @@ To build your custom Ubuntu Core image, you must have the following:
 - 10GB of free storage space on the host system
 - A 4GB+ microSD card to store the image
 
-<a href="#heading--define-your-custom-image"><h2 id="heading--define-your-custom-image">Define your custom image</h2></a>
+## Define your custom image
 
 To define your image to include Landscape Client, you’ll need to get the appropriate reference model to create your base image and manually add the Landscape Client snap.
 
@@ -103,7 +103,7 @@ Now, add an additional record in the `snaps` array for the Landscape Client snap
 
 The `id` parameter is unique to each snap with the value shown here belonging to the Landscape Client snap. If you need to find the ID of any other snap, you can use the `snap info <snap-name>` command in your terminal and find the snap ID.
 
-<a href="#heading--configure-your-custom-image"><h2 id="heading--configure-your-custom-image">Configure your custom image</h2></a>
+## Configure your custom image
 
 Once you’ve created your model assertion, you’re technically able to sign and build the image. However, the image you would build at this stage would need additional manual configuration on each client device, which isn’t ideal for many deployments.
 
@@ -142,7 +142,7 @@ To create and configure your gadget snap:
     
 These details will be the same for all devices that run this image.
 
-<a href="#heading--build-the-gadget-and-update-your-model-assertion"><h2 id="heading--build-the-gadget-and-update-your-model-assertion">Build the gadget and update your model assertion</h2></a>
+## Build the gadget and update your model assertion
 
 ### Build the gadget snap
 
@@ -175,7 +175,7 @@ This section of your local `.json` file should look similar to the following exa
         },
 ```
 
-<a href="#heading--sign-the-model-assertion"><h2 id="heading--sign-the-model-assertion">Sign the model assertion</h2></a>
+## Sign the model assertion
 
 If you don’t have a signing key yet, run the following command to create one, replacing `{KEY_NAME}` with your chosen name for your signing key:
 
@@ -189,7 +189,7 @@ Next, sign the model assertion:
 $ snap sign -k {KEY_NAME} model.json > landscape.model
 ```
 
-<a href="#heading--build-the-custom-ubuntu-core-image"><h2 id="heading--build-the-custom-ubuntu-core-image">Build the custom Ubuntu Core image</h2></a>
+## Build the custom Ubuntu Core image
 
 Now, you need to build a custom Ubuntu Core image from the signed model using the `ubuntu-image` tool:
 
@@ -202,7 +202,7 @@ Now, you need to build a custom Ubuntu Core image from the signed model using th
     
 If done successfully, this will produce the image `pi.img` which is ready to be written to an SD card and inserted into your Raspberry Pi.
 
-<a href="#heading--write-the-image-to-an-sd-card"><h2 id="heading--write-the-image-to-an-sd-card">Write the image to an SD card</h2></a>
+## Write the image to an SD card
 
 You’ll need to write the image to an SD card. There are various tools you can use, such as *Startup Disk Creator*, which is included in many Ubuntu variants or can be downloaded from the Snap Store.
 
@@ -214,7 +214,7 @@ To write the image to an SD card with *Startup Disk Creator*:
 
 This process typically takes 10 minutes or less.
 
-<a href="#heading--boot-the-device"><h2 id="heading--boot-the-device">Boot the device</h2></a>
+## Boot the device
 
 To boot the device:
 
@@ -224,7 +224,7 @@ To boot the device:
 
 If done successfully, your device(s) should be registered, and they can now be remotely managed with your Landscape server. This process is essential for deploying large fleets or installing devices in inaccessible areas.
 
-<a href="#heading--explanation-auto-registration-process-in-the-gadget-snap"><h2 id="heading--explanation-auto-registration-process-in-the-gadget-snap">Explanation: Auto-registration process in the gadget snap</h2></a>
+## Explanation: Auto-registration process in the gadget snap
 
 The `gadget.yaml` file contains a configuration that is similar to the following:
 

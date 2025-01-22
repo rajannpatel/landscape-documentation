@@ -16,7 +16,7 @@ If you're using the charm, you'll need to configure the client with `juju config
 - [Enable script execution](#heading--enable-script-execution)
 - [Configuration management tools](#heading--landscape-clients-with-configuration-management-tools)
 
-<a href="#heading--use-landscape-config"><h2 id="heading--use-landscape-config">Use `landscape-config`</h2></a>
+## Use `landscape-config`
 
 After you’ve installed `landscape-client`, you can use `landscape-config` to configure it on your client machines. Running `landscape-config` without any arguments starts the configuration, and you’ll be prompted to provide any information needed to run Landscape Client. When the configuration is complete, you’ll receive confirmation that the client was registered successfully or if an error occurred.
 
@@ -36,7 +36,7 @@ To view all possible options for `landscape-config`, visit the man page with:
 man landscape-config
 ```
 
-<a href="#heading--auto-register-new-computers"><h2 id="heading--auto-register-new-computers">Auto-register new computers</h2></a>
+## Auto-register new computers
 
 ```{note}
 You must have a registration key defined in your Landscape account for this feature to be available. If you don’t have a registration key yet, you can create a new one during this configuration process.
@@ -62,7 +62,7 @@ Once you’ve defined a registration key and enabled the auto-registration featu
 sudo landscape-config --account-name={LANDSCAPE_ACCOUNT_NAME} --computer-title={COMPUTER_TITLE} --registration-key={KEY}
 ```
 
-<a href="#heading--enable-script-execution"><h2 id="heading--enable-script-execution">Enable script execution</h2></a>
+## Enable script execution
 
 
 > See also: [Landscape's scripts repository on GitHub](https://github.com/canonical/landscape-scripts)
@@ -91,7 +91,7 @@ sudo service landscape-client restart
 ```
 Setting `script_users = ALL` (or passing `ALL` to the `--script-users` parameter of `landscape-config`) will allow any system user to run scripts. If `script_users` is not set, then scripts can only be run by the `nobody` user.
 
-<a href="#heading--landscape-clients-with-configuration-management-tools"><h2 id="heading--landscape-clients-with-configuration-management-tools">Landscape clients with configuration management tools</h2></a>
+## Landscape clients with configuration management tools
 
 If you want to manage `landscape-client` through a configuration management tool such as Puppet or Ansible, you can avoid getting duplicate computers by writing the `/etc/landscape/client.conf` and `/etc/default/landscape-client` files, and then restarting the `landscape-client` service.
 

@@ -9,7 +9,7 @@
 - [Modify a package profile](#heading--modify-a-package-profile)
 - [Delete a package profile](#heading--delete-a-package-profile)
 
-<a href="#heading--access-package-information"><h2 id="heading--access-package-information">Access package information</h2></a>
+## Access package information
 
 To access package information:
 
@@ -28,7 +28,7 @@ The **Package information** section displays package information for each select
 
 The **Request upgrades** button at the bottom of the screen lets you quickly request that all possible upgrades be applied to the selected computers. Any resulting activities require explicit administrator approval.
 
-<a href="#heading--add-a-package-profile"><h2 id="heading--add-a-package-profile">Add a package profile</h2></a>
+## Add a package profile
 
 To add a [package profile](/explanation/terms/profiles/package-profile):
 
@@ -52,7 +52,7 @@ If Landscape finds computers on which the package profile should be installed, i
 
 Additionally, note that Debian package names can't contain underscores (`_`). If you push packages to Debian machines and your package profile name contains an underscore (`_`), this could lead to a `debsums` error.
 
-<a href="#heading--export-a-package-profile"><h2 id="heading--export-a-package-profile">Export a package profile</h2></a>
+## Export a package profile
 
 To export a [package profile](/explanation/terms/profiles/package-profile):
 
@@ -62,7 +62,7 @@ To export a [package profile](/explanation/terms/profiles/package-profile):
 4. Select each package you want to export 
 5. Click **Download as CSV**
 
-<a href="#heading--modify-a-package-profile"><h2 id="heading--modify-a-package-profile">Modify a package profile</h2></a>
+## Modify a package profile
 
 To modify a [package profile](/explanation/terms/profiles/package-profile):
 
@@ -73,7 +73,7 @@ To modify a [package profile](/explanation/terms/profiles/package-profile):
 5. Modify it as desired
 6. Click **Change**
 
-<a href="#heading--delete-a-package-profile"><h2 id="heading--delete-a-package-profile">Delete a package profile</h2></a>
+## Delete a package profile
 
 To delete a [package profile](/explanation/terms/profiles/package-profile):
 

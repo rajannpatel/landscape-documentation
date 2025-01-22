@@ -3,7 +3,7 @@
 
 This document describes how to install the Landscape Client snap and some general limitations of the snap. If you want to install the Debian package instead of the snap, see [how to install Landscape Client](/how-to-guides/landscape-installation-and-set-up/install-landscape-client).
 
-<a href="#heading--install-landscape-client-snap"><h2 id="heading--install-landscape-client-snap">Install and set up the Landscape Client snap</h2></a>
+## Install and set up the Landscape Client snap
 
 ```{note}
 You must be running a self-hosted Landscape server version 23.10 or later (or beta) to use the snap.

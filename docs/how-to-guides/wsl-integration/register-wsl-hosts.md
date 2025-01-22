@@ -20,7 +20,7 @@ This guide describes how to set up Ubuntu Pro for WSL and register new WSL hosts
 - [Finalize the Windows machine registration](#heading--finalize-the-windows-machine-registration)
 - [(If necessary) Troubleshoot](#heading--troubleshoot)
 
-<a href="#heading--check-prerequisites"><h2 id="heading--check-prerequisites">Check prerequisites</h2></a>
+## Check prerequisites
 
 ```{note}
 You must be running Windows 11 to use Ubuntu Pro for WSL.
@@ -35,7 +35,7 @@ If you don't want to download your Ubuntu image from the Microsoft Store, you ca
 
 Also, you must have WSL 2 installed instead of WSL 1. If you've just now installed WSL from the Microsoft store, then you've installed WSL 2 and can proceed to the next steps. If you've previously installed WSL and aren't sure if it's WSL 1 or WSL 2, run `wsl -l -v` in Powershell or Command Prompt to get the version. If you have WSL 1, you need to upgrade to WSL 2. For more information, see [Microsoft's guide on upgrading from WSL 1 to WSL 2](https://learn.microsoft.com/en-us/windows/wsl/install#upgrade-version-from-wsl-1-to-wsl-2).
 
-<a href="#heading--install-and-configure-ubuntu-pro-for-wsl"><h2 id="heading--install-and-configure-ubuntu-pro-for-wsl">Install and configure Ubuntu Pro for WSL</h2></a>
+## Install and configure Ubuntu Pro for WSL
 
 ```{note}
 The documentation here is for a future release of Landscape beta. Ubuntu Pro for WSL is **not available yet** for everyone in the Microsoft Store.
@@ -115,7 +115,7 @@ From your Windows machine:
     ssl_public_key = C:\Users\user\Downloads\landscape_server.pem
     ```
     
-<a href="#heading--finalize-the-windows-machine-registration"><h2 id="heading--finalize-the-windows-machine-registration">Finalize the Windows machine registration</h2></a>
+## Finalize the Windows machine registration
 
 To finish registering your WSL host to Landscape:
 
@@ -126,7 +126,7 @@ To finish registering your WSL host to Landscape:
 
 That's it! Your Windows host machine is now registered in Landscape. To register WSL-Ubuntu instances, see [how to register WSL instances](/how-to-guides/wsl-integration/manage-wsl-instances).
 
-<a href="#heading--troubleshoot"><h2 id="heading--troubleshoot">(If necessary) Troubleshoot</h2></a>
+## (If necessary) Troubleshoot
 
 > See also: [Ubuntu Pro for WSL's logs](https://canonical-ubuntu-pro-for-wsl.readthedocs-hosted.com/en/latest/dev/howto/06-access-the-logs/)
 

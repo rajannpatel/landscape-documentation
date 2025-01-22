@@ -12,7 +12,7 @@
 You can also use this guide to test Landscape inside a single LXD container.
 ```
 
-<a href="#heading--install-and-configure-cloud-init"><h2 id="heading--install-and-configure-cloud-init">Install and configure cloud-init</h2></a>
+## Install and configure cloud-init
 
 ### Download the cloud-init configuration file
 
@@ -71,7 +71,7 @@ To populate `cloud-init.yaml` with your variables, run:
 for VALUE in "${!VARIABLES[@]}"; do sed -i "s|{% set $VALUE = '.*' %}|{% set $VALUE = '${VARIABLES[$VALUE]}' %}|" cloud-init.yaml; done
 ```
 
-<a href="#heading--install-and-configure-LXD"><h2 id="heading--install-and-configure-LXD">Install and configure LXD</h2></a>
+## Install and configure LXD
 
 ### Install or update LXD
 
@@ -91,7 +91,7 @@ To configure LXD with predefined settings without requiring user input, run:
 lxd init --auto
 ```
 
-<a href="#heading--configure-network-settings"><h2 id="heading--configure-network-settings">Configure network settings</h2></a>
+## Configure network settings
 
 ### Identify the default network adapter and check MTU configuration
 
@@ -111,7 +111,7 @@ To change the LXD bridge MTU to match the network’s configuration, run:
 lxc network set lxdbr0 bridge.mtu=$(ip link show $INTERFACE | awk '/mtu/ {print $5}')
 ```
 
-<a href="#heading--install-and-configure-landscape-quickstart"><h2 id="heading--install-and-configure-landscape-quickstart">Install and configure Landscape Quickstart</h2></a>
+## Install and configure Landscape Quickstart
 
 ```{note}
 It’s recommended to install Landscape on the latest Ubuntu LTS, but you can also use 20.04 if you require that version.

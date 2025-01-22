@@ -18,7 +18,7 @@ You can deploy Landscape in a scalable way with Juju.
 1. [Configure an SSL cert on HAProxy](#heading--configure-an-ssl-cert-on-haproxy)
 1. [Access self-hosted Landscape](#heading--access-self-hosted-landscape)
 
-<a href="#heading--install-juju"><h2 id="heading--install-juju">Install Juju</h2></a>
+## Install Juju
 
 [Install Juju](https://juju.is/docs/olm/installing-juju) as a snap with this command:
 
@@ -28,7 +28,7 @@ sudo snap install juju --classic
 
 To learn more about Juju and to bootstrap a Juju controller, check out their [getting started](https://juju.is/docs/juju/get-started-with-juju) page.
 
-<a href="#heading--deploy-self-hosted-landscape-server"><h2 id="heading--deploy-self-hosted-landscape-server">Deploy self-hosted Landscape Server</h2></a>
+## Deploy self-hosted Landscape Server
 
 When deploying with Juju, you will use a Juju bundle. A bundle is an encapsulation of all of the parts needed to deploy the required services as well as associated relations and configurations that the deployment requires. When deploying Landscape Server using Juju, there are three different methods you can use. Select the one that meets the needs for your environment.
 
@@ -66,7 +66,7 @@ juju deploy landscape-dense
 
 This is useful for the cases where the LXD containers don't get externally routable IP addresses.
 
-<a href="#heading--configure-an-ssl-cert-on-haproxy"><h2 id="heading--configure-an-ssl-cert-on-haproxy">Configure an SSL cert on HAProxy</h2></a>
+## Configure an SSL cert on HAProxy
 
 ### Create a SSL certificate with LetsEncrypt
 
@@ -87,7 +87,7 @@ juju config haproxy ssl_cert="$(base64 fullchain.pem)"
 juju config haproxy ssl_key="$(base64 privkey.pem)"
 ```
 
-<a href="#heading--access-self-hosted-landscape"><h2 id="heading--access-self-hosted-landscape">Access self-hosted Landscape</h2></a>
+## Access self-hosted Landscape
 
 Once the deployment has finished, grab the address of the first `haproxy` unit and access it with your browser:
 

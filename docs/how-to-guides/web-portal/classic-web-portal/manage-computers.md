@@ -15,7 +15,7 @@
 - [Manage upgrade profiles](#heading--manage-upgrade-profiles)
 - [Manage removal profiles](#heading--manage-removal-profiles)
 
-<a href="#heading--register-computers"><h2 id="heading--register-computers">Register computers</h2></a>
+## Register computers
 
 To register computers with a Landscape server:
 
@@ -24,7 +24,7 @@ To register computers with a Landscape server:
 
 This link provides the complete instructions for registering client computers with a Landscape server, which are also available at `https://yourserver/standalone/how-to-register`. You need to register computers with the server in order to manage them in Landscape.
 
-<a href="#heading--select-computers"><h2 id="heading--select-computers">Select computers</h2></a>
+## Select computers
 
 You can select computers by selecting them individually, using searches or using [tags](/explanation/terms/tags). 
 
@@ -48,7 +48,7 @@ To select computers using tags:
 2. Click any tag to display the list of computers associated with that tag
 3. Select the checkbox for each computer or click **All**
 
-<a href="#heading--apply-tags-to-computers"><h2 id="heading--apply-tags-to-computers">Apply tags to computers</h2></a>
+## Apply tags to computers
 
 To apply [tags](/explanation/terms/tags) to computers:
 
@@ -59,7 +59,7 @@ To apply [tags](/explanation/terms/tags) to computers:
 4. Enter the tag you want to use in the **Tags** row
 5. Click **Add**
 
-<a href="#heading--access-information-about-computers"><h2 id="heading--access-information-about-computers">Access information about computers</h2></a>
+## Access information about computers
 
 From the **Computers** page, you can get information about selected computers by clicking on tabs in the navigation menu. Commonly used tabs are described here.
 
@@ -80,7 +80,7 @@ From the **Computers** page, you can get information about selected computers by
   * have contacted the server within the last five minutes
   * have applied security updates - four visualisations show computers that have applied Ubuntu Security Notices within the last two, 14, 30, and 60+ days
 
-<a href="#heading--get-computer-ids"><h2 id="heading--get-computer-ids">Get computer IDs</h2></a>
+## Get computer IDs
 
 There are two ways to locate the IDs for a specific computer:
 
@@ -92,7 +92,7 @@ There are two ways to locate the IDs for a specific computer:
     1. Click the **Computers** tab
     2. Locate and click the name of the specific computer you want the ID for
 
-<a href="#heading--access-the-activity-log"><h2 id="heading--access-the-activity-log">Access the activity log</h2></a>
+## Access the activity log
 
 The **Activities** tab in the **Computers** page shows the status of Landscape activities in reverse chronological order.
 
@@ -110,7 +110,7 @@ You can select a subset to view by clicking **All**, **Pending**, **Unapproved**
 
 In addition to the status and description of each activity, the table shows what computers the activity applied to, who created it and when.
 
-<a href="#heading--manage-users"><h2 id="heading--manage-users">Manage users</h2></a>
+## Manage users
 
 The **Users** tab in the **Computers** page displays a list of users on each of the selected computers.
 
@@ -124,7 +124,7 @@ You may also select a checkbox to delete the user's home folders as well. Click 
 * The LOCK button prevents the selected users from logging into their accounts.
 * The UNLOCK button unlocks previously locked accounts.
 
-<a href="#heading--manage-roles"><h2 id="heading--manage-roles">Manage roles</h2></a>
+## Manage roles
 
 Landscape offers Role-Based Access Control (RBAC) management of permissions for all users in the web portal. There are three main roles configured by default:
 
@@ -148,7 +148,7 @@ To assign a role to a new user or edit the role(s) of an existing user:
 2. Select the relevant cells for each user to grant or revoke their role status
 3. Click **Save**
 
-<a href="#heading--manage-alerts"><h2 id="heading--manage-alerts">Manage alerts</h2></a>
+## Manage alerts
 
 Landscape uses [alerts](/explanation/terms/alerts) to notify administrators of conditions that require attention. The following types of alerts are available:
 
@@ -170,7 +170,7 @@ If an alert is triggered, an administrator should typically investigate it. You 
 
 For some alerts, you can download a list of affected computers as a CSV file. Click **Save this search** to save the criteria that was generated from the alert.
 
-<a href="#heading--manage-scripts"><h2 id="heading--manage-scripts">Manage scripts</h2></a>
+## Manage scripts
 
 ```{note}
 You must have remote script execution enabled to run scripts on the target Landscape Client. For more information, visit [how to enable script execution](https://ubuntu.com/landscape/docs/configure-landscape-client#heading--enable-script-execution).
@@ -186,7 +186,7 @@ To run a stored script, navigate to the **Scripts** tab from the **Computers** p
 
 To run a new script, enter most of the same information you would if you were creating a stored script. You must specify the user on the target computers to run the script as, and you may optionally select **Save script** to save the new script. You must also schedule the script to run either as soon as possible, or at a specified time. When you're ready to run the script, click **Run**.
 
-<a href="#heading--manage-upgrade-profiles"><h2 id="heading--manage-upgrade-profiles">Manage upgrade profiles</h2></a>
+## Manage upgrade profiles
 
 An [upgrade profile](/explanation/terms/profiles/upgrade-profile) defines a schedule for the times when upgrades are to be automatically installed on the machines associated with a specific access group. You can associate zero or more computers with each upgrade profile via tags to install packages on those computers. You can also associate an upgrade profile with an access group, which limits its use to only computers within the specified access group. You can manage upgrade profiles from the **Upgrade Profiles** link in the **Profiles** tab on your organisation's home page.
 
@@ -200,7 +200,7 @@ On the resulting **Create an upgrade profile** page, you must enter a name for t
 
 To delete one or more upgrade profiles, select the checkbox next to the upgrade profiles' names, then click **Remove**.
 
-<a href="#heading--manage-removal-profiles"><h2 id="heading--manage-removal-profiles">Manage removal profiles</h2></a>
+## Manage removal profiles
 
 A [removal profile](/explanation/terms/profiles/removal-profile) defines a maximum number of days that a computer can go without exchanging data with the Landscape server before it's automatically removed. If more days pass than the profile's *Days without exchange*, that computer will automatically be removed and the license seat it held will be released. This helps Landscape keep license seats open and ensure Landscape is not tracking stale or retired computer data for long periods of time. You can associate zero or more computers with each removal profile via tags to ensure those computers are governed by this removal profile. You can also associate a removal profile with an access group, which limits its use to only computers within the specified access group. You can manage removal profiles from the **Removal profiles** page in the **Profiles** tab under your organisation's home page.
 

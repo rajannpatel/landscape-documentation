@@ -20,7 +20,7 @@ Repository mirroring is available for self-hosted users.
 - [Repository management mirroring tips](#heading--repository-management-mirroring-tips)
 - [Mirror smaller pocket for testing](#heading--mirror-smaller-pocket-for-testing)
 
-<a href="#heading--overview"><h2 id="heading--overview">Overview</h2></a>
+## Overview
 
 Repository management requires the use of the Landscape [API.](/how-to-guides/api/use-the-legacy-api) Set it up and have it ready for the next steps. Linux distributions like Ubuntu use repositories to hold packages you can install on managed computers. While Ubuntu has several repositories that anyone can access, you can also maintain your own repositories on your network, and enforce repository configurations for the machines you manage. This can be useful when you want to maintain packages with different versions from those in the community repositories, or if you have private repositories of in-house software for internal distribution. Once you add your machines to a Landscape repository profile, you have a choice to enforce the entire repository configuration, or just individual repositories.
 
@@ -43,7 +43,7 @@ In a `sources.list` line, you would see:
 deb http://archive.ubuntu.com/DISTRIBUTION/ SERIES-POCKET COMPONENT [COMPONENT ...]
 ```
 
-<a href="#heading--disk-space-requirements"><h2 id="heading--disk-space-requirements">Disk space requirements</h2></a>
+## Disk space requirements
 
 As of March 2024, these are the estimates for the amount of disk space needed to download the following Ubuntu distributions:
 
@@ -59,7 +59,7 @@ Packages will be downloaded to `/var/lib/landscape/landscape-repository/standalo
 
 Note that this is only a subset, and it does not include arm and other architectures. Including these will use more disk space.
 
-<a href="#heading--create-the-gpg-key"><h2 id="heading--create-the-gpg-key">Create the gpg key</h2></a>
+## Create the gpg key
 
 Create a secret GPG key and import it into Landscape. This will be used by self-hosted Landscape to sign your repository. For this guide, we'll create a key with the 'real name' of `Mirror Key`.
 
@@ -111,7 +111,7 @@ landscape-api import-gpg-key mirror-key mirror-key.asc --json
 }
 ```
 
-<a href="#heading--create-the-distribution-series-and-pockets"><h2 id="heading--create-the-distribution-series-and-pockets">Create the distribution, series and pockets</h2></a>
+## Create the distribution, series and pockets
 
 Create the distribution first:
 ```bash
@@ -128,7 +128,7 @@ landscape-api create-series bionic ubuntu \
  --mirror-series bionic
 ```
 
-<a href="#heading--sync-pockets"><h2 id="heading--sync-pockets">Sync pockets</h2></a>
+## Sync pockets
 
 ```{note}
 If you're running Landscape on Jammy 22.04 or later, you may need to change the default timeout of 30 minutes in RabbitMQ for your pockets to sync successfully. For more information, see [how to configure RabbitMQ for Jammy 22.04 or later](/how-to-guides/landscape-installation-and-set-up/configure-rabbitmq).
@@ -179,7 +179,7 @@ and
 
 `http://your-server.com/repository/standalone/ubuntu/dists/`
 
-<a href="#heading--create-a-repository-profile"><h2 id="heading--create-a-repository-profile">Create a repository profile</h2></a>
+## Create a repository profile
 
 We will create a repository profile named `example-profile` that later will be associated with a tag named `example-tag`. This profile will be applied to all computers that have that tag.
 ```bash
@@ -197,7 +197,7 @@ landscape-api create-repository-profile \
 }
 ```
 
-<a href="#heading--associate-computers-with-repository-profile"><h2 id="heading--associate-computers-with-repository-profile">Associate computers with repository profile</h2></a>
+## Associate computers with repository profile
 
 This will associate all the computers with the tag `example-tag` to the `example-profile` repository profile:
 ```bash
@@ -217,7 +217,7 @@ landscape-api associate-repository-profile \
 }
 ```
 
-<a href="#heading--add-pockets-to-the-repository-profile"><h2 id="heading--add-pockets-to-the-repository-profile">Add pockets to the repository profile</h2></a>
+## Add pockets to the repository profile
 
 ```bash
 landscape-api add-pockets-to-repository-profile example-profile release,updates,security bionic ubuntu
@@ -237,7 +237,7 @@ To revert the changes, disassociate the tag from the repository profile:
 landscape-api disassociate-repository-profile --tags example-tag example-profile
 ```
 
-<a href="#heading--edit-pockets"><h2 id="heading--edit-pockets">Edit pockets</h2></a>
+## Edit pockets
 
 If needed, pockets can be modified using `edit-pocket`. For example, to change the archive mirror address:
 ```bash
@@ -255,7 +255,7 @@ to:
 
 Using an `https` source could be useful in situation where a content filtering interferes with the pocket sync when using an `http` source. Some of the [Official Archive Mirrors for Ubuntu](https://launchpad.net/ubuntu/+archivemirrors) are available over `https` although they are not advertised in the mirror list. For more options have a loot at `landscape-api edit-pocket --help`.
 
-<a href="#heading--upload-pockets"><h2 id="heading--upload-pockets">Upload pockets</h2></a>
+## Upload pockets
 
 Removing a package from a pocket is only supported in upload mode. Landscape lets you create and manage repositories that hold packages uploaded by authorized users. You could, for example, create a staging area to which certain users could upload packages. Here is a quick howto for creating and uploading packages to such a repository.
 
@@ -350,7 +350,7 @@ If you don't want to use gpg keys, change the pocket to allow unsigned packages:
 landscape-api edit-pocket staging bionic ubuntu --upload-allow-unsigned=true
 ```
 
-<a href="#heading--pull-pockets"><h2 id="heading--pull-pockets">Pull pockets</h2></a>
+## Pull pockets
 
 Pull mode pockets are meant to "stage" packages coming from another pocket, for example if you want to exclude some packages from that pocket, you can use filters (blacklist/whitelist) and then pull packages in the pocket again. Note that since pull operations don't really fetch packages, but just builds repository indices, you can also remove and recreate pull pockets very quickly if you want to start from scratch with filters. When creating the pull type pocket, you have to specify if you want a whitelist or blacklist for filtering.
 ```bash
@@ -362,7 +362,7 @@ landscape-api create-pocket \
 ```
 The blacklist only works only for pull type repositories, but those don't support syncing from upstream archives, only from local ones.
 
-<a href="#heading--repository-management-mirroring-tips"><h2 id="heading--repository-management-mirroring-tips">Repository management mirroring tips</h2></a>
+## Repository management mirroring tips
 
 Here are some simple tips on how to create standard repositories using Landscape. They all use the `create-pocket` API call, so to use them, you must have created a distribution (for example ubuntu, using a command like `create-distribution ubuntu`) and a series (for instance bionic, with a command like `create-series bionic ubuntu`). For complete create-pocket syntax, run the command `landscape-api create-pocket -h`. Suppose you want to mirror an upstream repository. Basic usage looks like this:
 ```
@@ -413,7 +413,7 @@ The specific suffix is not significant. You could theoretically choose a differe
 landscape-api sync-mirror-pocket release bionic ubuntu
 ```
 
-<a href="#heading--mirror-smaller-pocket-for-testing"><h2 id="heading--mirror-smaller-pocket-for-testing">Mirror smaller pocket for testing</h2></a>
+## Mirror smaller pocket for testing
 
 For testing purposes, instead of mirroring the whole `bionic` series, you can just mirror the `restricted` component of the `updates` pocket:
 ```bash

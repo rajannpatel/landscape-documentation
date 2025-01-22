@@ -13,7 +13,7 @@ Note that this document is for integrating with [Microsoft's Active Directory](h
 2. [Create the first administrator account](#heading--create-the-first-administrator-account)
 3. [Migrate users to Active Directory authentication](#heading--migrate-users-to-active-directory-authentication)
 
-<a href="#heading--integrate-landscape-with-active-directory"><h2 id="heading--integrate-landscape-with-active-directory">Integrate Landscape with Active Directory</h2></a>
+## Integrate Landscape with Active Directory
 
 To integrate Landscape with Active Directory:
 
@@ -82,7 +82,7 @@ To integrate Landscape with Active Directory:
     sudo lsctl restart
     ```
     
-<a href="#heading--create-the-first-administrator-account"><h2 id="heading--create-the-first-administrator-account">Create the first administrator account</h2></a>
+## Create the first administrator account
 
 To create the first administrator account:
 
@@ -94,7 +94,7 @@ To create the first administrator account:
 Other Active Directory users will need to be invited individually in Landscape. This process does not automatically grant access to all Active Directory users. 
 ```
 
-<a href="#heading--migrate-users-to-active-directory-authentication"><h2 id="heading--migrate-users-to-active-directory-authentication">Migrate users to Active Directory authentication</h2></a>
+## Migrate users to Active Directory authentication
 
 ```{note}
 Once a user is migrated to Active Directory authentication, the user’s password that was previously stored by Landscape will no longer be usable for login.

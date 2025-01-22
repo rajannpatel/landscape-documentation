@@ -15,7 +15,7 @@ This document describes how to manage additional administrators and roles.
 - [Disable administrators](#heading--disable-administrators)
 - [Create roles](#heading--create-roles)
 
-<a href="#heading--invite-administrators"><h2 id="heading--invite-administrators">Invite administrators</h2></a>
+## Invite administrators
 
 You can make someone an administrator by sending them an invitation via email. To invite an administrator: 
 
@@ -30,7 +30,7 @@ Users who receive an invitation will see an HTML link in the email. Clicking thi
 
 The first person to click on the link and submit information becomes an administrator, even if it's not the person with the name and email address to which you sent the invitation. Take care to keep track of the status of administrator invitations.
 
-<a href="#heading--disable-administrators"><h2 id="heading--disable-administrators">Disable administrators</h2></a>
+## Disable administrators
 
 To disable one or more administrators:
 
@@ -41,7 +41,7 @@ To disable one or more administrators:
 
 The administrator is permanently disabled and will no longer be in Landscape. Although this operation cannot be reversed, you can send another administrator invitation to the same email address.
 
-<a href="#heading--create-roles"><h2 id="heading--create-roles">Create roles</h2></a>
+## Create roles
 
 To add a [role](/t/38566#heading--roles):
 

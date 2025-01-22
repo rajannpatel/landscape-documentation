@@ -14,7 +14,7 @@ This document describes some differences and gives examples of how remote script
 - [Debug scripts](#heading--debug-scripts)
 
 
-<a href="#heading--background-information"><h2 id="heading--background-information">Background information</h2></a>
+## Background information
 
 ### Landscape Client snap design
 
@@ -84,7 +84,7 @@ While this isn't as compact, it allows your Core device and your Snap to maintai
 **Note:** The Landscape team has a [repository of example scripts in GitHub](https://github.com/canonical/landscape-scripts/tree/main) that covers many scenarios you may encounter. The repository is also open to pull requests. If you have a script you think would be useful to others and want to include in the repository, please open a PR.
 ```
 
-<a href="#heading--example-scripts-to-run-on-your-device"><h2 id="heading--example-scripts-to-run-on-your-device">Example scripts to run on your device</h2></a>
+## Example scripts to run on your device
 
 You can use these examples to explore running remote scripts on your devices. You may need to adapt parts of them to fit your configuration. It’s also recommended that you explore the example scripts available in the [Landscape Scripts repository](https://github.com/canonical/landscape-scripts).
 
@@ -163,7 +163,7 @@ You can also use a file attachment. Add the `testscript.py` file in the web port
 python3 $LANDSCAPE_ATTACHMENTS/testscript.py
 ```
 
-<a href="#heading--debug-scripts"><h2 id="heading--debug-scripts">Debug scripts</h2></a>
+## Debug scripts
 
 One of the limitations of remote script execution is that when a script fails, the returned information can be limited. The options provided here can help you debug your scripts.
 

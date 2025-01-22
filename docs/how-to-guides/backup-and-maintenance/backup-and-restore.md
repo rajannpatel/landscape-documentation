@@ -8,7 +8,7 @@
 - [Backup server configuration files](#heading--backup-server-configuration-files)
 - [Test recovery procedures](#heading--test-recovery-procedures)
 
-<a href="#heading--overview"><h2 id="heading--overview">Overview</h2></a>
+## Overview
 
 Self-hosted Landscape consists of several stateful components that must be roughly synchronized to guarantee correct functioning of the system as a whole. These include:
 
@@ -29,7 +29,7 @@ Given the wide variety of clients (from physical hardware, to VMs, to containers
 **Note:** The database guidelines here don't apply to juju deployments with [Charmed PostgreSQL](https://canonical.com/data/docs/postgresql/iaas). Charmed PostgreSQL was introduced in the [Landscape 24.04 LTS charm](https://charmhub.io/landscape-server). See [Charmed PostgreSQL's backup and restore documentation](https://canonical.com/data/docs/postgresql/iaas/h-create-backup) for information on backing up and restoring your charmed database.
 ```
 
-<a href="#heading--define-a-backup-and-retention-policy"><h2 id="heading--define-a-backup-and-retention-policy">Define a backup and retention policy</h2></a>
+## Define a backup and retention policy
 
 Before configuring your PostgreSQL instance for continuous archiving and PITR, it's important to decide on a backup policy. You may want to consider the following questions:
 
@@ -44,7 +44,7 @@ Before configuring your PostgreSQL instance for continuous archiving and PITR, i
 
 Although it's possible to backup and archive on the same machine as the PostgreSQL server, we recommend that you use a separate machine for base backup and archived log storage. This is to allow restoration in case the server becomes inaccessible for any reason. We also recommend that any other files needed to restore the Landscape application server (such as the configuration files listed in a following section) are also copied to this location to allow recovery of the entire service from one location.
 
-<a href="#heading--configure-postgresql"><h2 id="heading--configure-postgresql">Configure PostgreSQL</h2></a>
+## Configure PostgreSQL
 
 To configure PostgreSQL:
 
@@ -59,7 +59,7 @@ To configure PostgreSQL:
 
 Note that you don't need to take Landscape offline to perform these backups; `pg_basebackup` can only execute when the cluster is up. There's no need to worry about inconsistency between Landscape's various databases either: a base backup represents the state of the cluster across all databases within it at the instant the backup starts.
 
-<a href="#heading--backup-server-configuration-files"><h2 id="heading--backup-server-configuration-files">Backup server configuration files</h2></a>
+## Backup server configuration files
 
 The following files should also be copied from your Landscape Server(s) to your backup destination to ensure that restoration of the Landscape application server is also possible:
 
@@ -76,7 +76,7 @@ You may also want to backup the following log files. They're not required for no
 
 If any of these files change periodically (e.g., the SSL certificates), you may also want to set up a cronjob to handle backing-up these files regularly.
 
-<a href="#heading--test-recovery-procedures"><h2 id="heading--test-recovery-procedures">Test recovery procedures</h2></a>
+## Test recovery procedures
 
 We recommend that administrators of self-hosted Landscape test their recovery procedures after configuring their Landscape Server(s) for archived logging and PITR. This is to ensure that backups are valid and restorable, and that administrators are familiar with these procedures.
 

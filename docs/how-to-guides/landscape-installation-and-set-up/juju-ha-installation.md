@@ -362,7 +362,7 @@ Machine  State    Address        Inst id         Base          AZ  Message
 
 You now have Landscape Server set up for a high-availability deployment. Next, you need to set up your clients by [installing the Landscape Client charm](/how-to-guides/landscape-installation-and-set-up/install-landscape-client) on each client, and configuring them with [the `juju config` command](https://juju.is/docs/juju/juju-config). You may also need to change your SSL certificate configuration. See the [configure HAProxy with an SSL certificate](#heading--configure-haproxy-with-an-ssl-certificate) section in this guide for more information.
 
-<a href="#heading--configure-haproxy-with-an-ssl-certificate"><h2 id="heading--configure-haproxy-with-an-ssl-certificate">Configure HAProxy with an SSL certificate</h2></a>
+## Configure HAProxy with an SSL certificate
 
 If you followed the previous instructions in this guide, you'll have a Landscape Server high availability deployment. The HAProxy application in this deployment uses a self-signed SSL certificate for secure HTTPS. Landscape Clients and your browser won't trust this certificate by default.
 

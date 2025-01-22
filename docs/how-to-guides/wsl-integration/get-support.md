@@ -9,7 +9,7 @@ This document describes multiple ways to get support for Windows Subsystem for L
 - [Troubleshoot basic issues and misconfigurations](#heading--troubleshoot-basic-issues-and-misconfigurations)
 - [Contact Support](#heading--contact-support)
 
-<a href="#heading--check-minimum-requirements"><h2 id="heading--check-minimum-requirements">Check minimum requirements</h2></a>
+## Check minimum requirements
 
 The following minimum requirements are needed to register WSL machines with Landscape:
 
@@ -20,7 +20,7 @@ The following minimum requirements are needed to register WSL machines with Land
 
 If you don't meet these minimum requirements, you will encounter issues when attempting to register WSL machines with Landscape.
 
-<a href="#heading--troubleshoot-basic-issues-and-misconfigurations"><h2 id="heading--troubleshoot-basic-issues-and-misconfigurations">Troubleshoot basic issues and misconfigurations</h2></a>
+## Troubleshoot basic issues and misconfigurations
 
 You will encounter issues with the following scenarios.
 
@@ -42,7 +42,7 @@ You will encounter issues with the following scenarios.
 
 To troubleshoot issues with your Windows host registration, see the [troubleshooting guide for registering WSL hosts with Landscape](https://ubuntu.com/landscape/docs/register-wsl-hosts-to-landscape#heading--troubleshoot).
     
-<a href="#heading--contact-support"><h2 id="heading--contact-support">Contact Support</h2></a>
+## Contact Support
 
 Ubuntu Pro customers can receive support through [Canonical’s Support portal](https://support.canonical.com/). Before contacting Support, you should know the versions of all your major software components. This includes:
 

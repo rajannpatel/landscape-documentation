@@ -15,7 +15,7 @@ The quickstart mode of deploying Landscape consists of installing all the necess
 4. [Create a global administrator account](#heading--create-a-global-administrator-account)
 5. [(Optional) Configure Postfix for email](#heading--configure-postfix-for-email)
 
-<a href="#heading--check-minimum-requirements"><h2 id="heading--check-minimum-requirements">Check minimum requirements</h2></a>
+## Check minimum requirements
 
 The following minimum requirements are needed to install Landscape Server:
 
@@ -24,7 +24,7 @@ The following minimum requirements are needed to install Landscape Server:
 - **Networking**: An IP address and FQDN with TCP communication allowed for SSH (typically port 22), HTTP (port 80), and HTTPS (port 443)
 - If you wish to use LetsEncrypt to obtain an SSL certificate, DNS administration access for the hostname you’ll use to access Landscape
 
-<a href="#heading--install-landscape-server"><h2 id="heading--install-landscape-server">Install Landscape Server</h2></a>
+## Install Landscape Server
 
 ### Install prerequisites
 
@@ -90,7 +90,7 @@ To install `landscape-server-quickstart`:
 
    - This installation takes approximately five minutes.
 
-<a href="#heading--install-an-ssl-certificate"><h2 id="heading--install-an-ssl-certificate">Install an SSL certificate</h2></a>
+## Install an SSL certificate
 
 ```{note}
 If you have the `fullchain.pem` and `privkey.pem` files for your SSL certificate, skip these steps and configure Apache manually.
@@ -121,7 +121,7 @@ sudo certbot --non-interactive --apache --no-redirect --agree-tos --email {EMAIL
 
 But, replace `{EMAIL@ADDRESS.COM}` with an email address where certificate renewal reminders can be sent.
 
-<a href="#heading--create-a-global-administrator-account"><h2 id="heading--create-a-global-administrator-account">Create a global administrator account</h2></a>
+## Create a global administrator account
 
 At this point, visiting `https://HOST_NAME.DOMAIN` prompts you to create Landscape’s first Global Administrator account. To add administrators:
 
@@ -131,7 +131,7 @@ At this point, visiting `https://HOST_NAME.DOMAIN` prompts you to create Landsca
 
 By default, the email address will be pre-filled with *noreply@HOST_NAME.DOMAIN*. You may want to change this to *noreply@DOMAIN*, or another valid email address.
 
-<a href="#heading--configure-postfix-for-email"><h2 id="heading--configure-postfix-for-email">(Optional) Configure Postfix for email</h2></a>
+## (Optional) Configure Postfix for email
 
 You can configure Postfix to handle Landscape Server email notifications and alerts. For details, see [how to configure Postfix for emails](/how-to-guides/landscape-installation-and-set-up/configure-postfix).
 

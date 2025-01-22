@@ -22,7 +22,7 @@ The guide specifically demonstrates how to mirror an Ubuntu repository, but most
 - [Create a repository profile and associate computers to the profile](#heading--create-a-repository-profile-and-associate-computers)
 - [Create and manage pull pockets](#heading--create-and-manage-pull-pockets)
 
-<a href="#heading--disk-space-requirements"><h2 id="heading--disk-space-requirements">Disk space requirements</h2></a>
+## Disk space requirements
 
 As of March 2024, these are the estimates for the amount of disk space needed to download the following Ubuntu distributions:
 
@@ -37,7 +37,7 @@ Packages will be downloaded to `/var/lib/landscape/landscape-repository/standalo
 
 Note that this is only a subset, and it does not include arm and other architectures. Including these will use more disk space.
 
-<a href="#heading--generate-API-credentials"><h2 id="heading--generate-API-credentials">(If needed) Generate API credentials</h2></a>
+## (If needed) Generate API credentials
 
 ```{note}
 You only need to generate API credentials if this is your first time using the newer web portal introduced in Landscape 24.04 LTS. If you've used this web portal before, you can skip this step.
@@ -51,7 +51,7 @@ If you're a first-time user of the 24.04 LTS web portal and web-based repository
 
 Now you can access web-based repository management and navigate to the newer web portal by clicking **Repositories** from the header. You may need to log out and back in again, but you only need to generate API credentials once.
 
-<a href="#heading--create-and-import-the-gpg-key"><h2 id="heading--create-and-import-the-gpg-key">Create and import the GPG key</h2></a>
+## Create and import the GPG key
 
 You need to create a secret GPG key in your terminal before importing it into the web portal. 
 
@@ -106,7 +106,7 @@ If done successfully, your key will now be listed in the *GPG Keys* page. Once i
 If you intend to mirror a third-party repository, you'll also need to get their public GPG key and import it into Landscape.
 ```
 
-<a href="#heading--create-a-new-repository"><h2 id="heading--create-a-new-repository">Create a new repository (distribution)</h2></a>
+## Create a new repository (distribution)
 
 To create a new distribution:
 
@@ -117,7 +117,7 @@ To create a new distribution:
 4. Select the appropriate access group(s) for this distribution
 5. Click **Add distribution**
 
-<a href="#heading--create-a-mirror"><h2 id="heading--create-a-mirror">Create a mirror</h2></a>
+## Create a mirror
 
 To create a mirror using the distribution you previously made:
 
@@ -131,7 +131,7 @@ To create a mirror using the distribution you previously made:
 1. Review the selections under **Pockets**, **Components** and **Architectures**. Either use the defaults or change the options as needed to customize your mirror. 
 1. Click **Add mirror**
 
-<a href="#heading--sync-pockets"><h2 id="heading--sync-pockets">Sync pockets</h2></a>
+## Sync pockets
 
 ```{note}
 If you’re using Landscape on Jammy 22.04 or later, you may need to change the default timeout of 30 minutes in RabbitMQ before syncing your pocket. For more information, see [how to configure RabbitMQ for Jammy 22.04 or later](/how-to-guides/landscape-installation-and-set-up/configure-rabbitmq).
@@ -155,7 +155,7 @@ landscape-api get-activities --query type:SyncPocketRequest --limit 1
 
 The output of this returns a `progress` field that provides an estimate of the percent complete of your pocket sync. You can also add `watch --`  before the previous command to get an update every two seconds.
 
-<a href="#heading--create-a-repository-profile-and-associate-computers"><h2 id="heading--create-a-repository-profile-and-associate-computers">Create a repository profile and associate computers to the profile</h2></a>
+## Create a repository profile and associate computers to the profile
 
 To create a profile:
 
@@ -169,7 +169,7 @@ To create a profile:
 
 Note that you may want to create multiple repository profiles for different groups of computers.
 
-<a href="#heading--create-and-manage-pull-pockets"><h2 id="heading--create-and-manage-pull-pockets">Create and manage pull pockets</h2></a>
+## Create and manage pull pockets
 
 To create a new pull pocket:
 

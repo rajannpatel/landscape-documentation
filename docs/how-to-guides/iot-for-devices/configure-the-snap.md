@@ -14,7 +14,7 @@ This document describes how to configure the Landscape Client snap in multiple w
 - [Manage script execution](#heading--manage-script-execution)
 - [Managed device mode](#heading--managed-device-mode)
 
-<a href="#heading--use-landscape-client-config"><h2 id="heading--use-landscape-client-config">Use `landscape-client.config`</h2></a>
+## Use `landscape-client.config`
 
 After you’ve installed the `landscape-client` snap, you can use `landscape-client.config` to configure it on your client devices. Running `landscape-client.config` without any arguments starts the configuration, and you’ll be prompted to provide any information needed to run.
 
@@ -41,7 +41,7 @@ If you’re using Ubuntu Core and require your own SSL certificates, you must pl
 sudo landscape-config --ssl-public-key /var/snap/landscape-client/ssl/server.pem
 ```
 
-<a href="#heading--auto-register-new-devices"><h2 id="heading--auto-register-new-devices">Auto-register new devices</h2></a>
+## Auto-register new devices
 
 ```{note}
 These steps are for automatically registering devices that are manually configured. If you’re registering a large-scale deployment of Ubuntu Core devices, you may want to auto-register them through the build image configuration. For more information, see [how to create an Ubuntu Core image with Landscape Client included](/how-to-guides/iot-for-devices/create-a-core-image).
@@ -67,7 +67,7 @@ Once you’ve defined a registration key and enabled the auto-registration featu
 sudo landscape-client.config --account-name={ACCOUNT_NAME} --computer-title={COMPUTER_TITLE} --registration-key={REGISTRATION_KEY}
 ```
 
-<a href="#heading--manage-script-execution"><h2 id="heading--manage-script-execution">Manage script execution</h2></a>
+## Manage script execution
 
 The Landscape Client snap has a plugin that allows an administrator to execute scripts remotely on any client snap device. This plugin is enabled by default, although you can manually disable it.
 
@@ -83,7 +83,7 @@ To re-enable it, add that line back to the `client.conf` file, or run the follow
 sudo landscape-client.config --include-manager-plugins=ScriptExecution
 ```
 
-<a href="#heading--managed-device-mode"><h2 id="heading--managed-device-mode">Managed device mode</h2></a>
+## Managed device mode
 
 > This configuration is available for Rev 383 or higher.
 
