@@ -24,7 +24,7 @@ Retrieve the list of administrators in the account.
 
 Here’s an example output:
 
-```json
+```text
 [
     {
         "email": "john@example.com",

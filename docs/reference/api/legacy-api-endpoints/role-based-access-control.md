@@ -30,7 +30,7 @@ For example, the following request adds the access group ‘my-group’ to the r
 
 The method returns a JSON serialized representation of the edited role:
 
-```json
+```text
 {
     "key": 1012,
     "name": "MyRole",
@@ -66,7 +66,7 @@ For example, the following request adds the ‘ExecuteScript’ permission to th
 
 The method returns a JSON serialized representation of the edited role:
 
-```json
+```text
 {
     "key": 1012,
     "name": "MyRole",
@@ -101,7 +101,7 @@ For example, the following request grants the role named ‘MyRole’ to the per
 
 The method returns a JSON serialized representation of the edited role:
 
-```json
+```text
 {
     "key": 1012,
     "name": "MyRole",
@@ -138,7 +138,7 @@ For example, the following request creates a role named ‘BaseRole1’ from Bas
 
 The method returns a JSON serialized representation of the new role:
 
-```json
+```text
 {
     "key": 1012,
     "name": "BaseRole1",
@@ -172,7 +172,7 @@ For example, the following request creates an access group named ‘Production�
 
 The method returns a JSON serialized representation of the new access group:
 
-```json
+```text
 {
     "title": "MyAccessGroup",
     "parent": "ParentAccessGroup",
@@ -202,7 +202,7 @@ For example, the following request creates a role named ‘MyRole’:
 
 The method returns a JSON serialized representation of the new role:
 
-```json
+```text
 {
     "key": 1012,
     "name": "MyRole",
@@ -229,7 +229,7 @@ For example, the following request fetches all access groups in the caller’s a
 
 The method returns a JSON serialized representation of the account access groups:
 
-```json
+```text
 [
     {
         "name": "MyAccessGroup",
@@ -252,7 +252,7 @@ Example of valid call:
 
 The method returns a JSON serialized list of permissions:
 
-```json
+```text
 [
     {
         "name": "ViewComputer",
@@ -282,7 +282,7 @@ For example, the following request fetches all roles in the caller’s account:
 
 The method returns a JSON serialized representation of the account roles:
 
-```json
+```text
 [
     {
         "key": 1012,
@@ -312,7 +312,7 @@ For example, the following request removes an access group named ‘MyAccessGrou
 
 The method returns a JSON serialized representation of the state of the parent access group after the child is removed:
 
-```json
+```text
 {
     "name": "ParentAccessGroup",
     "title": "parent",
@@ -339,7 +339,7 @@ For example, the following request removes the access group ‘my-group’ from 
 
 The method returns a JSON serialized representation of the edited role:
 
-```json
+```text
 {
     "key": 1012,
     "name": "MyRole",
@@ -374,7 +374,7 @@ For example, the following request will remove the ‘ExecuteScript’ permissio
 
 The method returns a JSON serialized representation of the edited role:
 
-```json
+```text
 {
     "key": 1012,
     "name": "MyRole",
@@ -407,7 +407,7 @@ For example, the following request removes the role named ‘MyRole’ from the 
 
 The method returns a JSON serialized representation of the edited role:
 
-```json
+```text
 {
     "key": 1012,
     "name": "MyRole",
@@ -439,7 +439,7 @@ For example, the following request removes a role named ‘MyRole’:
 
 An empty response is returned is the role is successfuly removed:
 
-```json
+```text
 {}
 ```
 

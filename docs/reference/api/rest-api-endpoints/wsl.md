@@ -22,7 +22,7 @@ curl -X GET https://your-landscape.domain.com/api/v2/child-instance-profiles -H 
 
 Example output:
 
-```json
+```text
 {
     "count": 1,
     "results": [
@@ -84,7 +84,7 @@ curl -X POST https://your-landscape.domain.com/api/v2/child-instance-profiles -H
 
 Example output:
 
-```json
+```text
 {
     "id": 2,
     "name": "customized-ubuntu-2404",
@@ -151,7 +151,7 @@ curl -X GET https://your-landscape.domain.com/api/v2/child-instance-profiles/sto
 
 Example output:
 
-```json
+```text
 {
   "id": 2,
   "name": "stock-ubuntu-2404",
@@ -200,7 +200,7 @@ curl -X PATCH https://your-landscape.domain.com/api/v2/child-instance-profiles/s
 
 Example output:
 
-```json
+```text
 {
   "id": 2,
   "name": "stock-ubuntu-2404",
@@ -249,7 +249,7 @@ curl -X POST https://your-landscape.domain.com/api/v2/computers/20/children -H "
 ```
 
 Example output:
-```json
+```text
 {
   "id": 118,
   "creation_time": "2024-08-05T16:38:52Z",
@@ -276,7 +276,7 @@ curl -X POST https://your-landscape.domain.com/api/v2/computers/20/children -H "
 ```
 
 Example output:
-```json
+```text
 {
   "id": 118,
   "creation_time": "2024-08-05T16:38:52Z",

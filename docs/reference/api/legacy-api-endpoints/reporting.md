@@ -106,7 +106,7 @@ This example request will return statistics for unpatched times on USNs released
 
 Example output looks like:
 
-```json
+```text
 {
     "30": [
         1,
@@ -162,7 +162,7 @@ For example, the following request will query for all machines running Ubuntu 12
 
 Example output looks like:
 
-```json
+```text
 {
     "Every hour at 30 minutes past the hour": [
         1,

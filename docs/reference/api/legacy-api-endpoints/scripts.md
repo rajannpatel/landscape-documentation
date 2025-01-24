@@ -21,7 +21,7 @@ For example, the following request looks for stored scripts associated with the 
 
 The method returns a JSON serialized list of scripts, like the following result:
 
-```json
+```text
 [
     {
         "creator": {
@@ -90,7 +90,7 @@ For example, the following request will execute the Script with Id 19000 on all 
 
 The method returns a JSON structure with the activity that was created:
 
-```json
+```text
 {
     "computer_id": "None",
     "creation_time": "2012-11-26T23: 36: 20Z",
@@ -157,7 +157,7 @@ The following errors may be raised:
 
 The method returns a JSON serialized description of the script, like the following result:
 
-```json
+```text
 {
     "creator": {
         "name": "John Smith",
@@ -206,7 +206,7 @@ The following errors may be raised:
 
 The method returns a JSON serialized description of the new script, like the following result:
 
-```json
+```text
 {
     "creator": {
         "name": "John Smith",
@@ -252,7 +252,7 @@ For example, the following request creates a script from an existing script:
 
 The method returns a JSON serialized representation of the new script:
 
-```json
+```text
 {
     "creator": {
         "name": "John Smith",

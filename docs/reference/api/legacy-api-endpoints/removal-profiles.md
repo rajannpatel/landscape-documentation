@@ -21,7 +21,7 @@ For example, the following command creates a removal profile titled “New Profi
 
 The method returns a JSON representation of the created removal profile:
 
-```json
+```text
 {
     "id": 1,
     "name": "new-profile",
@@ -67,7 +67,7 @@ For example, the following request lists all removal profiles:
 
 The method returns a JSON serialized representation of the list:
 
-```json
+```text
 [
     {
         "id": 1,
@@ -105,7 +105,7 @@ For example, the following modifies the example profile in documented in CreateR
 
 The method returns a JSON serialized representation of the modified object:
 
-```json
+```text
 {
     "id": 1,
     "name": "newprofile",
@@ -147,7 +147,7 @@ The following errors may be raised:
 
 The method returns JSON serialized info of the profile status:
 
-```json
+```text
 {
     "name": "test-1",
     "id": 178,
@@ -188,7 +188,7 @@ The following errors may be raised:
 
 The method returns JSON serialized info of the profile status:
 
-```json
+```text
 {
     "name": "test-1",
     "id": 178,

@@ -30,7 +30,7 @@ The following errors may be raised:
 
 The method returns JSON serialized info of the profile status:
 
-```json
+```text
 {
     "name": "test-1",
     "id": 178,
@@ -79,7 +79,7 @@ For example, the following request creates an upgrade profile schedule that upda
 
 The method returns a JSON serialized representation of the newly created object:
 
-```json
+```text
 [
     {
         "id": 1,
@@ -127,7 +127,7 @@ The following errors may be raised:
 
 The method returns JSON serialized info of the profile status:
 
-```json
+```text
 {
     "name": "test-1",
     "id": 178,
@@ -172,7 +172,7 @@ For example, the following is a request to update the example created in `Create
 
 The method returns a JSON serialized representation of the modified object:
 
-```json
+```text
 [
     {
         "id": 1,
@@ -227,7 +227,7 @@ For example, the following request lists all upgrade profile schedules:
 
 The method returns a JSON serialized representation of the list:
 
-```json
+```text
 [
     {
         "id": 1,

@@ -72,7 +72,7 @@ The method returns a JSON serialized list of computers:
 
 The JSON equivalent of this output is:
 
-```json
+```text
 [
     {
         "access_group": "global",
@@ -205,7 +205,7 @@ The method returns a JSON serialized list of computers in the selection which ha
 
 The JSON equivalent of this output is:
 
-```json
+```text
 [
     {
         "access_group": "server",
@@ -268,7 +268,7 @@ Get a list of pending computers associated with the account used for authenticat
 
 The method returns a JSON serialized list of pending computers:
 
-```json
+```text
 [
     {
         "id": 12345,
@@ -314,7 +314,7 @@ The method returns a JSON serialized list of accepted computers:
 
 The JSON equivalent of this output is:
 
-```json
+```text
 [
     {
         "id": 12345,
@@ -372,7 +372,7 @@ Create one-time passwords used for registration of cloud instances:
 
 The method returns a JSON serialized list of one-time passwords, one for each requested:
 
-```json
+```text
 ["otp1", "otp2", "otp3"]
 ```
 
@@ -417,7 +417,7 @@ The method returns a JSON serialized activity:
 
 The JSON equivalent of this output is:
 
-```json
+```text
 {
     "computer_id": "None",
     "creation_time": "2012-11-19T18:11:51Z",
@@ -472,7 +472,7 @@ The method returns a JSON serialized activity:
 
 The JSON equivalent of this output is:
 
-```json
+```text
 {
     "computer_id": "None",
     "creation_time": "2012-11-19T18:14:19Z",

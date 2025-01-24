@@ -8,7 +8,7 @@ These administration tasks typically span multiple systems and interfaces, which
 
 For system administrators, security analysts, CISOs and more, Landscape provides a flexible and efficient system management solution that can adapt to various organizational sizes, requirements and complexities.
 
-### Support
+## Support
 
 [Support](https://support.canonical.com/) is available to those who purchase it with [Ubuntu Pro](https://ubuntu.com/pro).
 

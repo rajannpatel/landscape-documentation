@@ -179,7 +179,8 @@ curl -X GET https://landscape.canonical.com/api/v2/computers/1?with_grouped_hard
 
 Example output:
 
-```bash{
+```text
+{
   "id": 1,
   "title": "Application Server 1",
   "comment": "",

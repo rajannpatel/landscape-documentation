@@ -27,7 +27,7 @@ The following errors may be raised:
 
 The method returns JSON serialized info of the created distribution:
 
-```json
+```text
 {
     "name": "ubuntu",
     "access_group": "global",
@@ -52,7 +52,7 @@ For example, the following request returns info about a distribution named ‘ub
 
 The method returns JSON serialized info on the distributions:
 
-```json
+```text
 [
     {
         "creation_time": "2011-07-19T12:51:18Z",
@@ -153,7 +153,7 @@ The following errors may be raised:
 
 The method returns JSON serialized info of the created series:
 
-```json
+```text
 {
     "name": "lucid",
     "pockets": [],
@@ -209,7 +209,7 @@ The following errors may be raised:
 
 The method returns JSON serialized info of the derived series:
 
-```json
+```text
 {
     "creation_time": "2011-07-26T15:15:17Z",
     "name": "lucid-staging",
@@ -289,7 +289,7 @@ The following errors may be raised:
 
 The method returns JSON serialized info of the created pocket:
 
-```json
+```text
 {
     "name": "updates",
     "architectures": [
@@ -406,7 +406,7 @@ The following errors may be raised:
 
 The method returns JSON serialized info of changed packages between pockets for each component/architecture pair:
 
-```json
+```text
 {
     "main/i386": {
         "update": [
@@ -470,7 +470,7 @@ The following errors may be raised:
 
 The method returns JSON serialized info of the packages in the pocket, for each section and architecture:
 
-```json
+```text
 {
     "main/i386": [
         [
@@ -533,7 +533,7 @@ The following errors may be raised:
 
 The method returns JSON serialized info of the pocket state:
 
-```json
+```text
 {
     "name": "updates",
     "architectures": [
@@ -598,7 +598,7 @@ The following errors may be raised:
 
 The method returns a JSON representation of the created repository profile:
 
-```json
+```text
 {
     "all_computers": false,
     "description": "Example Lucid profile",
@@ -622,7 +622,7 @@ Example of a valid request:
 
 The method returns a JSON serialized list of the repository profiles:
 
-```json
+```text
 [
     {
         "all_computers": false,
@@ -650,7 +650,7 @@ Example of a valid request:
 
 The method returns a JSON serialized list of the APT sources:
 
-```json
+```text
 [
     {
         "id": 100,
@@ -680,7 +680,7 @@ Example of a valid request:
 
 The method returns a JSON serialized list of the created APT source:
 
-```json
+```text
 {
     "id": 100,
     "name": "lucid-mirror",
@@ -747,7 +747,7 @@ The method returns JSON serialized info of the profile status:
 
 The JSON equivalent output is:
 
-```json
+```text
 {
     "name": "lucide-example",
     "id": 178,
@@ -800,7 +800,7 @@ The method returns JSON serialized info of the profile status:
 
 The JSON equivalent output is:
 
-```json
+```text
 {
     "name": "lucide-example",
     "id": 178,
@@ -847,7 +847,7 @@ The method returns JSON serialized info of the profile status:
 
 The JSON equivalent output is:
 
-```json
+```text
 {
     "name": "lucide-example",
     "id": 178,
@@ -903,7 +903,7 @@ The method returns JSON serialized info of the profile status:
 
 The JSON equivalent output is:
 
-```json
+```text
 {
     "name": "lucide-example",
     "id": 178,
@@ -963,7 +963,7 @@ The method returns JSON serialized info of the profile status:
 
 The JSON equivalent output is:
 
-```json
+```text
 {
     "name": "lucide-example",
     "id": 178,
@@ -1027,19 +1027,19 @@ Example of a valid request:
 
 The method returns JSON serialized info of the profile status:
 
-```json
+```text
 {"name": "lucide-example",
  "id": 178,
  "description": "A profile for ubuntu lucid",
  "tags": ["desktop", "my-computers"],
- "all_computers": False,
+ "all_computers": false,
  "pockets": [],
  "apt_sources": []}
 ```
 
 The JSON equivalent output is:
 
-```json
+```text
 {
     "name": "lucide-example",
     "id": 178,
@@ -1109,7 +1109,7 @@ The method returns a JSON serialized dictionary of the repository profile:
 
 The JSON equivalent output is:
 
-```json
+```text
 {
     "all_computers": false,
     "description": "Example Lucid profile",
@@ -1163,7 +1163,7 @@ The method returns JSON serialized info of the pocket:
 
 The JSON equivalent output is:
 
-```json
+```text
 {
     "name": "devel",
     "architectures": [
@@ -1213,7 +1213,7 @@ The following errors may be raised:
 
 The method returns JSON serialized info of the pocket:
 
-```json
+```text
 {
     "name": "devel",
     "architectures": [
@@ -1256,7 +1256,7 @@ The following errors may be raised:
 
 The method returns JSON serialized info of the pocket:
 
-```json
+```text
 {
     "name": "devel",
     "architectures": [
@@ -1303,7 +1303,7 @@ The following errors may be raised:
 
 The method returns JSON serialized info of the pocket:
 
-```json
+```text
 {
     "name": "devel",
     "architectures": [

@@ -27,7 +27,7 @@ curl -X PUT https://landscape.canonical.com/api/v2/administrators/6 -H "Authoriz
 
 Example output:
 
-```json
+```text
 {
   "email": "robert@example.com",
   "id": 6,

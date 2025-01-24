@@ -32,7 +32,7 @@ For example, the following request looks for a package named with the tag ‘ser
 
 The method returns a JSON serialized list of packages, with the list of computer IDs on which they are available, installed, or available as upgrades:
 
-```json
+```text
 [
     {
         "name": "python2.7",
@@ -106,7 +106,7 @@ The method returns a JSON serialized list of the parent activity created:
 
 The JSON equivalent of this output is:
 
-```json
+```text
 {
     "activity_status": "undelivered",
     "computer_id": "None",
@@ -160,7 +160,7 @@ The method returns a JSON serialized list of the activity created:
 
 The JSON equivalent of this output is:
 
-```json
+```text
 {
     "activity_status": "undelivered",
     "computer_id": "None",
@@ -210,7 +210,7 @@ The method returns a JSON serialized list of the activity created:
 
 The JSON equivalent of this output is:
 
-```json
+```text
 {
     "computer_id": "None",
     "creation_time": "2011-07-18T15:30:13Z",

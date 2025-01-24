@@ -88,7 +88,7 @@ The method returns a JSON serialized list of the alert subscribers:
 
 The JSON equivalent of this output is:
 
-```json
+```text
 [
     {
         "email": "person1@example.com",
@@ -134,7 +134,7 @@ The method returns a JSON serialised list of the alerts:
 
 The JSON equivalent of this output is:
 
-```json
+```text
 [
     {
         "alert_type": "PackageReporterAlert",

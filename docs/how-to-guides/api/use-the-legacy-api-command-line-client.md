@@ -49,7 +49,7 @@ landscape-api get-computers --json
 
 Would produce JSON output that looks like:
 
-```json
+```text
 [
     {
         "comment": "",

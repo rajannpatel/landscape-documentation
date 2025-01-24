@@ -33,7 +33,7 @@ For example, the following request looks for the succeeded activities on the com
 
 The method returns a JSON serialized list of activities with a limit of 20. The output would be similar to the following:
 
-```JSON
+```text
 [
     {
         "id": 86,
@@ -86,7 +86,7 @@ Common examples of activities with a `progress` field would be syncing a pocket 
 
 For example, the a `GetActivities` request that reports activities with ongoing progress could output something like:
 
-```json
+```text
 [
     {
         "id": 73,
@@ -119,7 +119,7 @@ For example, the following request gets a list of all possible activity types:
 
 The method returns a JSON serialized list of activity types, like the following result:
 
-```json
+```text
 [
     "RestartRequest",
     "EditUserRequest",

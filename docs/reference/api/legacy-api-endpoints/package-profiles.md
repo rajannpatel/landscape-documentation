@@ -20,7 +20,7 @@ For example, the following command limits the results to return the single packa
 
 The method returns a JSON representation of the package profiles. It includes a list of computers which are constrained by this profile as well as a list of constrained computers which are non-compliant:
 
-```json
+```text
 [
     {
         "id": 2,
@@ -73,7 +73,7 @@ For example, the following command copies the package profile ‘mysqlprofile’
 
 The method returns a JSON representation of the copied package profile:
 
-```json
+```text
 [
     {
         "id": 3,
@@ -132,7 +132,7 @@ For example, the following command creates a package profile ‘newprofile’ ba
 
 The method returns a JSON representation of the created package profile:
 
-```json
+```text
 [
     {
         "id": 3,
