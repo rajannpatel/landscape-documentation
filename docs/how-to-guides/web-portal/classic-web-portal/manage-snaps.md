@@ -3,7 +3,7 @@
 
 You can manage snaps from the web portal for each managed computer in your Landscape account.
 
-### View snap information from the **Snaps** tab
+## View snap information from the **Snaps** tab
 
 To view snap information for a specific computer:
 
@@ -17,7 +17,7 @@ To view installed snaps, click **Installed snaps** located after the table or cl
 
 To view held snaps, click **Held snaps** located after the table.
 
-### Install snaps for a specific computer
+## Install snaps for a specific computer
 
 To install snaps for a specific computer, navigate to the **Snaps** tab and:
 
@@ -29,7 +29,7 @@ To install snaps for a specific computer, navigate to the **Snaps** tab and:
 6. Specify the delivery information
 7. Click **Submit**
 
-### Refresh (upgrade), remove or hold snaps for a specific computer
+## Refresh (upgrade), remove or hold snaps for a specific computer
 
 To manage snaps on a specific computer:
 

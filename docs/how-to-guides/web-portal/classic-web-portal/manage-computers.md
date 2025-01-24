@@ -40,7 +40,7 @@ To apply [tags](/docs/explanation/terms/tags) to computers:
 
 1. Navigate to the **Computers** page in the header
 2. Select the computers you want to associate with that tag
-   - For more information, see [Select computers](#heading--select-computers)
+   - For more information, see [Select computers](#select-computers)
 3. Click the **Info** tab
 4. Enter the tag you want to use in the **Tags** row
 5. Click **Add**

@@ -5,13 +5,6 @@ This document is for upgrading Landscape Server 23.03 or later to a newer versio
 
 Note that you don’t need to upgrade your client machines when you upgrade your Landscape server.
 
-**Contents**:
-- [Prepare to upgrade](#heading--prepare-to-upgrade)
-- [Upgrade your Landscape server](#heading--upgrade-your-landscape-server)
-- [(If necessary) Upgrade the database schema](#heading--upgrade-the-database-schema)
-- [Upgrade Juju deployments](#heading--upgrade-juju-deployments)
-
-
 ## Prepare to upgrade
 
 > See also: [Backup and restore](/docs/how-to-guides/backup-and-maintenance/backup-and-restore)
@@ -56,7 +49,7 @@ If you accidentally replace your configuration file, you can put your previous c
 
 If you’re not using a quickstart deployment of Landscape, you need to manually update your database schema. You only need to run the database schema updates once, even if your deployment has multiple servers.
 
-For Juju deployments, see the [upgrade Juju deployments section](#heading--upgrade-juju-deployments) in this guide. For manual installations of Landscape, follow these steps to manually update your database schema:
+For Juju deployments, see the [upgrade Juju deployments section](#upgrade-juju-deployments) in this guide. For manual installations of Landscape, follow these steps to manually update your database schema:
 
 1. Stop Landscape
     

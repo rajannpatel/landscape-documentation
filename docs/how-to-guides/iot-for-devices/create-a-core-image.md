@@ -126,7 +126,7 @@ To create and configure your gadget snap:
     - `(ACCOUNT_NAME)`: Self-hosted Landscape users should set this to `standalone`.
     - `(REGISTRATION_KEY)`: Your registration key.
     
-    Now, you’ve finished configuring the details of your Landscape server instance. In the `auto-register` section, you’ll likely want to change `computer-title-pattern` to your preferred method of identifying devices. For more information on these parameters, see the [explanation on the auto-registration process in the gadget snap](#heading--explanation-auto-registration-process-in-the-gadget-snap) located in this guide.
+    Now, you’ve finished configuring the details of your Landscape server instance. In the `auto-register` section, you’ll likely want to change `computer-title-pattern` to your preferred method of identifying devices. For more information on these parameters, see the [explanation on the auto-registration process in the gadget snap](#explanation-auto-registration-process-in-the-gadget-snap) located in this guide.
     
 These details will be the same for all devices that run this image.
 

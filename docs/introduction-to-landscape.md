@@ -32,7 +32,7 @@ Landscape performs your system management tasks. You can use Landscape for lots 
 
 ## Editions of Landscape
 
-There are three different editions of Landscape: [SaaS](#heading--landscape-saas), [Managed](#heading--managed-landscape), and [Self-hosted](#heading--self-hosted-landscape).
+There are three different editions of Landscape: [SaaS](#landscape-saas), [Managed](#managed-landscape), and [Self-hosted](#self-hosted-landscape).
 
 ### Landscape SaaS
 

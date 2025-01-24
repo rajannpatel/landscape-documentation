@@ -7,12 +7,6 @@ Once enabled, users will be required to authenticate with an Active Directory ac
 
 Note that this document is for integrating with [Microsoft's Active Directory](https://learn.microsoft.com/en-us/troubleshoot/windows-server/active-directory/active-directory-overview), not Microsoft Entra ID (formerly "Azure Active Directory").
 
-**Contents**:
-
-1. [Integrate Landscape with Active Directory](#heading--integrate-landscape-with-active-directory)
-2. [Create the first administrator account](#heading--create-the-first-administrator-account)
-3. [Migrate users to Active Directory authentication](#heading--migrate-users-to-active-directory-authentication)
-
 ## Integrate Landscape with Active Directory
 
 To integrate Landscape with Active Directory:

@@ -3,12 +3,6 @@
 
 This document describes multiple ways to get support for Windows Subsystem for Linux (WSL) machines that connect to Landscape and troubleshoot some basic issues.
 
-**Contents**:
-
-- [Check minimum requirements](#heading--check-minimum-requirements)
-- [Troubleshoot basic issues and misconfigurations](#heading--troubleshoot-basic-issues-and-misconfigurations)
-- [Contact Support](#heading--contact-support)
-
 ## Check minimum requirements
 
 The following minimum requirements are needed to register WSL machines with Landscape:
