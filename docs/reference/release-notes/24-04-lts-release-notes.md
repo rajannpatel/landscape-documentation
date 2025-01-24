@@ -1,7 +1,7 @@
 (reference-release-notes-24-04-lts-release-notes)=
 # 24.04 LTS release notes
 
-> See also: [Upgrade to Landscape Server 24.04 LTS](/how-to-guides/upgrade/upgrade-to-24-04-lts)
+> See also: [Upgrade to Landscape Server 24.04 LTS](/docs/how-to-guides/upgrade/upgrade-to-24-04-lts)
 
 **Note**: Landscape 24.04 LTS runs on Ubuntu 24.04 LTS Noble Numbat or 22.04 LTS Jammy Jellyfish.
 
@@ -15,9 +15,9 @@
 
     This portal is available to self-hosted Landscape users. To access it, click **Try the new UI** from the header of the default web portal. The first time you use the portal, you may need to generate new API credentials to access the portal. For more information, see [how to generate API credentials](https://ubuntu.com/landscape/docs/manage-repositories-web-portal#heading--generate-API-credentials).
     
-- **Web-based repository management**: Manage and mirror your repositories locally with Landscape’s new web-based repository management. For more information, see [how to manage and mirror repositories from the web portal](/how-to-guides/repository-mirrors/manage-repositories-in-the-web-portal) and an [explanation on repository mirroring](/explanation/repository-mirroring/repository-mirroring).
+- **Web-based repository management**: Manage and mirror your repositories locally with Landscape’s new web-based repository management. For more information, see [how to manage and mirror repositories from the web portal](/docs/how-to-guides/repository-mirrors/manage-repositories-in-the-web-portal) and an [explanation on repository mirroring](/docs/explanation/repository-mirroring/repository-mirroring).
 
-- **REST API for self-hosted users**: Use the new REST API that supports JSON Web Tokens for authentication. For more information, see [how to make a REST API request](/how-to-guides/api/make-a-rest-api-request) and the available [REST API endpoints](/).
+- **REST API for self-hosted users**: Use the new REST API that supports JSON Web Tokens for authentication. For more information, see [how to make a REST API request](/docs/how-to-guides/api/make-a-rest-api-request) and the available [REST API endpoints](/).
 
 - **Snap management:** Manage snaps directly from the Landscape web portal.
 

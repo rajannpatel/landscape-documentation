@@ -14,7 +14,7 @@ Note that you don’t need to upgrade your client machines when you upgrade your
 
 ## Prepare to upgrade
 
-> See also: [Backup and restore](/how-to-guides/backup-and-maintenance/backup-and-restore)
+> See also: [Backup and restore](/docs/how-to-guides/backup-and-maintenance/backup-and-restore)
 
 We strongly recommend you backup your database and configuration files before performing an upgrade. You should backup:
 

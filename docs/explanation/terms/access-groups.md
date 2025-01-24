@@ -5,7 +5,7 @@ In Landscape, **access groups** are logical groupings used by administrators to 
 
 A new Landscape installation comes with a single access group, called global, which gives any administrators who are associated with roles that include that access group control over every computer managed by Landscape. Most organisations will want to subdivide administration responsibilities by creating logical groupings of computers.
 
-Typical access groups might be constructed around organizational units or departments, locations or hardware architecture. You can manage access groups from the **Access groups** tab in your organisation's home page. See how to [create access groups](/t/23075#heading--create-access-groups), [add computers to access groups](/t/23075#heading--add-computers-to-access-groups), and [associate roles with access groups](/t/23073#heading--roles). 
+Typical access groups might be constructed around organizational units or departments, locations or hardware architecture. You can manage access groups from the **Access groups** tab in your organisation's home page. See how to [create access groups](/docs/how-to-guides/web-portal/classic-web-portal/manage-access-groups#create-access-groups), [add computers to access groups](/docs/how-to-guides/web-portal/classic-web-portal/manage-access-groups#add-computers-to-access-groups), and [associate roles with access groups](/docs/how-to-guides/web-portal/classic-web-portal/manage-access-groups#associate-roles-with-access-groups). 
 
 It's good practice to create and document a naming convention for access groups before you deploy Landscape, so that all administrators understand what constitutes an acceptable logical grouping for your organization.
 

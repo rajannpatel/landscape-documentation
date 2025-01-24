@@ -9,8 +9,8 @@ We currently have a REST API and our legacy API.
 
 ## Other
 
-- [Logs](/reference/logs/logs)
-- [Network firewall](/reference/networking/network-firewall)
+- [Logs](/docs/reference/logs/logs)
+- [Network firewall](/docs/reference/networking/network-firewall)
 
 
 ```{toctree}
