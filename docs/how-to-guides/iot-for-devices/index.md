@@ -1,5 +1,5 @@
 (how-to-guides-iot-for-devices-index)=
-# Iot-For-Devices
+# Iot for devices
 
 ```{toctree}
 :hidden:

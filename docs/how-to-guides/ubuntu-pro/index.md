@@ -1,5 +1,5 @@
 (how-to-guides-ubuntu-pro-index)=
-# Ubuntu-Pro
+# Ubuntu Pro
 
 ```{toctree}
 :hidden:

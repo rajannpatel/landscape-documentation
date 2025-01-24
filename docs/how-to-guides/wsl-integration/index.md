@@ -1,5 +1,5 @@
 (how-to-guides-wsl-integration-index)=
-# Wsl-Integration
+# WSL integration
 
 ```{toctree}
 :hidden:

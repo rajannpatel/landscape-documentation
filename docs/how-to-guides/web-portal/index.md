@@ -1,5 +1,5 @@
 (how-to-guides-web-portal-index)=
-# Web-Portal
+# Web portal
 
 ```{toctree}
 :hidden:

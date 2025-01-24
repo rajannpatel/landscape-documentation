@@ -1,5 +1,5 @@
 (how-to-guides-repository-mirrors-index)=
-# Repository-Mirrors
+# Repository mirrors
 
 ```{toctree}
 :hidden:

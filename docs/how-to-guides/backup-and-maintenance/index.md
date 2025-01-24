@@ -1,5 +1,5 @@
 (how-to-guides-backup-and-maintenance-index)=
-# Backup-And-Maintenance
+# Backup and Maintenance
 
 ```{toctree}
 :hidden:

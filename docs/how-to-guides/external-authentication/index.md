@@ -1,5 +1,5 @@
 (how-to-guides-external-authentication-index)=
-# External-Authentication
+# External authentication
 
 ```{toctree}
 :hidden:

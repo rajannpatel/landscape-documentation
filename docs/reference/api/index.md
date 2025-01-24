@@ -1,5 +1,5 @@
 (reference-api-index)=
-# Api
+# API
 
 ```{toctree}
 :hidden:

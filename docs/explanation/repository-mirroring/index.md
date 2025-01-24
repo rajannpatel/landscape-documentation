@@ -1,5 +1,5 @@
 (explanation-repository-mirroring-index)=
-# Repository-Mirroring
+# Repository mirroring
 
 ```{toctree}
 :hidden:

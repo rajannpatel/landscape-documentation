@@ -1,5 +1,5 @@
 (how-to-guides-web-portal-classic-web-portal-index)=
-# Classic-Web-Portal
+# Classic web portal
 
 ```{toctree}
 :hidden:

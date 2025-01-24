@@ -1,5 +1,5 @@
 (how-to-guides-landscape-installation-and-set-up-index)=
-# Landscape-Installation-And-Set-Up
+# Landscape installation and set-up
 
 ```{toctree}
 :hidden:

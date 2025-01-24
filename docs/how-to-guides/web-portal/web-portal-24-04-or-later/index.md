@@ -1,5 +1,5 @@
 (how-to-guides-web-portal-web-portal-24-04-or-later-index)=
-# Web-Portal-24-04-Or-Later
+# Web portal (24.04 or later)
 
 ```{toctree}
 :hidden:
