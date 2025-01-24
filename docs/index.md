@@ -30,7 +30,7 @@ Landscape is a member of the Ubuntu family. It welcomes community contributions,
 * [Our Code of Conduct](https://launchpad.net/codeofconduct/2.0)
 * [Get support](https://ubuntu.com/support/community-support)
 * [Join the Discourse forum](https://discourse.ubuntu.com/c/landscape/89)
-* [How to contribute](/contribute-to-our-docs)
+* [How to contribute](/contributing)
 
 Thinking about using Landscape for your next project? [Get in touch!](https://ubuntu.com/landscape#get-in-touch)
  

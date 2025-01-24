@@ -191,7 +191,7 @@ Path parameters:
 
 Query parameters:
 
-- `kernel_package_id`: The package id to upgrade to. See the [`computers/<computer_id>/livepatch/kernel` endpoint](#p-124669-get-computerscomputer_idlivepatchkernel).
+- `kernel_package_id`: The package id to upgrade to. See the [`computers/<computer_id>/livepatch/kernel` endpoint](#get-computerscomputer_idlivepatchkernel).
 
 Optional parameters:
 
@@ -240,7 +240,7 @@ Path parameters:
 
 Query parameters:
 
-- `kernel_package_id`: The package id to downgrade to. See [`computers/<computer_id>/livepatch/kernel` endpoint](#p-124669-get-computerscomputer_idlivepatchkernel).
+- `kernel_package_id`: The package id to downgrade to. See [`computers/<computer_id>/livepatch/kernel` endpoint](#get-computerscomputer_idlivepatchkernel).
 
 Optional parameters:
 

@@ -150,7 +150,7 @@ snap_http.set_conf("landscape-client", {"logging-level": "debug"})
 
 You can also use a file attachment. Add the `testscript.py` file in the web portal as an attachment and run this script:
 
-```python
+```text
 #!/bin/bash
 
 python3 $LANDSCAPE_ATTACHMENTS/testscript.py

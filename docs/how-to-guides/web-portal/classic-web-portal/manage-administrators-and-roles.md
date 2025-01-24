@@ -37,7 +37,7 @@ The administrator is permanently disabled and will no longer be in Landscape. Al
 
 ## Create roles
 
-To add a [role](/t/38566#heading--roles):
+To add a role:
 
 1. Navigate to your organisation's home page
 2. Click the **Roles** tab

@@ -107,7 +107,7 @@ To create and configure your gadget snap:
     - Other reference gadget snaps are available for different architectures from the [Snapcore GitHub account](https://github.com/snapcore/). Search for repositories with “gadget” in the name.
 2. Append the following configuration at the bottom of the `gadget.yaml` file that defines the gadget snap:
     
-    ```json
+    ```text
     defaults:
       # landscape client
       ffnH0sJpX3NFAclH777M8BdXIWpo93af:
@@ -216,7 +216,7 @@ If done successfully, your device(s) should be registered, and they can now be r
 
 The `gadget.yaml` file contains a configuration that is similar to the following:
 
-```json
+```text
 defaults:
   # landscape client
   ffnH0sJpX3NFAclH777M8BdXIWpo93af:

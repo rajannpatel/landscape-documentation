@@ -17,11 +17,11 @@
     
 - **Web-based repository management**: Manage and mirror your repositories locally with Landscape’s new web-based repository management. For more information, see [how to manage and mirror repositories from the web portal](/docs/how-to-guides/repository-mirrors/manage-repositories-in-the-web-portal) and an [explanation on repository mirroring](/docs/explanation/repository-mirroring/repository-mirroring).
 
-- **REST API for self-hosted users**: Use the new REST API that supports JSON Web Tokens for authentication. For more information, see [how to make a REST API request](/docs/how-to-guides/api/make-a-rest-api-request) and the available [REST API endpoints](/).
+- **REST API for self-hosted users**: Use the new REST API that supports JSON Web Tokens for authentication. For more information, see [how to make a REST API request](/docs/how-to-guides/api/make-a-rest-api-request) and the available REST API endpoints.
 
 - **Snap management:** Manage snaps directly from the Landscape web portal.
 
-- **Landscape Client - new features for Ubuntu Core users**: The Landscape Client snap now includes additional features for Ubuntu Core users, such as remote script execution for snaps, user management on Core, and more. For more information, see the [Landscape client snap how-to guides](/).
+- **Landscape Client - new features for Ubuntu Core users**: The Landscape Client snap now includes additional features for Ubuntu Core users, such as remote script execution for snaps, user management on Core, and more. For more information, see the [Landscape client snap how-to guides](/docs/how-to-guides/iot-for-devices/overview).
 
 ## Additional updates
 
