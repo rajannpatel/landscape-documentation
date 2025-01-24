@@ -27,7 +27,7 @@ Landscape 19.01.1 contains the following fix:
 
 Landscape 19.01 supports Ubuntu 18.04 LTS ("bionic"). It can only be upgraded from Landscape 18.03 also running on the same Ubuntu 18.04 LTS release.
 
-For upgrading from Landscape 17.03 to 19.01 you'll have to go through the upgrade to Landscape 18.03 first while still on Ubuntu 16.04. Then go through the [Ubuntu release upgrade](/docs/reference/release-notes/older-release-notes/18-03-release-notes.md#ubuntu-release-upgrade) from Ubuntu 16.04 LTS to Ubuntu 18.04 LTS.
+For upgrading from Landscape 17.03 to 19.01 you'll have to go through the upgrade to Landscape 18.03 first while still on Ubuntu 16.04. Then go through the [Ubuntu release upgrade](/reference/release-notes/older-release-notes/18-03-release-notes.md#ubuntu-release-upgrade) from Ubuntu 16.04 LTS to Ubuntu 18.04 LTS.
 
 To upgrade a Landscape 18.03 running on Ubuntu 16.04 LTS ("xenial") to Landscape 19.01, first you need to upgrade your Ubuntu release to 18.04 LTS ("bionic"), and then upgrade Landscape to 19.01.
 

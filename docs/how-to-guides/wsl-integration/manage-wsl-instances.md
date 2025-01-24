@@ -1,11 +1,11 @@
 (how-to-guides-wsl-integration-manage-wsl-instances)=
 # Manage WSL instances
 
-> See also: [WSL Legacy API methods](/docs/reference/api/legacy-api-endpoints/wsl)
+> See also: [WSL Legacy API methods](/reference/api/legacy-api-endpoints/wsl)
 
 This guide describes how to create and register new WSL instances to Landscape.
 
-You must have a Windows host machine registered with Landscape before making any Windows Subsystem for Linux (WSL) instances. To register a new WSL host with Landscape, visit [how to register WSL hosts to Landscape](/docs/how-to-guides/wsl-integration/register-wsl-hosts).
+You must have a Windows host machine registered with Landscape before making any Windows Subsystem for Linux (WSL) instances. To register a new WSL host with Landscape, visit [how to register WSL hosts to Landscape](/how-to-guides/wsl-integration/register-wsl-hosts).
 
 ## Register new WSL instances in the Landscape web portal
 
@@ -108,5 +108,5 @@ Removing a WSL instance from its Windows host machine will also remove the assoc
 
 You can use child instance profiles to provision WSL instances from official Ubuntu images in the Microsoft Store or from custom images at scale. These WSL instances can be configured with cloud-init at the time of provisioning.
 
-For the available endpoints and example requests, see our [REST API (beta) documentation](/docs/reference/api/rest-api-endpoints/beta-only).
+For the available endpoints and example requests, see our [REST API (beta) documentation](/reference/api/rest-api-endpoints/beta-only).
 

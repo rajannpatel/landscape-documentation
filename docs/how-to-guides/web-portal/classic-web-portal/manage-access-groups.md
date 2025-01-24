@@ -1,7 +1,7 @@
 (how-to-guides-web-portal-classic-web-portal-manage-access-groups)=
 # Manage access groups
 
-> See also: [Access groups](/docs/explanation/terms/access-groups)
+> See also: [Access groups](/explanation/terms/access-groups)
 
 This document describes how to manage access groups.
 

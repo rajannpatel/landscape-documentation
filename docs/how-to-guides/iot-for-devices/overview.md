@@ -13,14 +13,14 @@ We have the following how-to guides to help you use the Landscape Client snap to
 
 ### Install and configure
 
-- [Install the snap](/docs/how-to-guides/iot-for-devices/install-the-snap)
-- [Configure the snap](/docs/how-to-guides/iot-for-devices/configure-the-snap)
-- [Create an Ubuntu Core image that includes the snap](/docs/how-to-guides/iot-for-devices/create-a-core-image)
+- [Install the snap](/how-to-guides/iot-for-devices/install-the-snap)
+- [Configure the snap](/how-to-guides/iot-for-devices/configure-the-snap)
+- [Create an Ubuntu Core image that includes the snap](/how-to-guides/iot-for-devices/create-a-core-image)
 
 ### Use
 
-- [Use remote script execution](/docs/how-to-guides/iot-for-devices/remote-script-execution)
-- [Use annotations](/docs/how-to-guides/iot-for-devices/use-annotations)
+- [Use remote script execution](/how-to-guides/iot-for-devices/remote-script-execution)
+- [Use annotations](/how-to-guides/iot-for-devices/use-annotations)
 
 ## Best practices for IoT
 
@@ -48,7 +48,7 @@ You may encounter these limitations when using the Landscape Client snap on Ubun
 
 **Remote script execution**
 
-You can use remote script execution in the Landscape Client snap, but the functionality is limited by the confinement of the snap. The automatically connected interfaces allow for extensive system configuration and management via script execution, but it may be necessary to do this in a snap interface-friendly manner. For more information, see [how to use remote script execution](/docs/how-to-guides/iot-for-devices/remote-script-execution) and the [Landscape Scripts repository on GitHub](https://github.com/canonical/landscape-scripts).
+You can use remote script execution in the Landscape Client snap, but the functionality is limited by the confinement of the snap. The automatically connected interfaces allow for extensive system configuration and management via script execution, but it may be necessary to do this in a snap interface-friendly manner. For more information, see [how to use remote script execution](/how-to-guides/iot-for-devices/remote-script-execution) and the [Landscape Scripts repository on GitHub](https://github.com/canonical/landscape-scripts).
 
 **User management**
 
