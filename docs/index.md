@@ -1,4 +1,5 @@
 (index)=
+# Landscape documentation
 
 Landscape is a systems management tool designed to help you manage and monitor your Ubuntu systems from a unified platform.
 
@@ -43,8 +44,8 @@ Thinking about using Landscape for your next project? [Get in touch!](https://ub
 :glob:
 
 Home <self>
-/tutorial*/index
-/how*/index
-/reference*/index
-/explanation*/index
+how*/index
+reference*/index
+explanation*/index
 *
+```

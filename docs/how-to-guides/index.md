@@ -89,5 +89,4 @@ These how-to guides can be applied to many key operations and common tasks with 
 :maxdepth: 2
 :glob:
 
-*
 */index

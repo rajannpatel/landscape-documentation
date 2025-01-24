@@ -10,4 +10,5 @@
 
 self
 contributing
+docs/index
 ```

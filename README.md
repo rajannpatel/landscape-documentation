@@ -1,7 +1,3 @@
----
-orphan: true
----
-
 # Landscape Documentation
 
 Landscape is a systems management tool designed to help you manage and monitor your Ubuntu systems from a unified platform.
