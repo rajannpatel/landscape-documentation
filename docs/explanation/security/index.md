@@ -2,9 +2,10 @@
 # Security
 
 ```{toctree}
-:hidden:
 :titlesonly:
 :maxdepth: 2
 :glob:
 
-*
+cryptographic-technology
+disclosure-and-reporting
+apparmor

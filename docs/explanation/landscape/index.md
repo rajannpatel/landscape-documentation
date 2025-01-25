@@ -2,9 +2,9 @@
 # Landscape
 
 ```{toctree}
-:hidden:
 :titlesonly:
 :maxdepth: 2
-:glob:
 
-*
+about-landscape
+self-hosted-landscape
+licenses

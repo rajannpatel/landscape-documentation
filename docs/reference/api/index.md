@@ -2,9 +2,9 @@
 # API
 
 ```{toctree}
-:hidden:
 :titlesonly:
 :maxdepth: 2
 :glob:
 
-*/index
+rest-api-endpoints/index
+legacy-api-endpoints/index

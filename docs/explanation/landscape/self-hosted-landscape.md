@@ -84,7 +84,7 @@ The machine(s) running as the application server will also need the following ex
 
 If this external network access is unavailable, Canonical's professional services include assistance with setting up Landscape in a fully air-gapped environment.
 
-# Unsupported Versions
+## Unsupported Versions
 | **major version**                | **Release date** | **Support expired on** | **Version of Ubuntu**  |
 | ----------------------           | ---------------- | ------------------------ | ---------------------  |
 | [23.10](/reference/release-notes/23-10-release-notes)      | 2023-Oct    | **2024-Apr**     | 20.04 LTS or 22.04 LTS |

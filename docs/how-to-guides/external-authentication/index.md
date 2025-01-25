@@ -2,9 +2,10 @@
 # External authentication
 
 ```{toctree}
-:hidden:
 :titlesonly:
 :maxdepth: 2
 :glob:
 
-*
+active-directory
+openid-connect-oidc
+pluggable-authentication-modules-pam

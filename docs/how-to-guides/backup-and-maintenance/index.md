@@ -2,9 +2,9 @@
 # Backup and Maintenance
 
 ```{toctree}
-:hidden:
 :titlesonly:
 :maxdepth: 2
 :glob:
 
-*
+backup-and-restore
+manage-maintenance-tasks

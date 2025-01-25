@@ -2,9 +2,13 @@
 # Classic web portal
 
 ```{toctree}
-:hidden:
 :titlesonly:
 :maxdepth: 2
 :glob:
 
-*
+manage-administrators-and-roles
+manage-access-groups
+manage-computers
+manage-packages
+manage-snaps
+other-tasks

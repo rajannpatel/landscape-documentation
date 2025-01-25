@@ -1,8 +1,7 @@
 (reference-api-rest-api-endpoints-index)=
-# Rest-Api-Endpoints
+# Rest API endpoints
 
 ```{toctree}
-:hidden:
 :titlesonly:
 :maxdepth: 2
 :glob:

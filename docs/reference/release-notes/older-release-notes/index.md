@@ -1,8 +1,7 @@
 (reference-release-notes-older-release-notes-index)=
-# Older-Release-Notes
+# Older release notes
 
 ```{toctree}
-:hidden:
 :titlesonly:
 :maxdepth: 2
 :glob:

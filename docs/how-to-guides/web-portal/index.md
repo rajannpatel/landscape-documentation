@@ -2,9 +2,9 @@
 # Web portal
 
 ```{toctree}
-:hidden:
 :titlesonly:
 :maxdepth: 2
 :glob:
 
-*/index
+web-portal-24-04-or-later/index
+classic-web-portal/index

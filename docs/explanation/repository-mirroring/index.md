@@ -2,9 +2,8 @@
 # Repository mirroring
 
 ```{toctree}
-:hidden:
 :titlesonly:
 :maxdepth: 2
 :glob:
 
-*
+repository-mirroring

@@ -2,7 +2,6 @@
 # Ubuntu Pro
 
 ```{toctree}
-:hidden:
 :titlesonly:
 :maxdepth: 2
 :glob:

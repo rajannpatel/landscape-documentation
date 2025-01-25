@@ -2,9 +2,11 @@
 # Web portal (24.04 or later)
 
 ```{toctree}
-:hidden:
 :titlesonly:
 :maxdepth: 2
 :glob:
 
-*
+manage-administrators-and-roles
+manage-access-groups
+use-annotations
+manage-livepatch-and-kernel-updates

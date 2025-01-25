@@ -17,4 +17,7 @@ Our explanatory and conceptual guides can provide better understanding of how La
 :maxdepth: 2
 :glob:
 
-*/index
+landscape/index
+security/index
+repository-mirroring/index
+terms/index

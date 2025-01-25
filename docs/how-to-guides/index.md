@@ -89,4 +89,13 @@ These how-to guides can be applied to many key operations and common tasks with 
 :maxdepth: 2
 :glob:
 
-*/index
+landscape-installation-and-set-up/index
+upgrade/index
+backup-and-maintenance/index
+ubuntu-pro/index
+external-authentication/index
+repository-mirrors/index
+web-portal/index
+iot-for-devices/index
+wsl-integration/index
+api/index

@@ -2,10 +2,13 @@
 # Release notes
 
 ```{toctree}
-:hidden:
 :titlesonly:
-:maxdepth: 2
+:maxdepth: 1
 :glob:
 
-*
-*/index
+what-s-new-in-beta
+24-04-lts-release-notes
+24-10-release-notes
+23-10-release-notes
+23-03-release-notes
+older-release-notes/index

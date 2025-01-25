@@ -19,4 +19,7 @@ We currently have a REST API and our legacy API.
 :maxdepth: 2
 :glob:
 
-*/index
+api/index
+logs/index
+networking/index
+release-notes/index
