@@ -2,7 +2,7 @@
 # 15.11 release notes
 
 # Highlights
- * --(Openstack Liberty cloud deployment)-- '''NOTE: in order to use the Autopilot to deploy OpenStack clouds, please use a more recent version of Landscape.'''
+ * --(OpenStack Liberty cloud deployment)-- '''NOTE: in order to use the Autopilot to deploy OpenStack clouds, please use a more recent version of Landscape.'''
  * '''LDS 15.11.3 point release''':
   * This replaces LDS 15.11.2 in the 15.11 PPA
   * Use `--no-auto-upgrade` when bootstrapping to prevent juju from upgrading the tools on its own
@@ -13,7 +13,7 @@
   * Fix removal profile page layout
  * '''LDS 15.11.2 point release''':
   * This replaces LDS 15.11.1 in the 15.11 PPA
-  * Update Openstack charm revisions to handle changes in liberty from the UCA
+  * Update OpenStack charm revisions to handle changes in liberty from the UCA
  * '''LDS 15.11.1 point release''':
   * This replaces LDS 15.11 in the 15.11 PPA.
   * Fix for stale idle in transaction connections to the database
@@ -23,8 +23,8 @@
 # Changes and new features
 This section describes the changes and new features in more detail.
 
-## Openstack Liberty deployment
---(Autopilot in LDS 15.11 will deploy Openstack Liberty clouds.)-- Due to https://bugs.launchpad.net/ubuntu/+source/nova/+bug/1559935, please use a newer version of Landscape if you want to use the Autopilot. In particular, version 16.03.1 at the time of this writing is the preferred way to deploy OpenStack Liberty.
+## OpenStack Liberty deployment
+--(Autopilot in LDS 15.11 will deploy OpenStack Liberty clouds.)-- Due to https://bugs.launchpad.net/ubuntu/+source/nova/+bug/1559935, please use a newer version of Landscape if you want to use the Autopilot. In particular, version 16.03.1 at the time of this writing is the preferred way to deploy OpenStack Liberty.
 
 ## MAAS supported version
 Autopilot in LDS 15.11 supports MAAS 1.8.x only.

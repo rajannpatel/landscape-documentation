@@ -12,7 +12,7 @@ These are the release notes for Landscape 18.03.
 Landscape 18.03 is a major release with the following:
 
  * Ubuntu 18.04 LTS ("bionic") support
- * Openstack autopilot removed
+ * OpenStack autopilot removed
  * [#1725323](https://bugs.launchpad.net/bugs/1725323) edit-pocket should have option to toggle udeb support
  * [#1749598](https://bugs.launchpad.net/bugs/1749598) A user with a restricted role can't schedule package upgrades. For users with limited access to the Global Access group, scheduling packages operations on machines in child groups was previously returning Unauthorized errors, even when the user had a role to manage machines from within that access group. This allows back the scheduling of packages from the web, consistently with the api.
  * [#1572299](https://bugs.launchpad.net/bugs/1572299) "landscape.no_proxy" setting not advertised from settings API. Landscape-api now exposes the landscape.no_proxy setting from the api, consistently with the web interface.

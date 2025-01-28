@@ -6,7 +6,7 @@
  * New charm to deploy Landscape
  * Juju deployed Landscape can be upgraded to future versions
  * HA (High Availability) cloud deployment
- * Openstack Kilo cloud deployment
+ * OpenStack Kilo cloud deployment
  * Add hardware to existing cloud
 
 Read on for details.
@@ -20,7 +20,7 @@ In addition to one machine for MAAS and another one for LDS, an Autopilot cloud 
  * HA cloud: 6 machines
 
 ## MAAS version
-The Openstack Autopilot component of LDS now requires MAAS base version 1.8. It won't complain version 1.7 is registered, but this configuration is no longer supported.
+The OpenStack Autopilot component of LDS now requires MAAS base version 1.8. It won't complain version 1.7 is registered, but this configuration is no longer supported.
 
 ## New charm for LDS
 When deployed with juju, LDS requires a newer version of the charm. Previous deployments cannot be upgraded to the new charm, nor can LDS in those deployments be upgraded.
@@ -28,10 +28,10 @@ When deployed with juju, LDS requires a newer version of the charm. Previous dep
 This new charm, however, allows LDS to be upgraded to future versions.
 
 ## High Availability cloud deployment
-Starting with LDS 15.10, Openstack deployments can be made highly available if enough nodes are used. Autopilot will show the requirements depending on the services chosen.
+Starting with LDS 15.10, OpenStack deployments can be made highly available if enough nodes are used. Autopilot will show the requirements depending on the services chosen.
 
-## Openstack Kilo deployment
-Autopilot in LDS 15.10 will deploy Openstack Kilo clouds.
+## OpenStack Kilo deployment
+Autopilot in LDS 15.10 will deploy OpenStack Kilo clouds.
 
 ## Adding hardware to an existing cloud
 Starting with LDS 15.10, Autopilot can add more nodes to a cloud after it is deployed. This is a beta feature, and it only works with clouds that were deployed with LDS 15.10 or later.
@@ -78,8 +78,8 @@ Follow these steps to perform a non-quickstart upgrade, that is, you did not use
 ## Charm upgrade
 Upgrading of a juju-deployed LDS 15.01 is not yet directly supported. Please follow the non-quickstart upgrade steps.
 
-# Openstack Autopilot Beta issues
-Here are some of the known issues with this release of Openstack Autopilot in LDS 15.10.
+# OpenStack Autopilot Beta issues
+Here are some of the known issues with this release of OpenStack Autopilot in LDS 15.10.
 
 ## Add hardware cancellation
 It is not yet possible to cancel an add hardware operation.

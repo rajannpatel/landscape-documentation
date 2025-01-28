@@ -10,7 +10,7 @@ These are the release notes for Landscape 17.03.
  * Autopilot
  * Nova-LXD
  * Ubuntu Xenial
- * 17.02 Openstack charms
+ * 17.02 OpenStack charms
  * MAAS 2.1 support
  * Juju 2.1 support
  * OpenStack Ocata
@@ -33,11 +33,11 @@ This section describes the changes and new features in more detail.
 
 ### Nova LXD (On-prem)
 
-The OpenStack Autopilot now allows the deployment of [nova-lxd](https://github.com/openstack/nova-lxd), bringing system containers to OpenStack using nova-lxd. With this feature, it's possible to pick a percentage of cores to deploy with KVM and LXD hypervisors across your compute servers.  LXD needs different images from KVM, but most workloads will operate transparently on this hypervisor choice that allows significantly denser deployments than KVM.
+The OpenStack Autopilot now allows the deployment of [nova-lxd](https://github.com/OpenStack/nova-lxd), bringing system containers to OpenStack using nova-lxd. With this feature, it's possible to pick a percentage of cores to deploy with KVM and LXD hypervisors across your compute servers.  LXD needs different images from KVM, but most workloads will operate transparently on this hypervisor choice that allows significantly denser deployments than KVM.
 
 ### OpenStack Ocata, 17.02 OpenStack Charms (On-prem)
 
-The Autopilot in Landscape 17.03 will deploy an [OpenStack Ocata](https://releases.openstack.org/ocata) cloud using the [17.02 OpenStack charms](http://docs.openstack.org/developer/charm-guide/1702.html).
+The Autopilot in Landscape 17.03 will deploy an [OpenStack Ocata](https://releases.OpenStack.org/ocata) cloud using the [17.02 OpenStack charms](http://docs.OpenStack.org/developer/charm-guide/1702.html).
 
 ### MAAS 2.1 (On-prem)
 

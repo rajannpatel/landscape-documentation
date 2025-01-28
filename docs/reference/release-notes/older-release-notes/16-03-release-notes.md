@@ -18,7 +18,7 @@ You can now select from 4 roles for machines through the autopilot - Storage, Co
 
 ## Autopilot: Nagios
 
-The autopilot will now allow Nagios integration at cloud deployment time.  Each charm in openstack ships with sensible monitoring thresholds already enabled as defaults. You may choose to let the autopilot deploy a new Nagios server or use an existing one in your infrastructure.
+The autopilot will now allow Nagios integration at cloud deployment time.  Each charm in OpenStack ships with sensible monitoring thresholds already enabled as defaults. You may choose to let the autopilot deploy a new Nagios server or use an existing one in your infrastructure.
 
 ## Autopilot: New charms
 
