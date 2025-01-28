@@ -100,7 +100,7 @@ Create the distribution first:
 ```bash
 landscape-api create-distribution ubuntu
 ```
-Create the series and the pockets which are what hold the actual packages. This will create a `bionic` series, with pockets for `release`, `security` and `updates`. For components, we select `main`, `restricted`, `universe` and `multiverse`. It won't download any packages yet, just create the logical infrastrcuture for them.
+Create the series and the pockets which are what hold the actual packages. This will create a `bionic` series, with pockets for `release`, `security` and `updates`. For components, we select `main`, `restricted`, `universe` and `multiverse`. It won't download any packages yet, just create the logical infrastructure for them.
 ```bash
 landscape-api create-series bionic ubuntu \
  --pockets release,updates,security \
@@ -240,7 +240,7 @@ Using an `https` source could be useful in situation where a content filtering i
 
 ## Upload pockets
 
-Removing a package from a pocket is only supported in upload mode. Landscape lets you create and manage repositories that hold packages uploaded by authorized users. You could, for example, create a staging area to which certain users could upload packages. Here is a quick howto for creating and uploading packages to such a repository.
+Removing a package from a pocket is only supported in upload mode. Landscape lets you create and manage repositories that hold packages uploaded by authorized users. You could, for example, create a staging area to which certain users could upload packages. Here is a quick how-to for creating and uploading packages to such a repository.
 
 Create another gpg key with no passphrase and the "real name" of `Upload Key`. Export the key from gpg and import it to Landscape.
 ```bash

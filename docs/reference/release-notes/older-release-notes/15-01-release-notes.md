@@ -45,7 +45,7 @@ The logging format changed quite significantly. If you have scripts that parse t
 Event log replaces the existing audit log activities. Having audit activities mixed with regular activities was a bit confusing and noisy. Event log is specific for auditing and won't be mixed with other activities in Landscape.
 
 
-## AutoPilot reboots and package upgades
+## AutoPilot reboots and package upgrades
 To prevent accidental damage to the infrastructure nodes in clouds deployed using Landscape AutoPilot, package management and reboot alerts have been disabled on those computers. 
 
 ## API changes

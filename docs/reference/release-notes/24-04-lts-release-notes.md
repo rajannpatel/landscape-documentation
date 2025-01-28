@@ -30,7 +30,7 @@
 
 ## Bug fixes
 
-- [#2055348](https://bugs.launchpad.net/ubuntu/+source/landscape-client/+bug/2055348): Potential arbitrary execution in expandvars
+- [#2055348](https://bugs.launchpad.net/ubuntu/+source/landscape-client/+bug/2055348): Potential arbitrary execution in `expandvars`
 - [#2057976](https://bugs.launchpad.net/ubuntu/+source/landscape-client/+bug/2057976): Ubuntu Pro info is not sent on registration
 - [#2043035](https://bugs.launchpad.net/landscape/+bug/2043035): Landscape UI lag
 - [#2059194](https://bugs.launchpad.net/landscape/+bug/2059194): OIDC login not working, not producing any errors

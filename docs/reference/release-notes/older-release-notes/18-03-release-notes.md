@@ -216,7 +216,7 @@ sudo pg_dropcluster 9.5 main
 The release upgrade process for the manual non-quickstart deployment is a bit more complicated and needs to be done in steps. A summary is shown in the table below, in the order the steps should happen:
 
 
-LDS           | Ubuntu (LDS) | Postgresql | Ubuntu (Postgresql) |
+LDS           | Ubuntu (LDS) | PostgreSQL | Ubuntu (PostgreSQL) |
 ---           | ---          | ---        | ---                 |
  `17.03 (1)`  | Xenial       | 9.5        | Xenial              |
  `18.03 (2)`  | `Xenial (3)` | 9.5        | Xenial              |
@@ -288,7 +288,7 @@ Upgrading the Ubuntu release of servers within a juju deployment is not supporte
 
 ## Other changes of note
 
-* Landscape will send back anonymous usage data to Canonical to help improve the product. You may opt-out of this behaviour globally in the settings page.
+* Landscape will send back anonymous usage data to Canonical to help improve the product. You may opt-out of this behavior globally in the settings page.
 
 * Copying package profiles no longer applies the copied profile to the same set of computers by default -- it applies to no computers instead.
 

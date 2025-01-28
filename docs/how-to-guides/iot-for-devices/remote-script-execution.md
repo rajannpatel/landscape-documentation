@@ -11,7 +11,7 @@ This document describes some differences and gives examples of how remote script
 
 ### Landscape Client snap design
 
-Snaps are designed to be secure. As part of this, they operate in a confined environment. The Landscape Client snap is considered “strictly confined,” which is required for it to work on an Ubuntu Core device. Strict confinement restricts the snap from interacting with the system, except when interacting via specifically configured, audited and authorised interfaces. More information on how this works can be found in [Snapcraft’s documentation on interfaces](https://snapcraft.io/docs/interfaces).
+Snaps are designed to be secure. As part of this, they operate in a confined environment. The Landscape Client snap is considered “strictly confined,” which is required for it to work on an Ubuntu Core device. Strict confinement restricts the snap from interacting with the system, except when interacting via specifically configured, audited and authorized interfaces. More information on how this works can be found in [Snapcraft’s documentation on interfaces](https://snapcraft.io/docs/interfaces).
 
 Some standard connected interfaces are:
 

@@ -106,7 +106,7 @@ To create and provision your Windows 11 VM using an ISO:
     sudo sed -i "/<\/cpu>/i \    <feature policy='require' name='vmx' />" "/etc/libvirt/qemu/${vm_name}.xml"
     ```
     
-    The `sed` command edits the VM’s XML configuration file to add the CPU feature. These changes to the XML file may not immediately be reflected in Virtual Machine Manager’s (VMM) XML editor. This is because VMM often maintains its own cache or database of VM configurations for performance reasons.
+    The `sed` command edits the VM's XML configuration file to add the CPU feature. These changes to the XML file may not immediately be reflected in Virtual Machine Manager’s (VMM) XML editor. This is because VMM often maintains its own cache or database of VM configurations for performance reasons.
     
 2. Restart the libvirt daemon:
     
@@ -138,13 +138,13 @@ To create and provision your Windows 11 VM using an ISO:
 ### Install Chocolatey and necessary drivers
 
 1. In your Windows 11 VM, open an elevated PowerShell window. Right click **PowerShell > Run as Administrator**
-2. Set the execution policy to bypass PowerShell’s default policy:
+2. Set the execution policy to bypass PowerShell's default policy:
     
     ```bash
     Set-ExecutionPolicy Bypass -Scope Process -Force
     ```
     
-    Bypassing PowerShell’s execution policy should generally be used with caution. The execution policy is set to `Bypass` here to ensure the rest of the script runs smoothly. When you close your PowerShell window, the execution policy will return to the default.
+    Bypassing PowerShell's execution policy should generally be used with caution. The execution policy is set to `Bypass` here to ensure the rest of the script runs smoothly. When you close your PowerShell window, the execution policy will return to the default.
     
 3.  Install Chocolatey:
     

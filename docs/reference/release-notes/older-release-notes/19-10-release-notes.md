@@ -15,7 +15,7 @@ These are the release notes for Landscape 19.10.
  * [#1823017](https://bugs.launchpad.net/landscape/+bug/1823017) underflow updating computers active-process-info
  * [#1825023](https://bugs.launchpad.net/landscape/+bug/1825023) slow activity queries on the account dashboard
  * [#1825409](https://bugs.launchpad.net/landscape/+bug/1825409) Roles table does not scroll
- * [#1739819](https://bugs.launchpad.net/landscape/+bug/1739819) Automatically clean Xdays-old activities and events.
+ * [#1739819](https://bugs.launchpad.net/landscape/+bug/1739819) Automatically clean X days-old activities and events.
  * [#1817951](https://bugs.launchpad.net/landscape/+bug/1817951) UI issue in Computers API doc
  * [#1770223](https://bugs.launchpad.net/landscape/+bug/1770223) Feature request - enable landscape to authenticate users with OpenID-Connect
  * [#1810793](https://bugs.launchpad.net/landscape/+bug/1810793) Landscape should add GPG material for Bionic
@@ -23,7 +23,7 @@ These are the release notes for Landscape 19.10.
 Landscape 19.10.1 contains the following fixes:
 
  * Packaging of unblock-repo-activities script.
- * [#1826862](https://bugs.launchpad.net/landscape/+bug/1826862) Quickstart cert generation with long fqdn.
+ * [#1826862](https://bugs.launchpad.net/landscape/+bug/1826862) Quickstart cert generation with long FQDN.
  * [#1858692](https://bugs.launchpad.net/landscape/+bug/1858692) Remove old dependency to ceph-common.
 
 Landscape 19.10.2 contains the following fixes:
@@ -62,7 +62,7 @@ Landscape 19.10.8 contains the following fixes:
 
  * [#1961323](https://bugs.launchpad.net/bugs/1961323) Alert when a UA preference file disables ESM.
  * [#1878439](https://bugs.launchpad.net/bugs/1878439) Make logo link in offline pages relative.
- * [#1966095](https://bugs.launchpad.net/bugs/1966095) Set umask in hashid script.
+ * [#1966095](https://bugs.launchpad.net/bugs/1966095) Set `umask` in hashid script.
  * [#1739825](https://bugs.launchpad.net/bugs/1739825) Fix bugs associate with clone status not getting updated. Also UI improvements to clones
  * [#1962211](https://bugs.launchpad.net/bugs/1962211) Support newer virtio hardware info
  * [#1945458](https://bugs.launchpad.net/bugs/1945458) Adds content policy headers
@@ -281,7 +281,7 @@ Next, switch to the Landscape 19.10 PPA:
 juju config landscape-server source="" install_sources="['ppa:landscape/19.10']"
 ```
 
-Pause all of the units by issuing a command similar to this for each landsacpe-server unit:
+Pause all of the units by issuing a command similar to this for each landscape-server unit:
 
 ```text
 juju run-action landscape-server/0 pause

@@ -49,7 +49,7 @@ In this example, we discuss mirroring the Landscape PPA. Since the PPA is treate
 1. In your Mirror Server web portal, [create a new distribution](https://ubuntu.com/landscape/docs/manage-repositories-web-portal#heading--create-a-new-repository).
 2. Then [create a mirror](https://ubuntu.com/landscape/docs/manage-repositories-web-portal#heading--create-a-mirror), with the following additional options:
     * Select **Third-party** as the **Type**
-    * Enter the PPA location under **Mirror URI**. For example, the Landscape Server 24.04 LTS mirror URI is[ https://ppa.launchpadcontent.net/landscape/self-hosted-24.04/ubuntu](https://ppa.launchpadcontent.net/landscape/self-hosted-24.04/ubuntu)
+    * Enter the PPA location under **Mirror URI**. For example, the Landscape Server 24.04 LTS mirror URI is [https://ppa.launchpadcontent.net/landscape/self-hosted-24.04/ubuntu](https://ppa.launchpadcontent.net/landscape/self-hosted-24.04/ubuntu)
     * In the **Mirror GPG Key** dropdown menu, select the public key from the PPA that you just imported
 
 **Step #5: Sync the mirror**

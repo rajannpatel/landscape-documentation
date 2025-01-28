@@ -13,7 +13,7 @@ This document describes how to manage additional administrators and roles.
 
 You can make someone an administrator by sending them an invitation via email. To invite an administrator: 
 
-1. Navigate to your organisation's home page
+1. Navigate to your organization's home page
 2. Click the **Administrators** tab
 3. Enter the requested information
 4. Click **Invite**
@@ -28,7 +28,7 @@ The first person to click on the link and submit information becomes an administ
 
 To disable one or more administrators:
 
-1. Navigate to your organisation's home page
+1. Navigate to your organization's home page
 2. Click the **Administrators** tab
 3. Select the checkboxes next to the administrator(s) you want to disable
 4. Click **Disable**
@@ -39,7 +39,7 @@ The administrator is permanently disabled and will no longer be in Landscape. Al
 
 To add a role:
 
-1. Navigate to your organisation's home page
+1. Navigate to your organization's home page
 2. Click the **Roles** tab
 3. Click **Add role**
 4. Enter the requested information

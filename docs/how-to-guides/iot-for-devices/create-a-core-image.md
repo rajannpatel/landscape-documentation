@@ -249,15 +249,15 @@ In this example, there are three parameters within the `auto-register` section. 
     
     | Parameter | Description |
     | --- | --- |
-    | serial | Serial from device’s serial assertion |
-    | model | model id from device’s serial assertion |
-    | brand | brand-id from device’s serial assertion |
-    | hostname | device’s network hostname |
-    | ip | device’s IP address of primary NIC |
-    | mac | device’s MAC address of primary NIC |
-    | prodiden | Product identifier |
-    | serialno | Serial Number |
-    | datetime | date/time of auto-enrolment |
+    | `serial` | Serial from device’s serial assertion |
+    | `model` | model id from device’s serial assertion |
+    | `brand` | brand-id from device’s serial assertion |
+    | `hostname` | device’s network hostname |
+    | `ip` | device’s IP address of primary NIC |
+    | `mac` | device’s MAC address of primary NIC |
+    | `prodiden` | Product identifier |
+    | `serialno` | Serial Number |
+    | `datetime` | date/time of auto-enrollment |
 
 - **`wait-for-serial-as`**
     

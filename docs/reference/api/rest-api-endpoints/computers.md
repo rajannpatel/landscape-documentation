@@ -11,7 +11,7 @@ Path parameters:
 
 Query parameters:
 
-- `query`: A query string with space-separated tokens used to filter the returned computers. Words provided as search parameters are treated as keywords, matching the hostname or the computer title. Selector prefixes can be used to further customise the search:
+- `query`: A query string with space-separated tokens used to filter the returned computers. Words provided as search parameters are treated as keywords, matching the hostname or the computer title. Selector prefixes can be used to further customize the search:
   - `tag`: Search for computers with the specified tag.
   - `distribution`: Search for computers running a specific Ubuntu release (can be code name like -`jammy` or version number like `22.04`).
   - `hostname`: Search for computers with the exact hostname.
@@ -735,7 +735,7 @@ Path parameters:
 
 Query parameters:
 
-- `query`: A query string with space-separated tokens used to filter the returned computers. Words provided as search parameters are treated as keywords, matching the hostname or the computer title. Selector prefixes can be used to further customise the search.
+- `query`: A query string with space-separated tokens used to filter the returned computers. Words provided as search parameters are treated as keywords, matching the hostname or the computer title. Selector prefixes can be used to further customize the search.
 
 Example request:
 

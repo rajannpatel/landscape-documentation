@@ -9,7 +9,7 @@ This document describes how to manage access groups.
 
 To create a new access group:
 
-1. Navigate to your organisation's home page
+1. Navigate to your organization's home page
 2. Click the **Access groups** tab
 3. Enter the requested information
 4. Click **Save**.
@@ -22,7 +22,7 @@ When a new access group is first created, its administrators are those who have 
 
 To change the name or title of an existing access group:
 
-1. Navigate to your organisation's home page
+1. Navigate to your organization's home page
 2. Click the **Access groups** tab
 3. Click the name of the access group you want to edit
 4. Click **Edit access group**
@@ -33,7 +33,7 @@ To change the name or title of an existing access group:
 
 To delete an existing access group:
 
-1. Navigate to your organisation's home page
+1. Navigate to your organization's home page
 2. Click the **Access groups** tab
 3. Click the name of the access group you want to delete
 4. Click **Edit access group**
@@ -47,7 +47,7 @@ When you delete an access group, its resources move to its parent access group.
 
 To view existing computers in an access group:
 
-1. Navigate to your organisation's home page
+1. Navigate to your organization's home page
 2. Click the **Access groups** tab
 3. Click the name of the access group you want to view
 4. Click the link in the text *There is [number] computers in this access group* on the right side of the screen
@@ -62,7 +62,7 @@ Or, you can view existing computers directly from the **Computers** page in the 
 
 To add computers to in an access group:
 
-1. Navigate to your organisation's home page
+1. Navigate to your organization's home page
 2. Click the **Access groups** tab
 3. Click the name of the access group you want to add computers to
 4. Click **selecting computers** from the text on the right side of the screen
@@ -87,7 +87,7 @@ You can also add computers to access groups directly from the **Computers** page
 
 To associate a role with one or more access groups:
 
-1. Navigate to your organisation's home page
+1. Navigate to your organization's home page
 2. Click the **Roles** tab
 3. Click the name of the role that you want to edit
 4. Select the checkbox next to the access group you want to associate the role with on the right side of the screen

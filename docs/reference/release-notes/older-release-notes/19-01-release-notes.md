@@ -8,7 +8,7 @@
  * [#1770416](https://bugs.launchpad.net/landscape/+bug/1770416) Create script to unblock stuck repository activities.
  * [#1782651](https://bugs.launchpad.net/landscape/+bug/1782651) Disable TLS 1.0 in apache2 config (quickstart install)
  * [#1791119](https://bugs.launchpad.net/landscape/+bug/1791119) ComputerOfflineAlert flapping when exchanges are not happening
- * [#1797503](https://bugs.launchpad.net/landscape/+bug/1797503) Option to randomise delivery of manual upgrade requests
+ * [#1797503](https://bugs.launchpad.net/landscape/+bug/1797503) Option to randomize delivery of manual upgrade requests
  * [#673002](https://bugs.launchpad.net/landscape/+bug/673002) Activity scheduling widget should reject dates in the past
  * [#1616626](https://bugs.launchpad.net/landscape/+bug/1616626) Landscape appears to hang after hitting 'remove computer'
  * [#1764456](https://bugs.launchpad.net/landscape/+bug/1764456) Segmentation fault in landscape-env.sh
@@ -207,7 +207,7 @@ Next, switch to the Landscape 19.01 PPA:
 ```
 juju config landscape-server source="" install_sources="['ppa:landscape/19.01']"
 ```
-Pause all of the units by issuing a command similar to this for each landsacpe-server unit:
+Pause all of the units by issuing a command similar to this for each landscape-server unit:
 ```
 juju run-action landscape-server/0 pause
 ```
@@ -292,7 +292,7 @@ Next, switch to the Landscape 19.01 PPA:
 juju set landscape-server source="" install_sources="['ppa:landscape/19.01']"
 ```
 
-Pause all of the units by issuing a command similar to this for each landsacpe-server unit:
+Pause all of the units by issuing a command similar to this for each landscape-server unit:
 ```
 juju action do landscape-server/0 pause
 ```

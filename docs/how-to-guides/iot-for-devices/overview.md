@@ -3,7 +3,7 @@
 
 Managing IoT devices can be a challenge, especially when you consider the requirements for deploying these devices to physically inaccessible locations, or the need to dictate exactly when and how your devices are updated.
 
-Landscape can solve these issues. Landscape enables you to remotely manage, configure, and control each of your devices, choose when and which updates are installed, and allow remote debugging and health checking of your devices all from a centralised web portal.
+Landscape can solve these issues. Landscape enables you to remotely manage, configure, and control each of your devices, choose when and which updates are installed, and allow remote debugging and health checking of your devices all from a centralized web portal.
 
 Using the strictly-confined snap version of Landscape Client, you can add all of your Core devices to your Landscape account and manage them from the web portal. Landscape works with a variety of devices, including devices with limited or intermittent connectivity. Additionally, leveraging the capabilities of the Snap Store ensures transactional, automatic updates with built-in rollback-on-failure support. As a result, you can manage your devices remotely without the need for physical intervention.
 

@@ -13,7 +13,7 @@ The general steps to make a REST API request are:
 1. Provide your login credentials with `POST`
 2. Copy your token from the output
 3. Assign your token to a new variable, such as `JWT`
-4. Make your API request, using your token for authorisation
+4. Make your API request, using your token for authorization
 
 ## Password authentication: Make a REST API request with `curl`
 
@@ -54,7 +54,7 @@ This method is for those using password authentication to login.
     JWT="qkJ0eXAiOiJKV1QiLCJhbGciOiJskdi296MTcxMDM2MTQxNiwic3ViIjoieWFuaXNhLnNjaGVyYmVyQGNhbm9uaWNhbC5jb20iLCJhY2MiOiJzdGFuZGFsb2i93nboPRfXp50"
     ```
 
-4. Make your API request, using your token as authorisation. For example:
+4. Make your API request, using your token as authorization. For example:
 
     ```bash
     curl -X GET https://your-landscape.domain.com/api/v2/activities -H "Authorization: Bearer $JWT"
@@ -109,7 +109,7 @@ To make a REST API request with `curl`:
     JWT="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MjUwMzkyNzYsImlhdCI6MTcyNDk1Mjg3Niwic3ViIjoiam9obkBleGFtcGxlLmNvbSIsImFjYyI6Im9ud2FyZCIsImlkIjoxfQ.8rWW_GN1jRzKownpg4k1Zp4iZMmn_lfLjy0cX-DLh_g"
     ```
 
-4. Make your API request, using your token as authorisation. For example:
+4. Make your API request, using your token as authorization. For example:
 
     ```bash
     curl -X GET https://your-landscape.domain.com/api/v2/activities -H "Authorization: Bearer $JWT"

@@ -90,7 +90,7 @@ The options you can set with snap `set` are:
 ### Accept the registration
 
 ```{note}
-If you’re using a registration key, you don’t need to accept the registration. Your device will enrol automatically. For more information on auto-registration, see how to auto-register new devices.
+If you’re using a registration key, you don’t need to accept the registration. Your device will enroll automatically. For more information on auto-registration, see how to auto-register new devices.
 ```
 
 If you didn’t specify a registration key, you’ll need to accept the registration request in the Landscape web portal. You’ll receive an alert that a pending computer/device needs approval. If you’re re-installing a device that previously existed in Landscape, you can select it during this stage of the registration if you want to reuse the instance.
@@ -99,7 +99,7 @@ To accept the registration from the alerts menu in the header:
 
 1. Click on the alert
 
-2. Confirm that the device attempting to enrol is your device
+2. Confirm that the device attempting to enroll is your device
 
 3. Click **Accept**
 

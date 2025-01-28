@@ -22,7 +22,7 @@ These are the release notes for Landscape 17.03.
  * Landscape Release 17.03.2 with repository management bug fixes and changes.
  * ValueError when handling reprepro error. When storing the repository management files in an NFS mount, the gpg-agent process that is spawned indirectly by reprepro will hold a file descriptor open on an deleted file, triggering the [NFS silly rename](http://nfs.sourceforge.net/#faq_d2) behavior. Landscape will fail to remove this special file and the repository operation will be interrupted. As soon as the gpg-agent process dies, the file will be removed on its own, that's why the operation ends up working if tried multiple times. The fix for this bug is to just ignore that particular failure. [Bug #1554208](https://launchpad.net/bugs/1554208).
  * Create/derive-series does not inherit udeb setting. Add a include-udeb option to create-series so that the optional pockets that can be created with this API call can also include udebs if so desired. Additionally, derive-series was fixed to honor the udeb setting from the parent series on the new derived series. [Bug #1723930](https://launchpad.net/bugs/1723930).
- * Edit-pocket should have option to toggle udeb support. To help with systems that have derived series already created and without udebs, the edit-pocket API call also received a new unclude-udeb option to allow changing this setting on already existing pockets. [Bug #1725323](https://launchpad.net/bugs/1725323).
+ * Edit-pocket should have option to toggle udeb support. To help with systems that have derived series already created and without udebs, the edit-pocket API call also received a new `unclude-udeb` option to allow changing this setting on already existing pockets. [Bug #1725323](https://launchpad.net/bugs/1725323).
  * To use the new udeb related parameters in the landscape API, please also upgrade the `landscape-api` package to version 17.03.2. If you use the raw API, then just adjust your code for the new optional parameters if you intend to use them.
  * Important new known issue that can affect how long the `landscape-server` takes to upgrade: please read the Known Issues section at the end of this document.
  * There are no special upgrade instructions for Landscape 17.03.2, regardless of the installation method.
@@ -255,7 +255,7 @@ timing:
 ## Other changes of note
 
  * Landscape will send back anonymous usage data to Canonical to help
- improve the product. You may opt-out of this behaviour globally in the
+ improve the product. You may opt-out of this behavior globally in the
  settings page.
  * Copying package profiles no longer applies the copied profile to the
  same set of computers by default -- it applies to no computers instead.

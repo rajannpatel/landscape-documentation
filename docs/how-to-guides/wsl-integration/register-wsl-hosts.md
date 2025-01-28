@@ -26,7 +26,7 @@ To use the WSL-Landscape integration, you must have the following applications d
 
 If you don't want to download your Ubuntu image from the Microsoft Store, you can manually specify a different image source instead. See [how to use a specific Ubuntu image source for WSL machines](/how-to-guides/wsl-integration/use-a-specific-image-source).
 
-Also, you must have WSL 2 installed instead of WSL 1. If you've just now installed WSL from the Microsoft store, then you've installed WSL 2 and can proceed to the next steps. If you've previously installed WSL and aren't sure if it's WSL 1 or WSL 2, run `wsl -l -v` in Powershell or Command Prompt to get the version. If you have WSL 1, you need to upgrade to WSL 2. For more information, see [Microsoft's guide on upgrading from WSL 1 to WSL 2](https://learn.microsoft.com/en-us/windows/wsl/install#upgrade-version-from-wsl-1-to-wsl-2).
+Also, you must have WSL 2 installed instead of WSL 1. If you've just now installed WSL from the Microsoft store, then you've installed WSL 2 and can proceed to the next steps. If you've previously installed WSL and aren't sure if it's WSL 1 or WSL 2, run `wsl -l -v` in PowerShell or Command Prompt to get the version. If you have WSL 1, you need to upgrade to WSL 2. For more information, see [Microsoft's guide on upgrading from WSL 1 to WSL 2](https://learn.microsoft.com/en-us/windows/wsl/install#upgrade-version-from-wsl-1-to-wsl-2).
 
 ## Install and configure Ubuntu Pro for WSL
 
@@ -87,8 +87,8 @@ From your Windows machine:
     Replace these values:
     
     - `{HOST_URL:PORT}`: The URL of your Landscape account (without `https://`) followed by a colon (`:`) and the port number. Port 6554 is the default for Landscape Quickstart installations. For example, `landscape-server.domain.com:6554`.
-    - `{ACCOUNT_NAME}`: The Landscape account name this computer belongs to. This is located on your organisation’s home page in the Landscape web portal. For self-hosted Landscape accounts, the account name defaults to “standalone”.
-    - `{REGISTRATION_KEY}`: An optional account-wide key used to register new clients. There is no key defined by default, but one can be set in your Landscape account settings. If you have a registration key, it's located on your organisation’s home page in your Landscape web portal. If you don’t have a registration key, leave this field blank.
+    - `{ACCOUNT_NAME}`: The Landscape account name this computer belongs to. This is located on your organization’s home page in the Landscape web portal. For self-hosted Landscape accounts, the account name defaults to “standalone”.
+    - `{REGISTRATION_KEY}`: An optional account-wide key used to register new clients. There is no key defined by default, but one can be set in your Landscape account settings. If you have a registration key, it's located on your organization’s home page in your Landscape web portal. If you don’t have a registration key, leave this field blank.
     - `{CLIENT_URL}`: The main URL for the Landscape Server to connect this client to. This defaults to the URL of your Landscape account suffixed with `/message-system`, although you may be using a different URL. For example, `https://landscape-server.domain.com/message-system`.
     - `{PING_URL}`: The ping URL you want this client to report to. This defaults to the URL of your Landscape account suffixed with `/ping`, although you may be using a different URL. For example, `http://landscape-server.domain.com/ping`. Your ping URL use HTTP (not HTTPS).
    - `{SSL_CERT}`: The location of Landscape Server's public certificate on your Windows machine. If you saved the certificate to the user `Downloads` directory, this value would similar to `C:\Users\user\Downloads\landscape_server.pem`.
@@ -170,7 +170,7 @@ If your Windows host machine doesn’t appear as a pending computer in your Land
 
 - **Access the Ubuntu Pro for WSL logs**
     
-   If you’ve completed the previous troubleshooting steps and your Windows machine still doesn’t appear as a pending computer in Landscape, you should review the Ubuntu Pro for WSL logs. To access those logs, see [Ubuntu Pro for WSL’s guide on how to access the logs](https://canonical-ubuntu-pro-for-wsl.readthedocs-hosted.com/en/latest/dev/howto/06-access-the-logs/).
+   If you’ve completed the previous troubleshooting steps and your Windows machine still doesn’t appear as a pending computer in Landscape, you should review the Ubuntu Pro for WSL logs. To access those logs, see [Ubuntu Pro for WSL's guide on how to access the logs](https://canonical-ubuntu-pro-for-wsl.readthedocs-hosted.com/en/latest/dev/howto/06-access-the-logs/).
 
   Landscape won’t have awareness of the Windows host machine until it's a pending computer or auto-registered in your Landscape account. The Landscape logs won’t be helpful when troubleshooting this registration issue.
 

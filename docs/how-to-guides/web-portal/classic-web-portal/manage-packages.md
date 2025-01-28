@@ -24,7 +24,7 @@ The **Request upgrades** button at the bottom of the screen lets you quickly req
 
 To add a [package profile](/explanation/terms/profiles/package-profile):
 
-1. Navigate to your organisation's home page
+1. Navigate to your organization's home page
 2. Click the **Profiles** tab
 3. Click **Package Profiles**
 4. Click **Add package profile**
@@ -48,7 +48,7 @@ Additionally, note that Debian package names can't contain underscores (`_`). If
 
 To export a [package profile](/explanation/terms/profiles/package-profile):
 
-1. Navigate to your organisation's home page
+1. Navigate to your organization's home page
 2. Click the **Profiles** tab
 3. Click **Package Profiles**
 4. Select each package you want to export 
@@ -58,7 +58,7 @@ To export a [package profile](/explanation/terms/profiles/package-profile):
 
 To modify a [package profile](/explanation/terms/profiles/package-profile):
 
-1.  Navigate to your organisation's home page
+1.  Navigate to your organization's home page
 2. Click the **Profiles** tab
 3. Click **Package Profiles**
 4. Click the name of the package profile you want to modify
@@ -69,7 +69,7 @@ To modify a [package profile](/explanation/terms/profiles/package-profile):
 
 To delete a [package profile](/explanation/terms/profiles/package-profile):
 
-1. Navigate to your organisation's home page
+1. Navigate to your organization's home page
 2. Click the **Profiles** tab
 3. Click **Package Profiles**
 4. Select each package you want to delete

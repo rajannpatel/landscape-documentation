@@ -12,10 +12,10 @@ These are the release notes for Landscape 23.03.
 * Compatible with Canonical's air-gapped contract server
 * Landscape Client package for the RISC-V (RV64) CPU architecture
 * Landscape Server packages for the s390x, rv64, and arm64 (AArch64) CPU architectures
-* Modernised Charms authored in Juju's Operator Framework
+* Modernized Charms authored in Juju's Operator Framework
 * Added the publication date of Ubuntu Security Notices (USNs) to the Packages page
 * Landscape API HTTP request parameters are now order-agnostic
-* Query optimisation on the Activities page when selecting many computers
+* Query optimization on the Activities page when selecting many computers
 * Added public keys for mirroring Jammy pockets
 * Improved user experience and API for environments where machines are cloned
 * Computer count on dashboard sidebar is consistent with other counts
@@ -23,7 +23,7 @@ These are the release notes for Landscape 23.03.
 
 ## Bug fixes
 * #1945456 Landscape Login page using an older version of jQuery
-* #1966970 GPG licence gets truncated if it's too large
+* #1966970 GPG license gets truncated if it's too large
 * #1966199 XSS - Cross-Site Scripting vulnerability via the page_key parameter
 * #1970224 Update logos
 * #2009079 Landscape can't use Duo for OIDC
@@ -57,7 +57,7 @@ Performing an in-place upgrade from Landscape 19.10 entails a fresh installation
 
 - landscape-server 23.03+17 published 21 Sep 2023
 
-  * update message handler and ui for snap holds and summary info
+  * update message handler and UI for snap holds and summary info
   * add API endpoint remove-wsl-hosts
   * add API endpoint and activity to delete child computer instances
   * add API endpoint to get mirror repo info
@@ -102,7 +102,7 @@ Performing an in-place upgrade from Landscape 19.10 entails a fresh installation
 - landscape-server 23.03+11 published 19 May 2023
 
   * Add identity argument to bootstrap accounts script
-  * Add UbuntuPro to license role name mapping for accounts
+  * Add `UbuntuPro` to license role name mapping for accounts
 
 - landscape-server 23.03+10 published 10 May 2023
 

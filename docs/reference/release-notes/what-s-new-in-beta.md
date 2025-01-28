@@ -19,7 +19,7 @@ landscape-server 25.04~beta.1 published 15 November 2024
   * feat: grpc server sends the request_id parameter
   * feat: standalone OIDC uses new dashboard flow
   * feat: activity requests are associated with child instance profiles
-  * feat: grpc server accepts SendCommandStatus and publishes messages
+  * feat: grpc server accepts `SendCommandStatus` and publishes messages
   * feat: hostagent consumer processes command status messages
   * feat: set [api] cookie-encryption-key during standalone install/upgrade
   * feat: process account subdomains in middleware for API service

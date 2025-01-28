@@ -10,7 +10,7 @@ Install the package as a self updating [snap](https://ubuntu.com/core/services/g
 sudo snap install landscape-api
 ```
 
-To avoid having to pass the access key, secret key and endpoint URL everytime you call landscape-api, you can put them in a file and source it. For example, you can create a ~/.landscape-api.rc file with:
+To avoid having to pass the access key, secret key and endpoint URL every time you call landscape-api, you can put them in a file and source it. For example, you can create a `~/.landscape-api.rc` file with:
 
 ```bash
 #!/bin/bash

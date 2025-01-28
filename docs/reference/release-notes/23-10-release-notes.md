@@ -35,7 +35,7 @@ Landscape 23.10 is an interim release and is **not recommended for production us
     - Add: Endpoints for account preferences management
     - Add: Endpoints to manage package profiles
     - Update: Computer packages split security upgrades from upgrades
-    - Add: Add search for eventlog
+    - Add: Add search for event log
     - Add: Search as optional kwarg to paginated endpoints
     - Fix: In legacy api add `access_group` parameter to `EditUpgradeProfile`
     - Update: Use `List` type for old API profile tags instead of `Array` type

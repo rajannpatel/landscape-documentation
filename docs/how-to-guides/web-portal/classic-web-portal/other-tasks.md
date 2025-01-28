@@ -41,7 +41,7 @@ Note: While the upgrade tasks are now in the queue, they will not be executed un
 
 The best way is to use [upgrade profiles](/explanation/terms/profiles/upgrade-profile), which rely on [access groups](/explanation/terms/access-groups). If an access group is already set up for the group of machines you want to keep updated automatically, click on its name. If not, you must create an access group for them:
 
-1. Click on your organisation's name in the header
+1. Click on your organization's name in the header
 2. Click **Access groups**
 3. Specify a title for your new access group
 4. Click **Save**.
@@ -61,7 +61,7 @@ You must then add computers to the access group:
 
 Once you've added machines to an access group, you'll need to create an upgrade profile:
 
-1. Click on your organisation's name in the header
+1. Click on your organization's name in the header
 2. Click **Profiles**
 2. Click **Upgrade Profiles**
 3. Click **Add upgrade profile**
@@ -87,7 +87,7 @@ Once you've added machines to an access group, you'll need to create an upgrade 
 
 Suppose you want to monitor the size of the PostgreSQL database on your database servers, you may use tags to group these machines together. Now you can create a graph to provide information from all of these servers:
 
-1. Click on your organisation's name in the header
+1. Click on your organization's name in the header
 2. Click **Graphs**
 2. Click **Add graph**
 3. Complete the **Create graph** form. In our example, we could do something like:
