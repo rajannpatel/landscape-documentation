@@ -11,72 +11,72 @@ These are the release notes for Landscape 19.10.
 ## Highlights
 
  * Improvement for USN detection on ESM
- * [#1823094](https://bugs.launchpad.net/landscape/+bug/1823094) Report by CVE causes oops
- * [#1823017](https://bugs.launchpad.net/landscape/+bug/1823017) underflow updating computers active-process-info
- * [#1825023](https://bugs.launchpad.net/landscape/+bug/1825023) slow activity queries on the account dashboard
- * [#1825409](https://bugs.launchpad.net/landscape/+bug/1825409) Roles table does not scroll
- * [#1739819](https://bugs.launchpad.net/landscape/+bug/1739819) Automatically clean X days-old activities and events.
- * [#1817951](https://bugs.launchpad.net/landscape/+bug/1817951) UI issue in Computers API doc
- * [#1770223](https://bugs.launchpad.net/landscape/+bug/1770223) Feature request - enable landscape to authenticate users with OpenID-Connect
- * [#1810793](https://bugs.launchpad.net/landscape/+bug/1810793) Landscape should add GPG material for Bionic
+ * Report by CVE causes oops
+ * Underflow updating computers active-process-info
+ * Slow activity queries on the account dashboard
+ * Roles table does not scroll
+ * Automatically clean X days-old activities and events.
+ * UI issue in Computers API doc
+ * Feature request - enable landscape to authenticate users with OpenID-Connect
+ * Landscape should add GPG material for Bionic
 
 Landscape 19.10.1 contains the following fixes:
 
  * Packaging of unblock-repo-activities script.
- * [#1826862](https://bugs.launchpad.net/landscape/+bug/1826862) Quickstart cert generation with long FQDN.
- * [#1858692](https://bugs.launchpad.net/landscape/+bug/1858692) Remove old dependency to ceph-common.
+ * Quickstart cert generation with long FQDN.
+ * Remove old dependency to ceph-common.
 
 Landscape 19.10.2 contains the following fixes:
 
- * [#1877202](https://bugs.launchpad.net/landscape/+bug/1877202) OIDC login loop when missing end_session_endpoint
- * [#1877424](https://bugs.launchpad.net/landscape/+bug/1877424) Landscape doesn't support focal hash-ids
+ * OIDC login loop when missing end_session_endpoint
+ * Landscape doesn't support focal hash-ids
 
 Landscape 19.10.3 contains the following fixes:
 
- * [#1523950](https://bugs.launchpad.net/landscape/+bug/1523950) Cron jobs don't get proxy setting from landscape
- * [#1718746](https://bugs.launchpad.net/landscape/+bug/1718746) Landscape API doesn't support GPG subkeys
+ * Cron jobs don't get proxy setting from landscape
+ * Landscape API doesn't support GPG subkeys
 
 Landscape 19.10.4 contains the following fixes:
 
- * [#1896287](https://bugs.launchpad.net/landscape/+bug/1896287) Timeouts when modifying package-profiles
- * [#1898219](https://bugs.launchpad.net/landscape/+bug/1898219) Server fails to receive binary script output
- * [#1896276](https://bugs.launchpad.net/landscape/+bug/1896276) Low admin limit of juju-bootstrapped deployment
+ * Timeouts when modifying package-profiles
+ * Server fails to receive binary script output
+ * Low admin limit of juju-bootstrapped deployment
 
 Landscape 19.10.5 contains the following fixes:
 
- * [#1929037](https://bugs.launchpad.net/bugs/1929037) Block mod-status by default on quickstart.
- * [#1907737](https://bugs.launchpad.net/bugs/1907737) HTTP header injection fix.
- * [#1929034](https://bugs.launchpad.net/bugs/1929034) Replace insecure tokens generator.
- * [#1929620](https://bugs.launchpad.net/bugs/1929620) Open redirection vulnerability.
- * [#1906329](https://bugs.launchpad.net/bugs/1906329) NVMe hardware storage listing.
+ * Block mod-status by default on quickstart.
+ * HTTP header injection fix.
+ * Replace insecure tokens generator.
+ * Open redirection vulnerability.
+ * NVMe hardware storage listing.
 
 Landscape 19.10.6 contains the following fix:
 
- * [#1915949](https://bugs.launchpad.net/bugs/1915949) Pam authentication does not handle non-ascii characters.
+ * Pam authentication does not handle non-ascii characters.
 
 Landscape 19.10.7 contains the following fix:
 
- * [#1499686](https://bugs.launchpad.net/bugs/1499686) [#1682105](https://bugs.launchpad.net/bugs/1682105) Charm configs don't get updated in database.
+ * Charm configs don't get updated in database.
 
 Landscape 19.10.8 contains the following fixes:
 
- * [#1961323](https://bugs.launchpad.net/bugs/1961323) Alert when a UA preference file disables ESM.
- * [#1878439](https://bugs.launchpad.net/bugs/1878439) Make logo link in offline pages relative.
- * [#1966095](https://bugs.launchpad.net/bugs/1966095) Set `umask` in hashid script.
- * [#1739825](https://bugs.launchpad.net/bugs/1739825) Fix bugs associate with clone status not getting updated. Also UI improvements to clones
- * [#1962211](https://bugs.launchpad.net/bugs/1962211) Support newer virtio hardware info
- * [#1945458](https://bugs.launchpad.net/bugs/1945458) Adds content policy headers
- * [#1940786](https://bugs.launchpad.net/bugs/1940786) Changes to receive message from client containing computer tag info
- * [#1952802](https://bugs.launchpad.net/bugs/1952802) Trim whitespace on email fields in settings and invite admin pages
- * [#1924662](https://bugs.launchpad.net/bugs/1924662) Limit processing of HEAD requests
- * [#1518897](https://bugs.launchpad.net/bugs/1518897) Clamp monitoring graph range.
- * [#1666720](https://bugs.launchpad.net/bugs/1666720) Quote CSV fields which would be interpreted as formula by Excel
- * [#1946782](https://bugs.launchpad.net/bugs/1946782) Blocked when the license expires today
- * [#1932977](https://bugs.launchpad.net/bugs/1932977) Allow PendingComputer edition for users with limited access context
- * [#1944624](https://bugs.launchpad.net/bugs/1944624) Escape DB store credentials in schema setup.
- * [#1828601](https://bugs.launchpad.net/bugs/1828601) Validate registration key characters.
- * [#1943861](https://bugs.launchpad.net/bugs/1943861) Disable nested access roles on admin disable.
- * [#1928356](https://bugs.launchpad.net/bugs/1928356) Allow reporting about older USNs in compliance report.
+ * Alert when a UA preference file disables ESM.
+ * Make logo link in offline pages relative.
+ * Set `umask` in hashid script.
+ * Fix bugs associate with clone status not getting updated. Also UI improvements to clones
+ * Support newer virtio hardware info
+ * Adds content policy headers
+ * Changes to receive message from client containing computer tag info
+ * Trim whitespace on email fields in settings and invite admin pages
+ * Limit processing of HEAD requests
+ * Clamp monitoring graph range.
+ * Quote CSV fields which would be interpreted as formula by Excel
+ * Blocked when the license expires today
+ * Allow PendingComputer edition for users with limited access context
+ * Escape DB store credentials in schema setup.
+ * Validate registration key characters.
+ * Disable nested access roles on admin disable.
+ * Allow reporting about older USNs in compliance report.
 
 ## Upgrade notes
 
@@ -309,7 +309,7 @@ juju run-action landscape-server/0 resume
 
 This section describes some relevant known issues that might affect your usage of Landscape 19.10.
 
- * The `landscape-package-search` service ignores the `RUN_*` variable settings in `/etc/default/landscape-server` and will always try to start. This is only noticeable using multiple application servers [Bug #1675569](https://bugs.launchpad.net/landscape/+bug/1675569). To disable this run:
+ * The `landscape-package-search` service ignores the `RUN_*` variable settings in `/etc/default/landscape-server` and will always try to start. This is only noticeable using multiple application servers. To disable this run:
 
 ```text
 sudo systemctl disable landscape-package-search
@@ -337,5 +337,5 @@ sudo service landscape-package-search stop
     # update /etc/fstab regarding the new mount point, to avoid surprises after a reboot
 ```
 
- * Also due to the `chown` command run during postinst explained above, the upgrade can take a long time if the repository files are mounted somewhere `/var/lib/landscape`, depending on the size of the repository. On an experiment with two machines on the same gigabit switch and a 150Gb repository mounted via NFS, a test upgrade spent about 30min just in that `chown` command. While that happens, the service is down. This is being tracked as [bug #1725282](https://bugs.launchpad.net/landscape/+bug/1725282) and until a fix is explicitly mentioned in the release notes, we suggest the same workaround as for the previous case: mount the repository outside of the `/var/lib/landscape/` tree.
+ * Also due to the `chown` command run during postinst explained above, the upgrade can take a long time if the repository files are mounted somewhere `/var/lib/landscape`, depending on the size of the repository. On an experiment with two machines on the same gigabit switch and a 150Gb repository mounted via NFS, a test upgrade spent about 30min just in that `chown` command. While that happens, the service is down. Until a fix is explicitly mentioned in the release notes, we suggest the same workaround as for the previous case: mount the repository outside of the `/var/lib/landscape/` tree.
 

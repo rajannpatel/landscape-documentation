@@ -43,7 +43,7 @@ Landscape 23.10 is an interim release and is **not recommended for production us
     - Add: `/info` to snap endpoints (forwarded from snap store)
   - Add: Free accounts for SAAS users
   - Fix: Move onus of polling to front-end to old UI (LP: [#2043035](https://launchpad.net/bugs/2043035))
-  - Fix: Actually use proxy settings for appserver process (LP: [#2059194](https://launchpad.net/bugs/2059194))
+  - Fix: Actually use proxy settings for appserver process
   - Fix: Database object crossing thread boundaries in GRPC activities
   - Update: Hashids config for noble
   - Update: Allow server to run on Noble

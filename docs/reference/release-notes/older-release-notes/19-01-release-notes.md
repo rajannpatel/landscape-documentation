@@ -5,23 +5,23 @@
 ## Highlights
 
  * Improvements to security updates detection.
- * [#1770416](https://bugs.launchpad.net/landscape/+bug/1770416) Create script to unblock stuck repository activities.
- * [#1782651](https://bugs.launchpad.net/landscape/+bug/1782651) Disable TLS 1.0 in apache2 config (quickstart install)
- * [#1791119](https://bugs.launchpad.net/landscape/+bug/1791119) ComputerOfflineAlert flapping when exchanges are not happening
- * [#1797503](https://bugs.launchpad.net/landscape/+bug/1797503) Option to randomize delivery of manual upgrade requests
- * [#673002](https://bugs.launchpad.net/landscape/+bug/673002) Activity scheduling widget should reject dates in the past
- * [#1616626](https://bugs.launchpad.net/landscape/+bug/1616626) Landscape appears to hang after hitting 'remove computer'
- * [#1764456](https://bugs.launchpad.net/landscape/+bug/1764456) Segmentation fault in landscape-env.sh
- * [#1774210](https://bugs.launchpad.net/landscape/+bug/1774210) Can't run a script on more than 100 clients using the API
- * [#1790656](https://bugs.launchpad.net/landscape/+bug/1790656) last_exchange_time should be visible in a couple key places
- * [#1797087](https://bugs.launchpad.net/landscape/+bug/1797087) Landscape should display CVEs alongside USNs
- * [#1786078](https://bugs.launchpad.net/landscape/+bug/1786078) Landscape-server-quickstart fails if there is no eth0
- * [#1810793](https://bugs.launchpad.net/landscape/+bug/1810793) Landscape should include GPG material for Bionic.
+ * Create script to unblock stuck repository activities.
+ * Disable TLS 1.0 in apache2 config (quickstart install)
+ * ComputerOfflineAlert flapping when exchanges are not happening
+ * Option to randomize delivery of manual upgrade requests
+ * Activity scheduling widget should reject dates in the past
+ * Landscape appears to hang after hitting 'remove computer'
+ * Segmentation fault in `landscape-env.sh`
+ * Can't run a script on more than 100 clients using the API
+ * last_exchange_time should be visible in a couple key places
+ * Landscape should display CVEs alongside USNs
+ * Landscape-server-quickstart fails if there is no eth0
+ * Landscape should include GPG material for Bionic.
  * There are no special upgrade instructions for Landscape 19.01, regardless of the installation method.
 
 Landscape 19.01.1 contains the following fix:
 
- * [#1825409](https://bugs.launchpad.net/landscape/+bug/1825409) unscalable layout for roles table.
+ * unscalable layout for roles table.
 
 ## Upgrade notes
 
@@ -314,7 +314,7 @@ juju action do landscape-server/0 resume
 
 This section describes some relevant known issues that might affect your usage of Landscape 19.01.
 
- * The `landscape-package-search` service ignores the `RUN_*` variable settings in `/etc/default/landscape-server` and will always try to start. This is only noticeable using multiple application servers [Bug #1675569](https://bugs.launchpad.net/landscape/+bug/1675569). To disable this run:
+ * The `landscape-package-search` service ignores the `RUN_*` variable settings in `/etc/default/landscape-server` and will always try to start. This is only noticeable using multiple application servers. To disable this run:
 ```
 sudo systemctl disable landscape-package-search
 sudo service landscape-package-search stop
@@ -340,5 +340,5 @@ sudo service landscape-package-search stop
     # update /etc/fstab regarding the new mount point, to avoid surprises after a reboot
 ```
 
- * Also due to the `chown` command run during postinst explained above, the upgrade can take a long time if the repository files are mounted somewhere `/var/lib/landscape`, depending on the size of the repository. On an experiment with two machines on the same gigabit switch and a 150Gb repository mounted via NFS, a test upgrade spent about 30min just in that `chown` command. While that happens, the service is down. This is being tracked as [bug #1725282](https://bugs.launchpad.net/landscape/+bug/1725282) and until a fix is explicitly mentioned in the release notes, we suggest the same workaround as for the previous case: mount the repository outside of the `/var/lib/landscape/` tree.
+ * Also due to the `chown` command run during postinst explained above, the upgrade can take a long time if the repository files are mounted somewhere `/var/lib/landscape`, depending on the size of the repository. On an experiment with two machines on the same gigabit switch and a 150Gb repository mounted via NFS, a test upgrade spent about 30min just in that `chown` command. While that happens, the service is down. Until a fix is explicitly mentioned in the release notes, we suggest the same workaround as for the previous case: mount the repository outside of the `/var/lib/landscape/` tree.
 

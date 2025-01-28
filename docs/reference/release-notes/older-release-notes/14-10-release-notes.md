@@ -36,7 +36,7 @@ This release fixes an issue when upgrading from LDS older than 14.10. The status
 This release fixes a XSS (cross-site scripting) security issue.
 
 ## OpenStack Autopilot Beta
-The !OpenStack Autopilot integrates with MAAS and Juju to deploy an !OpenStack cloud. This reference !OpenStack install is Landscape's component of the Canonical Distribution of Ubuntu !OpenStack. See this page for more details: http://www.ubuntu.com/download/cloud/install-ubuntu-OpenStack
+The !OpenStack Autopilot integrates with MAAS and Juju to deploy an !OpenStack cloud. This reference !OpenStack install is Landscape's component of the Canonical Distribution of Ubuntu !OpenStack. 
 
 ## Juju integration
 As part of the work to create the !OpenStack Autopilot, Landscape now has Juju support. Once a juju environment is registered, Landscape will keep track of the units as they come and go. New units of a service will automatically become registered computers in Landscape, and when units are destroyed, or even full services are removed, the corresponding Landscape computers will also be removed.

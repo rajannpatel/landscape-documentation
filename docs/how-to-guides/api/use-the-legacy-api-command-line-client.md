@@ -4,7 +4,7 @@
 
 The **landscape-api** package is available as a snap package, and also in the same PPA repository as Landscape Server.
 
-Install the package as a self updating [snap](https://ubuntu.com/core/services/guide/snaps-intro), by running:
+Install the package as a self updating snap, by running:
 
 ```bash
 sudo snap install landscape-api

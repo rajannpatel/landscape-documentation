@@ -33,9 +33,9 @@
 - [#2055348](https://bugs.launchpad.net/ubuntu/+source/landscape-client/+bug/2055348): Potential arbitrary execution in `expandvars`
 - [#2057976](https://bugs.launchpad.net/ubuntu/+source/landscape-client/+bug/2057976): Ubuntu Pro info is not sent on registration
 - [#2043035](https://bugs.launchpad.net/landscape/+bug/2043035): Landscape UI lag
-- [#2059194](https://bugs.launchpad.net/landscape/+bug/2059194): OIDC login not working, not producing any errors
 - [#2062561](https://bugs.launchpad.net/ubuntu/+source/landscape-client/+bug/2062561): There are no APT sources configured in `/etc/apt/sources.list` or `/etc/apt/sources.list.d`.
 - In the legacy API, add `access_group` parameter to `EditUpgradeProfile`
+- Fix with OIDC login not working, not producing any errors
 - Fixed the database object crossing thread boundaries in gRPC activities
 - Fix with `bpickle` to guard against negative string/bytestring lengths
 - Fixed errors on Ubuntu Pro tab for Windows machines

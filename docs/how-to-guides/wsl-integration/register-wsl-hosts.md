@@ -54,7 +54,7 @@ You'll then have to complete your Landscape configuration. This can be done with
     - Click **Continue**
 - For custom setups:
     - Select **Custom Configuration**
-    - Enter the path for your client configuration file. For more information on the client configuration file, see [Ubuntu Pro for WSL's documentation on the client config](https://canonical-ubuntu-pro-for-wsl.readthedocs-hosted.com/en/latest/reference/landscape/#ref-landscape-config) or the following section in this guide.
+    - Enter the path for your client configuration file. For more information on the client configuration file, see [Ubuntu Pro for WSL's documentation on the client config](https://documentation.ubuntu.com/wsl/en/latest/reference/landscape_config/) or the following section in this guide.
 
 Once Landscape is successfully configured, you’ll receive confirmation on the next page that your Ubuntu Pro subscription is active and you can close the Ubuntu Pro for WSL window.
 
@@ -121,7 +121,7 @@ That's it! Your Windows host machine is now registered in Landscape. To register
 
 ## (If necessary) Troubleshoot
 
-> See also: [Ubuntu Pro for WSL's logs](https://canonical-ubuntu-pro-for-wsl.readthedocs-hosted.com/en/latest/dev/howto/06-access-the-logs/)
+> See also: [Ubuntu Pro for WSL's logs](https://documentation.ubuntu.com/wsl/en/latest/howto/06-access-the-logs/)
 
 If your Windows host machine doesn’t appear as a pending computer in your Landscape account:
 
@@ -170,7 +170,7 @@ If your Windows host machine doesn’t appear as a pending computer in your Land
 
 - **Access the Ubuntu Pro for WSL logs**
     
-   If you’ve completed the previous troubleshooting steps and your Windows machine still doesn’t appear as a pending computer in Landscape, you should review the Ubuntu Pro for WSL logs. To access those logs, see [Ubuntu Pro for WSL's guide on how to access the logs](https://canonical-ubuntu-pro-for-wsl.readthedocs-hosted.com/en/latest/dev/howto/06-access-the-logs/).
+   If you’ve completed the previous troubleshooting steps and your Windows machine still doesn’t appear as a pending computer in Landscape, you should review the Ubuntu Pro for WSL logs. To access those logs, see [Ubuntu Pro for WSL's guide on how to access the logs](https://documentation.ubuntu.com/wsl/en/latest/howto/06-access-the-logs/).
 
   Landscape won’t have awareness of the Windows host machine until it's a pending computer or auto-registered in your Landscape account. The Landscape logs won’t be helpful when troubleshooting this registration issue.
 

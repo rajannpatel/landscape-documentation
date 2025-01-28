@@ -13,17 +13,17 @@ Landscape 18.03 is a major release with the following:
 
  * Ubuntu 18.04 LTS ("bionic") support
  * OpenStack autopilot removed
- * [#1725323](https://bugs.launchpad.net/bugs/1725323) edit-pocket should have option to toggle udeb support
- * [#1749598](https://bugs.launchpad.net/bugs/1749598) A user with a restricted role can't schedule package upgrades. For users with limited access to the Global Access group, scheduling packages operations on machines in child groups was previously returning Unauthorized errors, even when the user had a role to manage machines from within that access group. This allows back the scheduling of packages from the web, consistently with the api.
- * [#1572299](https://bugs.launchpad.net/bugs/1572299) "landscape.no_proxy" setting not advertised from settings API. Landscape-api now exposes the landscape.no_proxy setting from the api, consistently with the web interface.
- * [#1208393](https://bugs.launchpad.net/bugs/1208393) add autoremove to Landscape. An option has been added to the update profiles to automatically remove packages marked as auto-installed but no longer required to satisfy a dependency.
- * [#1739806](https://bugs.launchpad.net/bugs/1739806) Missing API call to rename computer. Up to now, it was only possible to change the title of a computer from the web interface. The equivalent API call was added.
- * [#1739823](https://bugs.launchpad.net/bugs/1739823) display a computer's repository profiles on the info page. Although repository profiles are still managed from the API, they are now listed on the computer info pages on which they apply.
- * [#1754806](https://bugs.launchpad.net/bugs/1754806) Variable delay to USN refresh to avoid timeouts. Security database updates are now scheduled over a time window.
+ * edit-pocket should have option to toggle udeb support
+ * A user with a restricted role can't schedule package upgrades. For users with limited access to the Global Access group, scheduling packages operations on machines in child groups was previously returning Unauthorized errors, even when the user had a role to manage machines from within that access group. This allows back the scheduling of packages from the web, consistently with the api.
+ * "landscape.no_proxy" setting not advertised from settings API. Landscape-api now exposes the landscape.no_proxy setting from the api, consistently with the web interface.
+ * Add autoremove to Landscape. An option has been added to the update profiles to automatically remove packages marked as auto-installed but no longer required to satisfy a dependency.
+ * Missing API call to rename computer. Up to now, it was only possible to change the title of a computer from the web interface. The equivalent API call was added.
+ * Display a computer's repository profiles on the info page. Although repository profiles are still managed from the API, they are now listed on the computer info pages on which they apply.
+ * Variable delay to USN refresh to avoid timeouts. Security database updates are now scheduled over a time window.
 
 Landscape 18.03.1 contains the following fix:
 
- * [#1825409](https://bugs.launchpad.net/landscape/+bug/1825409) unscalable layout for roles table.
+ * Unscalable layout for roles table.
 
 ## Upgrade notes
 
@@ -296,7 +296,7 @@ Upgrading the Ubuntu release of servers within a juju deployment is not supporte
 
 This section describes some relevant known issues that might affect your usage of Landscape 18.03.
 
-* The `landscape-package-search` service ignores the `RUN_*` variable settings in `/etc/default/landscape-server` and will always try to start. To configure it not to start, run this command: `sudo systemctl disable landscape-package-search`. If it was already running, you will also have to stop it: `sudo service landscape-package-search stop`. This is only noticeable using multiple application servers [Bug #1675569](https://bugs.launchpad.net/landscape/+bug/1675569).
+* The `landscape-package-search` service ignores the `RUN_*` variable settings in `/etc/default/landscape-server` and will always try to start. To configure it not to start, run this command: `sudo systemctl disable landscape-package-search`. If it was already running, you will also have to stop it: `sudo service landscape-package-search stop`. This is only noticeable using multiple application servers.
 
 
 * When the landscape-server package is installed or upgraded, its postinst step runs a `chown landscape:landscape -R /var/lib/landscape` command. If you have the repository management files mounted via NFS in the default location `/var/lib/landscape/landscape-repository` and with the NFS `root_squash` option set, then this command will fail. There are two workarounds:
@@ -318,5 +318,5 @@ This section describes some relevant known issues that might affect your usage o
     # update /etc/fstab regarding the new mount point, to avoid surprises after a reboot
 ```
 
- * Also due to the `chown` command run during postinst explained above, the upgrade can take a long time if the repository files are mounted somewhere `/var/lib/landscape`, depending on the size of the repository. On an experiment with two machines on the same gigabit switch and a 150Gb repository mounted via NFS, a test upgrade spent about 30min just in that `chown` command. While that happens, the service is down. This is being tracked as [bug](https://bugs.launchpad.net/landscape/+bug/1725282) and until a fix is explicitly mentioned in the release notes, we suggest the same workaround as for the previous case: mount the repository outside of the `/var/lib/landscape/` tree.
+ * Also due to the `chown` command run during postinst explained above, the upgrade can take a long time if the repository files are mounted somewhere `/var/lib/landscape`, depending on the size of the repository. On an experiment with two machines on the same gigabit switch and a 150Gb repository mounted via NFS, a test upgrade spent about 30min just in that `chown` command. While that happens, the service is down. Until a fix is explicitly mentioned in the release notes, we suggest the same workaround as for the previous case: mount the repository outside of the `/var/lib/landscape/` tree.
 

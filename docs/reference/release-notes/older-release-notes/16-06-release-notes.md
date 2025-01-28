@@ -19,9 +19,7 @@ Landscape 16.06 is the first Landscape release to support both Ubuntu 14.04 LTS
 ("trusty") and Ubuntu 16.04 LTS ("xenial").
 
 ### OpenStack Mitaka 
-The Autopilot in Landscape 16.06 will deploy an OpenStack Mitaka cloud using the 
-[[https://wiki.ubuntu.com/ServerTeam/OpenStackCharms/ReleaseNotes1604|16.04 
-OpenStack charms]].
+The Autopilot in Landscape 16.06 will deploy an OpenStack Mitaka cloud using the OpenStack charms.
 
 ### Automatic cloud image refresh 
 The OpenStack Mitaka cloud deployed by the Autopilot includes two amd64 images 
@@ -318,7 +316,7 @@ is redeployed with the upgraded Landscape.
 #### package-search disabled after upgrade to xenial 
 If Landscape 16.06 on trusty is upgraded to xenial, the 
 `landscape-package-search` service will be left disabled due to a 
-[[https://bugs.launchpad.net/landscape/+bug/1589665|bug]] in the transitioning 
+bug in the transitioning 
 from upstart to systemd. As a result, if the host where this service lives is 
 rebooted, the service will not start on its own.
 
@@ -335,8 +333,7 @@ And start the service up manually one last time:
 
 #### Ceph as object autopilot failures 
 When Ceph is used as object storage (ceph-radosgw), sometimes a bug can be hit 
-where the radosgw service won't be running 
-(https://bugs.launchpad.net/charms/+source/ceph-radosgw/+bug/1577519). This will 
+where the radosgw service won't be running. This will 
 usually manifest itself in the Autopilot as a "Wait for SimpleStreams to sync an 
 image" activity that stays "In progress" forever.
 
@@ -349,7 +346,7 @@ reported in the Autopilot OpenStack dashboard graphs is less than the amount
 available.
 
 This is being tracked as 
-[[https://bugs.launchpad.net/landscape-client/+bug/1588404|bug #1588404]] and 
+an internal bug and 
 the workaround is to restart landscape-client on all swift-storage units.
 
 Here are some examples on how to do that depending on how Landscape itself was 
@@ -383,6 +380,4 @@ sudo JUJU_HOME=/var/lib/landscape/juju-homes/`sudo ls -rt
 ```bash
 juju run --service swift-storage 'sudo service landscape-client restart'
 ```
-
-[16.07 OpenStack charms]: https://wiki.ubuntu.com/ServerTeam/OpenStackCharms/ReleaseNotes1607
 

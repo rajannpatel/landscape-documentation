@@ -47,10 +47,12 @@ To use the `latest-stable` version of Landscape with the charms, you need charm 
 ## Bug fixes
 
 * [#2069746](https://bugs.launchpad.net/landscape/+bug/2069746): missing distribution information caused mis-identification of distros
-* [#2069586](https://bugs.launchpad.net/landscape/+bug/2069586): updated available WSL instance types
 * [#2076014](https://bugs.launchpad.net/landscape/+bug/2076014): improved resiliency against database disconnections
 * [#2072985](https://bugs.launchpad.net/landscape/+bug/2072985): better errors when attempting to manage Snaps on unsupported instances
-* [#2069779](https://bugs.launchpad.net/landscape/+bug/2069779): database user no longer reset during upgrade with UPGRADE_SCHEMA enabled
 * [#2065095](https://bugs.launchpad.net/landscape/+bug/2065095): improved directory structure of mirrored repositories, serving the “ubuntu” directory as-needed
-* [#2068927](https://bugs.launchpad.net/landscape/+bug/2068927): fixed “datetime” usage error in landscape-hostagent-messenger
+* Fixed “datetime” usage error in landscape-hostagent-messenger
+* Database user no longer reset during upgrade with UPGRADE_SCHEMA enabled
+* Updated available WSL instance types
+
+
 

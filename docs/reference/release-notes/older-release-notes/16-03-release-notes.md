@@ -22,7 +22,7 @@ The autopilot will now allow Nagios integration at cloud deployment time.  Each 
 
 ## Autopilot: New charms
 
-[[16.01 Charm Changes||https://wiki.ubuntu.com/ServerTeam/OpenStackCharms/ReleaseNotes1601]] have been incorporated, giving you the latest performance improvements and bug fixes for your newly deployed OpenStack clouds.
+16.01 Charm Changes have been incorporated, giving you the latest performance improvements and bug fixes for your newly deployed OpenStack clouds.
 
 ## New alert
 There is a new alert type that triggers when more than one computer has the same hostname.
