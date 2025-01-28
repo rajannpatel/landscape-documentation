@@ -188,7 +188,9 @@ redirects = {}
 
 linkcheck_ignore = [
     "http://127.0.0.1:8000",
-    "https://github.com/canonical/landscape-documentation/*"
+    "https://github.com/canonical/landscape-documentation/*",
+    "https://ubuntu.com/pro/dashboard",
+    "https://support.canonical.com/"
 ]
 
 
@@ -197,6 +199,7 @@ linkcheck_ignore = [
 linkcheck_anchors_ignore_for_url = [r"https://github\.com/.*",
                                     r"https://ubuntu.com/landscape"]
 
+linkcheck_retries = 3
 
 ########################
 # Configuration extras #
