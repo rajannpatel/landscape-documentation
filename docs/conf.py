@@ -190,7 +190,8 @@ linkcheck_ignore = [
     "http://127.0.0.1:8000",
     "https://github.com/canonical/landscape-documentation/*",
     "https://ubuntu.com/pro/dashboard",
-    "https://support.canonical.com/"
+    "https://support.canonical.com/",
+    "https://www.gnu.org/software/bash/manual/html_node/Shell-Parameter-Expansion.html"
 ]
 
 
