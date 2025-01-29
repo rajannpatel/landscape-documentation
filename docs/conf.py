@@ -81,7 +81,7 @@ ogp_site_name = project
 
 # Preview image URL
 #
-# TODO: To customise the preview image, update as needed.
+# TODO: To customize the preview image, update as needed.
 
 ogp_image = \
     "https://assets.ubuntu.com/v1/253da317-image-document-ubuntudocs.svg"
@@ -89,7 +89,7 @@ ogp_image = \
 
 # Product favicon; shown in bookmarks, browser tabs, etc.
 
-# TODO: To customise the favicon, uncomment and update as needed.
+# TODO: To customize the favicon, uncomment and update as needed.
 
 # html_favicon = '.sphinx/_static/favicon.png'
 
@@ -136,12 +136,12 @@ html_context = {
     "github_url": "https://github.com/canonical/landscape-documentation",
     # Docs branch in the repo; used in links for viewing the source files
     #
-    # TODO: To customise the branch, uncomment and update as needed.
+    # TODO: To customize the branch, uncomment and update as needed.
     # 'github_version': 'main',
     # Docs location in the repo; used in links for viewing the source files
     #
-    # TODO: To customise the directory, uncomment and update as needed.
-    "github_folder": "/",
+    # TODO: To customize the directory, uncomment and update as needed.
+    "github_folder": "/docs/",
 
     # TODO: To enable or disable the Previous / Next buttons at the bottom of pages
     # Valid options: none, prev, next, both
@@ -188,7 +188,10 @@ redirects = {}
 
 linkcheck_ignore = [
     "http://127.0.0.1:8000",
-    "https://github.com/canonical/landscape-documentation/*"
+    "https://github.com/canonical/landscape-documentation/*",
+    "https://ubuntu.com/pro/dashboard",
+    "https://support.canonical.com/",
+    "https://www.gnu.org/software/bash/manual/html_node/Shell-Parameter-Expansion.html"
 ]
 
 
@@ -197,6 +200,7 @@ linkcheck_ignore = [
 linkcheck_anchors_ignore_for_url = [r"https://github\.com/.*",
                                     r"https://ubuntu.com/landscape"]
 
+linkcheck_retries = 3
 
 ########################
 # Configuration extras #
@@ -209,6 +213,9 @@ linkcheck_anchors_ignore_for_url = [r"https://github\.com/.*",
 #       substitution, deflist, linkify
 
 # myst_enable_extensions = set()
+
+# MyST configurations
+myst_heading_anchors = 4
 
 
 # Custom Sphinx extensions; see
