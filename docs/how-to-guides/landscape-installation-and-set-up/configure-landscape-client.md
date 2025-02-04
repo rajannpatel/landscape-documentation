@@ -1,5 +1,5 @@
 (how-to-guides-landscape-installation-and-set-up-configure-landscape-client)=
-# Configure Landscape Client
+# How to configure Landscape Client
 
 > See also: [How to install Landscape Client](/how-to-guides/landscape-installation-and-set-up/install-landscape-client)
 
@@ -106,4 +106,18 @@ In `/etc/default/landscape-client`:
 RUN=1
 ```
 The advantage over calling `landscape-config` is that this will request a registration only if the client is not already registered against `landscape-server`. Be aware that some configuration options (namely `computer_title`, `tags`, `access_group`) are only sent to `landscape-server` on registration.
+
+## Log rotation
+
+Landscape Client implements automated log rotation to manage log file sizes and retention.
+
+The log rotation configuration is located at `/etc/logrotate.d/landscape-client`. By default, the logs are rotated once per week and the four most recent log files are kept before the oldest ones are deleted.
+
+Log rotation is automatically done through the system’s daily cron jobs, specifically via `/etc/cron.daily/logrotate`.
+
+To manually trigger log rotation, run:
+
+```bash
+$ logrotate --force /etc/logrotate.d/landscape-client
+```
 

@@ -1,5 +1,5 @@
 (how-to-guides-wsl-integration-manage-wsl-instances)=
-# Manage WSL instances
+# How to manage WSL instances
 
 > See also: [WSL Legacy API methods](/reference/api/legacy-api-endpoints/wsl)
 
@@ -103,7 +103,7 @@ Removing a WSL instance from its Windows host machine will also remove the assoc
 ## Use child instance profiles
 
 ```{note}
-**Note**: This feature is currently in beta.
+This feature is currently in beta.
 ```
 
 You can use child instance profiles to provision WSL instances from official Ubuntu images in the Microsoft Store or from custom images at scale. These WSL instances can be configured with cloud-init at the time of provisioning.

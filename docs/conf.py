@@ -191,7 +191,8 @@ linkcheck_ignore = [
     "https://github.com/canonical/landscape-documentation/*",
     "https://ubuntu.com/pro/dashboard",
     "https://support.canonical.com/",
-    "https://www.gnu.org/software/bash/manual/html_node/Shell-Parameter-Expansion.html"
+    "https://www.gnu.org/software/bash/manual/html_node/Shell-Parameter-Expansion.html",
+    "https://wiki.ubuntu.com/Membership"
 ]
 
 
@@ -239,7 +240,7 @@ myst_heading_anchors = 4
 extensions = [
     "canonical_sphinx",
     "sphinxcontrib.cairosvgconverter",
-    "sphinx_last_updated_by_git"
+    "sphinx_last_updated_by_git",
 ]
 
 
@@ -271,7 +272,7 @@ rst_epilog = """
 #
 # TODO: To disable the button, uncomment this.
 
-# disable_feedback_button = True
+disable_feedback_button = False
 
 
 # Your manpage URL

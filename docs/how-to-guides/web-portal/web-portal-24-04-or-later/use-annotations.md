@@ -1,5 +1,5 @@
 (how-to-guides-web-portal-web-portal-24-04-or-later-use-annotations)=
-# Use annotations
+# How to use annotations
 
 Annotations in Landscape provide a mechanism for sending custom metadata from a client device to your Landscape server. These annotations can then be used to monitor, group and search for devices.
 
@@ -9,7 +9,7 @@ The instructions provided here are specific to the Landscape Client debian packa
 
 Annotations are used to gather information from clients, and each annotation consists of a key-value pair. The key identifies the meaning or category of the information and the value is the data/information.
 
-Annotations are similar to [tags](/explanation/terms/tags), which are also used to group clients. However, tags are a single value (not key-value pair). Tags are typically used to group clients for various purposes, such as upgrading a certain (tagged) group of machines, whereas annotations are used to store notes and information about your clients.
+Annotations are similar to [tags](/reference/terms/tags), which are also used to group clients. However, tags are a single value (not key-value pair). Tags are typically used to group clients for various purposes, such as upgrading a certain (tagged) group of machines, whereas annotations are used to store notes and information about your clients.
 
 Annotations are configured on the Landscape client machines but can be viewed from the server.
 

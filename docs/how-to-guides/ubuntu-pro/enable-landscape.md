@@ -1,10 +1,10 @@
 (how-to-guides-ubuntu-pro-enable-landscape)=
-# Enable Landscape
+# How to enable Landscape in the Ubuntu Pro Client
 
 > See also: [Ubuntu Pro Client documentation](https://canonical-ubuntu-pro-client.readthedocs-hosted.com/en/latest/)
 
 ```{note}
-**Note:** You must be running Landscape client 23.02 or higher and Ubuntu 24.04 LTS (Noble) to enable Landscape with Ubuntu Pro. For more information, see the [Ubuntu Pro](https://documentation.ubuntu.com/pro/) and [Ubuntu Pro Client](https://canonical-ubuntu-pro-client.readthedocs-hosted.com/en/latest/) documentation.
+You must be running Landscape client 23.02 or higher and Ubuntu 24.04 LTS (Noble) to enable Landscape with Ubuntu Pro. For more information, see the [Ubuntu Pro](https://documentation.ubuntu.com/pro/) and [Ubuntu Pro Client](https://canonical-ubuntu-pro-client.readthedocs-hosted.com/en/latest/) documentation.
 ```
 
 If you have an Ubuntu Pro subscription, you can register a machine with Landscape via the `pro enable landscape` command. You can register interactively for convenience, or non-interactively which is useful for hands-off automation.
