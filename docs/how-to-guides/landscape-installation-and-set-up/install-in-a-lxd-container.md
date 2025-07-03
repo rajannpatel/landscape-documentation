@@ -30,7 +30,7 @@ declare -A VARIABLES=(
   [SMTP_PORT]='{SMTP_PORT}'
   [SMTP_USERNAME]='{SMTP_USERNAME}'
   [SMTP_PASSWORD]='{SMTP_PASSWORD}'
-  [LANDSCAPE_VERSION]='{LANDSCAPE_VERSION}'
+  [LANDSCAPE_PPA_NAME]='{LANDSCAPE_PPA_NAME}'
 )
 ```
 
@@ -54,7 +54,7 @@ This code block includes the following values that must be changed:
 
 `{SMTP_PASSWORD}`: The password or API key associated with the SMTP username. If you’re using SendGrid, use an API Key from [`https://app.sendgrid.com/settings/api_keys`](https://app.sendgrid.com/settings/api_keys)
 
-`{LANDSCAPE_VERSION}`: The version of Landscape you will install. Enter `beta` or `24.04` (stable LTS).
+`{LANDSCAPE_PPA_NAME}`: The PPA Name of Landscape you will install. Examples include `self-hosted-beta` or `self-hosted-24.04`.
 
 ### Populate the cloud-init configuration file with your variables
 
