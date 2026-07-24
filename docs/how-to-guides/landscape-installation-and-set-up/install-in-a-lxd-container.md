@@ -7,7 +7,7 @@ myst:
 (how-to-install-in-lxd-container)=
 # How to install Landscape Server in a LXD container using cloud-init
 
-This guide shows you how to deploy Landscape Server in a single LXD container using cloud-init. This approach is intended for testing and development environments, as it automates the entire setup process with a single cloud-init configuration file. Cloud-init handles the installation of all Landscape components, configuration of networking, certificates, and system settings.
+This guide shows you how to deploy Landscape Server in a single LXD container using cloud-init. This approach is intended for testing and development environments, as it automates the entire setup process with a single cloud-init configuration file. cloud-init handles the installation of all Landscape components, configuration of networking, certificates, and system settings.
 
 ## Prepare your cloud-init configuration
 
@@ -105,7 +105,7 @@ lxc network set lxdbr0 bridge.mtu=$(ip link show $INTERFACE | awk '/mtu/ {print 
 
 ## Deploy Landscape with cloud-init
 
-Cloud-init will automatically deploy Landscape and configure port forwarding for ports 80, 443, and 6554 to make the instance accessible.
+cloud-init will automatically deploy Landscape and configure port forwarding for ports 80, 443, and 6554 to make the instance accessible.
 
 **Step 1:** Install Landscape Quickstart inside a LXD container using `cloud-init.yaml`. This command installs Landscape on Ubuntu 24.04 LTS.
 
@@ -136,7 +136,7 @@ lxc exec landscape -- bash -c "tail -f /var/log/cloud-init-output.log"
 When the cloud-init process is complete, you’ll receive two lines similar to this:
 
 ```text
-Cloud-init v. 25.2-0ubuntu1~24.04.1 finished at Fri, 20 Feb 2026 18:36:19 +0000. Datasource DataSourceLXD.  Up 408.07 seconds
+cloud-init v. 25.2-0ubuntu1~24.04.1 finished at Fri, 20 Feb 2026 18:36:19 +0000. Datasource DataSourceLXD.  Up 408.07 seconds
 ```
 
 **Step 5:** Press `CTRL + C` to terminate the tail process in your terminal window.
