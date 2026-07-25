@@ -117,6 +117,18 @@ Manage Windows Subsystem for Linux (WSL) instances with Landscape, including reg
 wsl-integration/index
 ```
 
+(how-to-index-heading-nvidia-dgx)=
+## NVIDIA DGX Management
+
+Provision, monitor, and manage NVIDIA DGX systems using cloud-init, Landscape Client remote script execution, and Landscape.
+
+```{toctree}
+:titlesonly:
+:maxdepth: 2
+
+nvidia-dgx/index
+```
+
 (how-to-index-heading-ubuntu-installer)=
 ## Ubuntu installer
 

@@ -45,6 +45,17 @@ Run scripts on managed machines remotely, enabling centralized automation across
 Remote script execution <remote-script-execution>
 ```
 
+## NVIDIA DGX Management
+
+Manage NVIDIA DGX hardware as managed endpoint appliances using Landscape's remote execution framework.
+
+```{toctree}
+:titlesonly:
+:maxdepth: 2
+
+nvidia-dgx-management
+```
+
 ## Security
 
 Understand security-related Landscape features such as Full Disk Encryption.
@@ -54,4 +65,4 @@ Understand security-related Landscape features such as Full Disk Encryption.
 :maxdepth: 2
 
 Full Disk Encryption recovery keys <fde-recovery-key>
-
+```

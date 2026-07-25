@@ -99,4 +99,5 @@ logs
 database
 known-issues
 lsctl
+nvidia-dgx-scripts-reference
 ```

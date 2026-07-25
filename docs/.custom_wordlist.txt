@@ -473,3 +473,19 @@ MikeT
 gh
 Owsalla
 TropicolX
+
+# NVIDIA DGX integration
+reprovisioning
+stdout
+ISOs
+bootable
+ramdisk
+initrd
+tracebacks
+attestable
+lockdown
+
+# API reference
+Debarchive
+debarchive
+
